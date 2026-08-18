@@ -27,12 +27,9 @@ Each figure directory contains the relevant R script, input files and, where ava
 
 ## Analysis conventions
 
-- Pathogen detection is defined as `RPM > 0`.
 - The primary abundance matrix contains 75 pathogen taxa and 1,027 libraries.
 - Organ-level paired analyses use 112 fish with all eight organs successfully sampled and sequenced, corresponding to 896 libraries.
 - Complete-organ analyses treat fish identity as the independent biological unit and organs as repeated measurements.
-- Abundance transformations and statistical tests are defined in the corresponding R scripts and should not be changed without updating the associated input and result tables.
-- Figure S6 uses the updated host-species annotation and the 30-species matrix. Figure S6B and S6C use the updated 75-pathogen classification and the categories RNA, DNA, BACTERIA and EUKARYOTA.
 
 ## Software requirements
 
