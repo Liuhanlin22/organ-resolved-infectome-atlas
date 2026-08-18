@@ -1,0 +1,76 @@
+Pathogen	Classification	Taxa
+Wenzhou pacific spadenose shark astrovirus 2	RNA virus	Astro-Poty
+Nanhai astrovirus LZMB	RNA virus	Astro-Poty
+Cynoglossus gracilis hantavirus	RNA virus	Bunya-Arena
+Telatrygon zugei hepacivirus	RNA virus	Flavi
+Odontamblyopus rubicundus hepacivirus	RNA virus	Flavi
+Johnius belangerii hepacivirus	RNA virus	Flavi
+Bombay duck fish bornavirus	RNA virus	Mono-Chu
+Paramonacanthus sulcatus filovirus	RNA virus	Mono-Chu
+Nanhai filovirus 1	RNA virus	Mono-Chu
+Nanhai filovirus 2	RNA virus	Mono-Chu
+Nanhai filovirus 3	RNA virus	Mono-Chu
+Nanhai rhabdovirus 1	RNA virus	Mono-Chu
+Nanhai paramyxovirus 1	RNA virus	Mono-Chu
+Nanhai paramyxovirus 2	RNA virus	Mono-Chu
+Psenopsis anomala artervirus	RNA virus	Nido
+Nanhai amnoonvirus 1	RNA virus	Orthomyxo
+Arius arius calicivirus	RNA virus	Picorna
+Bregmaceros mcclellandi picornavirus	RNA virus	Picorna
+Thryssa dussumieri picornavirus	RNA virus	Picorna
+Leiognathus ruconius picornavirus	RNA virus	Picorna
+Polydactylus sextarius picornavirus	RNA virus	Picorna
+Psenopsis anomala picornavirus	RNA virus	Picorna
+Gymnothorax reevesii picornavirus	RNA virus	Picorna
+Micropterus salmoides reovirus	RNA virus	Reo
+Wenzhou pacific spadenose shark reovirus 2	RNA virus	Reo
+Nanhai reo-like virus 1	RNA virus	Reo
+Nanhai reo-like virus 2	RNA virus	Reo
+Nanhai reo-like virus 4	RNA virus	Reo
+Nanhai reo-like virus 5	RNA virus	Reo
+Nanhai reo-like virus 6	RNA virus	Reo
+Nanhai reo-like virus 7	RNA virus	Reo
+Asian seabass Nervous Necrosis Virus	RNA virus	Tombus-Noda
+Nanhai retrovirus 1	RNA virus	Ortervirales
+Nanhai retrovirus 2	RNA virus	Ortervirales
+Osteomugil cunnesius hepadna-like virus	DNA virus	Blubervirales
+Nanhai hepadna-like virus 1	DNA virus	Blubervirales
+Nanhai circo-like virus 2	DNA virus	Cirlivirales
+Cynoglossus gracilis herpes-like virus	DNA virus	Herpesvirales
+Nanhai parvovirus LTY1	DNA virus	Piccovirales
+Marble sleepy goby iridovirus	DNA virus	Pimascovirales
+Nanhai papillomavirus ZBTTT	DNA virus	Zurhausenvirales
+Nanhai papillomavirus HM	DNA virus	Zurhausenvirales
+Clostridium sp. SQHN	Bacteria	Bacillota
+Clostridium sp. Y	Bacteria	Bacillota
+Aliivibrio fischeri	Bacteria	Pseudomonadota
+Photobacterium sp.	Bacteria	Pseudomonadota
+Photobacterium damselae	Bacteria	Pseudomonadota
+Photobacterium sp. QLXSD	Bacteria	Pseudomonadota
+Photobacterium swingsii	Bacteria	Pseudomonadota
+Vibrio sp. Y	Bacteria	Pseudomonadota
+Vibrio ponticus	Bacteria	Pseudomonadota
+Acinetobacter johnsonii	Bacteria	Pseudomonadota
+Pseudomonas aeruginosa	Bacteria	Pseudomonadota
+Besnoitia sp. HKL	Eukaryota	Apicomplexa
+Cystoisospora_sp._DSLT-2	Eukaryota	Apicomplexa
+Cystoisospora sp. DSLT-4	Eukaryota	Apicomplexa
+Sarcocystidae sp. SZMB	Eukaryota	Apicomplexa
+Sarcocystidae sp. DSLT	Eukaryota	Apicomplexa
+Toxoplasma sp. LZY	Eukaryota	Apicomplexa
+Eimeriorina sp. RWXLT	Eukaryota	Apicomplexa
+Eimeria sp. SZMB	Eukaryota	Apicomplexa
+Glugea plecoglossi	Eukaryota	Microsporidia
+Pseudoloma sp. FJ	Eukaryota	Microsporidia
+Toxocaridae sp. Z	Eukaryota	Nematoda
+Toxocara sp. CTSZ	Eukaryota	Nematoda
+Toxocara sp. HBSXST	Eukaryota	Nematoda
+Toxocara sp. LYS	Eukaryota	Nematoda
+Strigeidida sp. FJ	Eukaryota	Platyhelminthes
+Taeniidae sp. HBSZ	Eukaryota	Platyhelminthes
+Taeniidae sp. QLXSDD	Eukaryota	Platyhelminthes
+Taeniidae sp. LZY	Eukaryota	Platyhelminthes
+Opisthorchiidae sp. SZMB	Eukaryota	Platyhelminthes
+Hydatigera sp. SDYY	Eukaryota	Platyhelminthes
+Lepeophtheirus sp. SQHN	Eukaryota	Arthropoda
+Caligus sp. RWXLT	Eukaryota	Arthropoda

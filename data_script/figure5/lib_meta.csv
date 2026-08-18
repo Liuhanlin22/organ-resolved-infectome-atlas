@@ -1,0 +1,73 @@
+﻿lib_id,genus,class,order,family,species,species_abbreviation,plot_group
+YS-HM-1,Anguilliformes,Actinopteri,Anguilliformes,Muraenidae,Gymnothorax reevesii,Gy. reevesii,Anguilliformes
+YS-HM-2,Anguilliformes,Actinopteri,Anguilliformes,Muraenidae,Gymnothorax reevesii,Gy. reevesii,Anguilliformes
+YS-HM-3,Anguilliformes,Actinopteri,Anguilliformes,Muraenidae,Gymnothorax reevesii,Gy. reevesii,Anguilliformes
+YS-HM-4,Anguilliformes,Actinopteri,Anguilliformes,Muraenidae,Gymnothorax reevesii,Gy. reevesii,Anguilliformes
+YS-CTSZ-1,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Saurida elongata,Sa. elongata,Aulopiformes
+YS-CTSZ-2,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Saurida elongata,Sa. elongata,Aulopiformes
+YS-CTSZ-3,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Saurida elongata,Sa. elongata,Aulopiformes
+YS-HBSZ-2,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Saurida undosquamis,Sa. undosquamis,Aulopiformes
+YS-HBSZ-3,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Saurida undosquamis,Sa. undosquamis,Aulopiformes
+YS-LTY-1,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Harpadon nehereus,Ha. nehereus,Aulopiformes
+YS-LTY-2,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Harpadon nehereus,Ha. nehereus,Aulopiformes
+YS-LTY-3,Aulopiformes,Actinopteri,Aulopiformes,Synodontidae,Harpadon nehereus,Ha. nehereus,Aulopiformes
+YS-LZMB-1,Others,Actinopteri,Carangaria incertae sedis,Polynemidae,Polydactylus sextarius,Po. sextarius,Others
+YS-LZMB-3,Others,Actinopteri,Carangaria incertae sedis,Polynemidae,Polydactylus sextarius,Po. sextarius,Others
+YS-SZMB-1,Others,Actinopteri,Carangaria incertae sedis,Polynemidae,Eleutheronema tetradactylum,El. tetradactylum,Others
+YS-LYS-3,Others,Actinopteri,Carangiformes,Carangidae,Decapterus maruadsi,De. maruadsi,Others
+YS-LBYKF-1,Others,Actinopteri,Chaetodontiformes,Leiognathidae,Deveximentum ruconius,De. ruconius,Others
+YS-LBYKF-2,Others,Actinopteri,Chaetodontiformes,Leiognathidae,Deveximentum ruconius,De. ruconius,Others
+YS-LBYKF-3,Others,Actinopteri,Chaetodontiformes,Leiognathidae,Deveximentum ruconius,De. ruconius,Others
+YS-CBLT-1,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Thryssa kammalensis,Th. kammalensis,Clupeiformes
+YS-CHLT-3,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Thryssa setirostris,Th. setirostris,Clupeiformes
+YS-DHY-2,Clupeiformes,Actinopteri,Clupeiformes,Pristigasteridae,Ilisha elongata,Il. elongata,Clupeiformes
+YS-DSLT-2,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Thryssa kammalensis,Th. kammalensis,Clupeiformes
+YS-DSLT-3,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Thryssa kammalensis,Th. kammalensis,Clupeiformes
+YS-HJ-3,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Setipinna tenuifilis,Se. tenuifilis,Clupeiformes
+YS-HKL-1,Clupeiformes,Actinopteri,Clupeiformes,Pristigasteridae,Ilisha melastoma,Il. melastoma,Clupeiformes
+YS-HKL-2,Clupeiformes,Actinopteri,Clupeiformes,Pristigasteridae,Ilisha melastoma,Il. melastoma,Clupeiformes
+YS-HSLT-1,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Thryssa hamiltonii,Th. hamiltonii,Clupeiformes
+YS-HSLT-3,Clupeiformes,Actinopteri,Clupeiformes,Engraulidae,Thryssa hamiltonii,Th. hamiltonii,Clupeiformes
+YS-JSXSD-1,Clupeiformes,Actinopteri,Clupeiformes,Clupeidae,Sardinella lemuru,Sa. lemuru,Clupeiformes
+YS-JSXSD-2,Clupeiformes,Actinopteri,Clupeiformes,Clupeidae,Sardinella lemuru,Sa. lemuru,Clupeiformes
+YS-JSXSD-3,Clupeiformes,Actinopteri,Clupeiformes,Clupeidae,Sardinella lemuru,Sa. lemuru,Clupeiformes
+YS-QLXSD-1,Clupeiformes,Actinopteri,Clupeiformes,Clupeidae,Sardinella fijiensis,Sa. fijiensis,Clupeiformes
+YS-QLXSD-3,Clupeiformes,Actinopteri,Clupeiformes,Clupeidae,Sardinella melanura,Sa. melanura,Clupeiformes
+YS-BGY-1,Others,Actinopteri,Eupercaria incertae sedis,Sciaenidae,Pennahia macrocephala,Pe. macrocephala,Others
+YS-BGY-2,Others,Actinopteri,Eupercaria incertae sedis,Sciaenidae,Pennahia macrocephala,Pe. macrocephala,Others
+YS-JXY-1,Others,Actinopteri,Eupercaria incertae sedis,Scatophagidae,Scatophagus argus,Sc. argus,Others
+YS-JXY-3,Others,Actinopteri,Eupercaria incertae sedis,Scatophagidae,Scatophagus argus,Sc. argus,Others
+YS-LY-2,Others,Actinopteri,Eupercaria incertae sedis,Sciaenidae,Larimichthys crocea,La. crocea,Others
+YS-LZY-1,Others,Actinopteri,Eupercaria incertae sedis,Siganidae,Siganus canaliculatus,Si. canaliculatus,Others
+YS-LZY-2,Others,Actinopteri,Eupercaria incertae sedis,Siganidae,Siganus canaliculatus,Si. canaliculatus,Others
+YS-PSJGY-1,Others,Actinopteri,Eupercaria incertae sedis,Sciaenidae,Johnius belangerii,Jo. belangerii,Others
+YS-MSXX-1,Gadiformes,Actinopteri,Gadiformes,Bregmacerotidae,Bregmaceros mcclellandi,Br. mcclellandi,Gadiformes
+YS-MSXX-2,Gadiformes,Actinopteri,Gadiformes,Bregmacerotidae,Bregmaceros mcclellandi,Br. mcclellandi,Gadiformes
+YS-MSXX-3,Gadiformes,Actinopteri,Gadiformes,Bregmacerotidae,Bregmaceros mcclellandi,Br. mcclellandi,Gadiformes
+YS-LYXHY-1,Gobiiformes,Actinopteri,Gobiiformes,Gobiidae,Odontamblyopus rubicundus,Od. rubicundus,Gobiiformes
+YS-LYXHY-2,Gobiiformes,Actinopteri,Gobiiformes,Gobiidae,Odontamblyopus rubicundus,Od. rubicundus,Gobiiformes
+YS-LYXHY-3,Gobiiformes,Actinopteri,Gobiiformes,Gobiidae,Odontamblyopus rubicundus,Od. rubicundus,Gobiiformes
+YS-Z-1,Others,Actinopteri,Mugiliformes,Mugilidae,Moolgarda cunnesius,Mo. cunnesius,Others
+YS-Z-2,Others,Actinopteri,Mugiliformes,Mugilidae,Moolgarda cunnesius,Mo. cunnesius,Others
+YS-QXDDY-1,Others,Actinopteri,Myctophiformes,Myctophidae,Benthosema pterotum,Be. pterotum,Others
+YS-QXDDY-2,Others,Actinopteri,Myctophiformes,Myctophidae,Benthosema pterotum,Be. pterotum,Others
+YS-QXDDY-3,Others,Actinopteri,Myctophiformes,Myctophidae,Benthosema pterotum,Be. pterotum,Others
+YS-DLLY-1,Others,Actinopteri,Perciformes,Platycephalidae,Kumococius rodericensis,Ku. rodericensis,Others
+YS-Y-1,Others,Actinopteri,Perciformes,Platycephalidae,Inegocia japonica,In. japonica,Others
+YS-Y-2,Others,Actinopteri,Perciformes,Platycephalidae,Inegocia japonica,In. japonica,Others
+YS-DZTT-1,Others,Actinopteri,Pleuronectiformes,Soleidae,Zebrias zebrinus,Ze. zebrinus,Others
+YS-CC-1,Others,Actinopteri,Scombriformes,Centrolophidae,Psenopsis anomala,Ps. anomala,Others
+YS-CC-2,Others,Actinopteri,Scombriformes,Centrolophidae,Psenopsis anomala,Ps. anomala,Others
+YS-CC-3,Others,Actinopteri,Scombriformes,Centrolophidae,Psenopsis anomala,Ps. anomala,Others
+YS-SDYY-1,Others,Actinopteri,Scombriformes,Trichiuridae,Lepturacanthus savala,Le. savala,Others
+YS-SDYY-2,Others,Actinopteri,Scombriformes,Trichiuridae,Lepturacanthus savala,Le. savala,Others
+YS-SQHN-1,Others,Actinopteri,Siluriformes,Ariidae,Arius arius,Ar. arius,Others
+YS-SQHN-2,Others,Actinopteri,Siluriformes,Ariidae,Arius arius,Ar. arius,Others
+YS-RBJXY-1,Others,Actinopteri,Spariformes,Nemipteridae,Nemipterus japonicus,Ne. japonicus,Others
+YS-RWXLT-1,Others,Actinopteri,Tetraodontiformes,Monacanthidae,Paramonacanthus sulcatus,Pa. sulcatus,Others
+YS-RWXLT-2,Others,Actinopteri,Tetraodontiformes,Monacanthidae,Paramonacanthus sulcatus,Pa. sulcatus,Others
+YS-RWXLT-3,Others,Actinopteri,Tetraodontiformes,Monacanthidae,Paramonacanthus sulcatus,Pa. sulcatus,Others
+YS-ZBTTT-1,Others,Actinopteri,Tetraodontiformes,Tetraodontidae,Lagocephalus spadiceus,La. spadiceus,Others
+YS-ZBTTT-3,Others,Actinopteri,Tetraodontiformes,Tetraodontidae,Lagocephalus spadiceus,La. spadiceus,Others
+YS-JTZCS-1,Others,Chondrichthyes,Carcharhiniformes,Carcharhinidae,Scoliodon macrorhynchos,Sc. macrorhynchos,Others
+YS-JZH-2,Others,Chondrichthyes,Myliobatiformes,Dasyatidae,Telatrygon zugei,Te. zugei,Others

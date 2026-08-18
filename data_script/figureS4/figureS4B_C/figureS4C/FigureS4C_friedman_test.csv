@@ -1,0 +1,2 @@
+"test","outcome","n_fish","n_tissues","chi_square","df","p_value","kendalls_W"
+"Friedman rank-sum test","log10(total pathogen RPM + 1)",112,8,44.2658326817826,7,1.89817696485618e-07,0.056461521277784

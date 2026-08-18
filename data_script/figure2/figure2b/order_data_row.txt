@@ -1,0 +1,75 @@
+Wenzhou pacific spadenose shark astrovirus 2
+Nanhai astrovirus LZMB
+Cynoglossus gracilis hantavirus
+Telatrygon zugei hepacivirus
+Odontamblyopus rubicundus hepacivirus
+Johnius belangerii hepacivirus
+Bombay duck fish bornavirus
+Paramonacanthus sulcatus filovirus
+Nanhai filovirus 1
+Nanhai filovirus 2
+Nanhai filovirus 3
+Nanhai rhabdovirus 1
+Nanhai paramyxovirus 1
+Nanhai paramyxovirus 2
+Psenopsis anomala artervirus
+Nanhai amnoonvirus 1
+Arius arius calicivirus
+Bregmaceros mcclellandi picornavirus
+Thryssa dussumieri picornavirus
+Leiognathus ruconius picornavirus
+Polydactylus sextarius picornavirus
+Psenopsis anomala picornavirus
+Gymnothorax reevesii picornavirus
+Micropterus salmoides reovirus
+Wenzhou pacific spadenose shark reovirus 2
+Nanhai reo-like virus 1
+Nanhai reo-like virus 2
+Nanhai reo-like virus 4
+Nanhai reo-like virus 5
+Nanhai reo-like virus 6
+Nanhai reo-like virus 7
+Asian seabass Nervous Necrosis Virus
+Nanhai retrovirus 1
+Nanhai retrovirus 2
+Osteomugil cunnesius hepadna-like virus
+Nanhai hepadna-like virus 1
+Nanhai circo-like virus 2
+Cynoglossus gracilis herpes-like virus
+Nanhai parvovirus LTY1
+Marble sleepy goby iridovirus
+Nanhai papillomavirus ZBTTT
+Nanhai papillomavirus HM
+Clostridium sp. SQHN
+Clostridium sp. Y
+Aliivibrio fischeri
+Photobacterium sp.
+Photobacterium damselae
+Photobacterium sp. QLXSD
+Photobacterium swingsii
+Vibrio sp. Y
+Vibrio ponticus
+Acinetobacter johnsonii
+Pseudomonas aeruginosa
+Besnoitia sp. HKL
+Cystoisospora_sp._DSLT-2
+Cystoisospora sp. DSLT-4
+Sarcocystidae sp. SZMB
+Sarcocystidae sp. DSLT
+Toxoplasma sp. LZY
+Eimeriorina sp. RWXLT
+Eimeria sp. SZMB
+Glugea plecoglossi
+Pseudoloma sp. FJ
+Toxocaridae sp. Z
+Toxocara sp. CTSZ
+Toxocara sp. HBSXST
+Toxocara sp. LYS
+Strigeidida sp. FJ
+Taeniidae sp. HBSZ
+Taeniidae sp. QLXSDD
+Taeniidae sp. LZY
+Opisthorchiidae sp. SZMB
+Hydatigera sp. SDYY
+Lepeophtheirus sp. SQHN
+Caligus sp. RWXLT

@@ -1,0 +1,76 @@
+"name","classification","novelty","pathogen_characteristics","kingdom","family","infected_hosts","total_pathogen_detections","average_pathogens_per_infected_host"
+"Osteomugil cunnesius hepadna-like virus","DNA virus","novel","Potential pathogen","k__Viruses","f__Hepadnaviridae",1,1,1
+"Nanhai hepadna-like virus 1","DNA virus","novel","Potential pathogen","k__Viruses","f__Hepadnaviridae",1,1,1
+"Nanhai circo-like virus 2","DNA virus","novel","Potential pathogen","k__Viruses","f__Nenyaviridae",1,3,3
+"Cynoglossus gracilis herpes-like virus","DNA virus","novel","Potential pathogen","k__Viruses","f__Alloherpesviridae",0,0,0
+"Nanhai parvovirus LTY1","DNA virus","novel","Potential pathogen","k__Viruses","f__Parvoviridae",1,3,3
+"Marble sleepy goby iridovirus","DNA virus","known","Known pathogen","k__Viruses","f__Iridoviridae",2,3,1.5
+"Nanhai papillomavirus ZBTTT","DNA virus","novel","Potential pathogen","k__Viruses","f__Papillomaviridae",1,2,2
+"Nanhai papillomavirus HM","DNA virus","novel","Potential pathogen","k__Viruses","f__Papillomaviridae",1,2,2
+"Nanhai retrovirus 1","RNA virus","novel","Potential pathogen","k__Viruses","f__Retroviridae",3,4,1.33333333333333
+"Nanhai retrovirus 2","RNA virus","novel","Potential pathogen","k__Viruses","f__Retroviridae",2,8,4
+"Wenzhou pacific spadenose shark astrovirus 2","RNA virus","known","Known pathogen","k__Viruses","f__Astroviridae",1,2,2
+"Nanhai astrovirus LZMB","RNA virus","novel","Potential pathogen","k__Viruses","f__Astroviridae",1,3,3
+"Cynoglossus gracilis hantavirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Hantaviridae",0,0,0
+"Odontamblyopus rubicundus hepacivirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Hepaciviridae",2,3,1.5
+"Johnius belangerii hepacivirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Hepaciviridae",1,1,1
+"Telatrygon zugei hepacivirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Hepaciviridae",1,1,1
+"Bombay duck fish bornavirus","RNA virus","known","Known pathogen","k__Viruses","f__Bornaviridae",2,5,2.5
+"Paramonacanthus sulcatus filovirus","RNA virus","known","Known pathogen","k__Viruses","f__Filoviridae",2,10,5
+"Nanhai filovirus 1","RNA virus","novel","Potential pathogen","k__Viruses","f__Filoviridae",0,0,0
+"Nanhai filovirus 2","RNA virus","novel","Potential pathogen","k__Viruses","f__Filoviridae",1,2,2
+"Nanhai filovirus 3","RNA virus","novel","Potential pathogen","k__Viruses","f__Filoviridae",1,5,5
+"Nanhai rhabdovirus 1","RNA virus","novel","Potential pathogen","k__Viruses","f__Rhabdoviridae",1,3,3
+"Nanhai paramyxovirus 1","RNA virus","novel","Potential pathogen","k__Viruses","f__Paramyxoviridae",1,1,1
+"Nanhai paramyxovirus 2","RNA virus","novel","Potential pathogen","k__Viruses","f__Paramyxoviridae",1,3,3
+"Psenopsis anomala artervirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Nanhypoviridae",1,1,1
+"Nanhai amnoonvirus 1","RNA virus","novel","Potential pathogen","k__Viruses","f__Amnoonviridae",1,1,1
+"Arius arius calicivirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Caliciviridae",2,5,2.5
+"Psenopsis anomala picornavirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Picornaviridae",1,3,3
+"Leiognathus ruconius picornavirus","RNA virus","novel","Potential pathogen","k__Viruses",NA,2,2,1
+"Polydactylus sextarius picornavirus","RNA virus","novel","Potential pathogen","k__Viruses",NA,1,2,2
+"Bregmaceros mcclellandi picornavirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Picornaviridae",1,2,2
+"Gymnothorax reevesii picornavirus","RNA virus","novel","Potential pathogen","k__Viruses","f__Picornaviridae",4,5,1.25
+"Thryssa dussumieri picornavirus","RNA virus","novel","Potential pathogen","k__Viruses","f__unclassified Picornavirales family",0,0,0
+"Micropterus salmoides reovirus","RNA virus","known","Known pathogen","k__Viruses","f__unclassified Reovirales family",1,1,1
+"Wenzhou pacific spadenose shark reovirus 2","RNA virus","known","Known pathogen","k__Viruses","f__unclassified Reovirales family",1,2,2
+"Nanhai reo-like virus 1","RNA virus","novel","Potential pathogen","k__Viruses","f__unclassified Reovirales family",1,5,5
+"Nanhai reo-like virus 2","RNA virus","novel","Potential pathogen","k__Viruses","f__Spinareoviridae",2,9,4.5
+"Nanhai reo-like virus 4","RNA virus","novel","Potential pathogen","k__Viruses","f__Spinareoviridae",2,2,1
+"Nanhai reo-like virus 5","RNA virus","novel","Potential pathogen","k__Viruses","f__unclassified Reovirales family",5,26,5.2
+"Nanhai reo-like virus 6","RNA virus","novel","Potential pathogen","k__Viruses","f__unclassified Reovirales family",5,25,5
+"Nanhai reo-like virus 7","RNA virus","novel","Potential pathogen","k__Viruses","f__Spinareoviridae",2,3,1.5
+"Asian seabass Nervous Necrosis Virus","RNA virus","known","Known pathogen","k__Viruses","f__Nodaviridae",3,6,2
+"Aliivibrio fischeri","Bacteria","known","Known pathogen","k__Bacteria","f__Vibrionaceae",5,18,3.6
+"Acinetobacter johnsonii","Bacteria","known","Known pathogen","k__Bacteria","f__Moraxellaceae",3,15,5
+"Pseudomonas aeruginosa","Bacteria","known","Known pathogen","k__Bacteria","f__Pseudomonadaceae",1,5,5
+"Vibrio ponticus","Bacteria","known","Known pathogen","k__Bacteria","f__Vibrionaceae",8,27,3.375
+"Photobacterium swingsii","Bacteria","known","Known pathogen","k__Bacteria","f__Vibrionaceae",1,5,5
+"Photobacterium damselae","Bacteria","known","Known pathogen","k__Bacteria","f__Vibrionaceae",3,11,3.66666666666667
+"Photobacterium sp. QLXSD","Bacteria","known","Known pathogen","k__Bacteria","f__Vibrionaceae",2,9,4.5
+"Clostridium sp. Y","Bacteria","known","Known pathogen","k__Bacteria","f__Clostridiaceae",3,4,1.33333333333333
+"Photobacterium sp.","Bacteria","novel","Potential pathogen","k__Bacteria","f__Vibrionaceae",8,21,2.625
+"Vibrio sp. Y","Bacteria","novel","Potential pathogen","k__Bacteria","f__Vibrionaceae",3,13,4.33333333333333
+"Clostridium sp. SQHN","Bacteria","novel","Potential pathogen","k__Bacteria","f__Clostridiaceae",1,3,3
+"Pseudoloma sp. FJ","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__unclassified Microsporidia family",1,7,7
+"Glugea plecoglossi","Eukaryota","known","Known pathogen","k__Eukaryota","f__Glugeidae",2,2,1
+"Toxocara sp. CTSZ","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Toxocaridae",19,57,3
+"Lepeophtheirus sp. SQHN","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Caligidae",1,3,3
+"Toxocara sp. HBSXST","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Toxocaridae",0,0,0
+"Toxoplasma sp. LZY","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Sarcocystidae",1,4,4
+"Toxocara sp. LYS","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Toxocaridae",1,2,2
+"Besnoitia sp. HKL","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Sarcocystidae",1,4,4
+"Cystoisospora sp. DSLT-4","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Sarcocystidae",0,0,0
+"Caligus sp. RWXLT","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Caligidae",2,13,6.5
+"Hydatigera sp. SDYY","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Taeniidae",3,11,3.66666666666667
+"Cystoisospora sp. DSLT-2","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Sarcocystidae",1,5,5
+"Sarcocystidae sp. DSLT","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Sarcocystidae",1,5,5
+"Sarcocystidae sp. SZMB","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Sarcocystidae",1,4,4
+"Toxocaridae sp. Z","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Toxocaridae",1,1,1
+"Eimeria sp. SZMB","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Eimeriidae",1,4,4
+"Taeniidae sp. QLXSDD","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Taeniidae",4,13,3.25
+"Taeniidae sp. LZY","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Taeniidae",1,5,5
+"Taeniidae sp. HBSZ","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Taeniidae",3,7,2.33333333333333
+"Opisthorchiidae sp. SZMB","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Opisthorchiidae",1,4,4
+"Eimeriorina sp. RWXLT","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Eimeriidae",1,5,5
+"Strigeidida sp. FJ","Eukaryota","novel","Potential pathogen","k__Eukaryota","f__Schistosomatidae",0,0,0

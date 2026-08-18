@@ -1,0 +1,118 @@
+node_id	label	node_type	node_zone	x	y
+host::Gy. reevesii	Gy. reevesii	Host species	host_ring	0.112709202489062	0.973497116418061
+host::Ha. nehereus	Ha. nehereus	Host species	host_ring	0.266697489322381	0.943012433210262
+host::Sa. elongata	Sa. elongata	Host species	host_ring	0.493390647410566	0.846738252973009
+host::Sa. undosquamis	Sa. undosquamis	Host species	host_ring	0.688921436277149	0.696984400569934
+host::El. tetradactylum	El. tetradactylum	Host species	host_ring	0.748887983187595	0.632112955599881
+host::Po. sextarius	Po. sextarius	Host species	host_ring	0.961030284438284	0.191887447198796
+host::De. maruadsi	De. maruadsi	Host species	host_ring	0.977383822954263	0.0715602028176987
+host::De. ruconius	De. ruconius	Host species	host_ring	0.976485039911611	-0.0829274793347767
+host::Co. mystus	Co. mystus	Host species	host_ring	0.958732568927776	-0.203056300757073
+host::Il. elongata	Il. elongata	Host species	host_ring	0.939753672217938	-0.277962291602475
+host::Il. melastoma	Il. melastoma	Host species	host_ring	0.914932034174834	-0.351140104289869
+host::Sa. fijiensis	Sa. fijiensis	Host species	host_ring	0.884421978654641	-0.422134769561345
+host::Sa. lemuru	Sa. lemuru	Host species	host_ring	0.848413196177054	-0.490504891466575
+host::Sa. melanura	Sa. melanura	Host species	host_ring	0.80712956456023	-0.555825391658939
+host::Sa. zunasi	Sa. zunasi	Host species	host_ring	0.760827757002655	-0.617690152240028
+host::Se. tenuifilis	Se. tenuifilis	Host species	host_ring	0.709795646265902	-0.675714540721132
+host::Th. dussumieri	Th. dussumieri	Host species	host_ring	0.654350514880002	-0.729537801403242
+host::Th. hamiltonii	Th. hamiltonii	Host species	host_ring	0.594837082499107	-0.778825298307618
+host::Th. kammalensis	Th. kammalensis	Host species	host_ring	0.53162536267202	-0.82327059571191
+host::Th. setirostris	Th. setirostris	Host species	host_ring	0.465108362352688	-0.862597363356509
+host::Jo. belangerii	Jo. belangerii	Host species	host_ring	0.385538969455089	-0.900977082411927
+host::La. crocea	La. crocea	Host species	host_ring	0.303344955863329	-0.931870075575064
+host::Pe. macrocephala	Pe. macrocephala	Host species	host_ring	0.218715644210546	-0.955281878283874
+host::Sc. argus	Sc. argus	Host species	host_ring	0.132330451096853	-0.971024537132046
+host::Si. canaliculatus	Si. canaliculatus	Host species	host_ring	0.0448828895977907	-0.978971667731683
+host::Br. mcclellandi	Br. mcclellandi	Host species	host_ring	-0.112001225667509	-0.973578823439056
+host::Od. rubicundus	Od. rubicundus	Host species	host_ring	-0.331493738575513	-0.922232021394415
+host::Lu. johnii	Lu. johnii	Host species	host_ring	-0.503209273450269	-0.840940204243829
+host::Mo. cunnesius	Mo. cunnesius	Host species	host_ring	-0.656012761658982	-0.728043444129919
+host::Be. pterotum	Be. pterotum	Host species	host_ring	-0.784161410188474	-0.587784724853601
+host::In. japonica	In. japonica	Host species	host_ring	-0.85083483819936	-0.486292173601704
+host::Ku. rodericensis	Ku. rodericensis	Host species	host_ring	-0.910497208536457	-0.362484252412873
+host::Cy. gracilis	Cy. gracilis	Host species	host_ring	-0.939440680772244	-0.279018292070936
+host::Ze. zebrinus	Ze. zebrinus	Host species	host_ring	-0.977198517038638	-0.0740476758412232
+host::Le. savala	Le. savala	Host species	host_ring	-0.979896347288565	0.014253019698552
+host::Ps. anomala	Ps. anomala	Host species	host_ring	-0.954722093766346	0.221146385171461
+host::Ar. arius	Ar. arius	Host species	host_ring	-0.893087206911598	0.403478922436899
+host::Ne. japonicus	Ne. japonicus	Host species	host_ring	-0.777269297229573	0.59686886297096
+host::La. spadiceus	La. spadiceus	Host species	host_ring	-0.697485214032067	0.688414392794515
+host::Pa. sulcatus	Pa. sulcatus	Host species	host_ring	-0.411580532261691	0.889382631640164
+host::Sc. macrorhynchos	Sc. macrorhynchos	Host species	host_ring	-0.264296405049135	0.943688195474598
+host::Te. zugei	Te. zugei	Host species	host_ring	-0.0772451483068702	0.976950964513086
+pathogen::Gymnothorax reevesii picornavirus	Gymnothorax reevesii picornavirus	Virus	outer	0.0498599660140172	1.26902087602572
+pathogen::Nanhai papillomavirus HM	Nanhai papillomavirus HM	Virus	outer	0.241420758651551	1.2468424187892
+pathogen::Bombay duck fish bornavirus	Bombay duck fish bornavirus	Virus	outer	0.338502667716053	1.22405716531097
+pathogen::Nanhai circo-like virus 2	Nanhai circo-like virus 2	Virus	outer	0.442311365037047	1.19048757085451
+pathogen::Nanhai parvovirus LTY1	Nanhai parvovirus LTY1	Virus	outer	0.542855815093768	1.1481322066813
+pathogen::Nanhai reo-like virus 1	Nanhai reo-like virus 1	Virus	outer	0.63939400225655	1.09730365436298
+pathogen::Nanhai reo-like virus 2	Nanhai reo-like virus 2	Virus	outer	0.731213477019789	1.03837702739642
+pathogen::Pseudomonas aeruginosa	Pseudomonas aeruginosa	Bacteria	outer	0.8176366138622	0.971787202875174
+pathogen::Taeniidae sp. LZY	Taeniidae sp. LZY	Eukaryota	outer	0.898025612106915	0.898025612106915
+pathogen::Eimeria sp. SZMB	Eimeria sp. SZMB	Eukaryota	outer	0.965715576312039	0.824799021379333
+pathogen::Nanhai astrovirus LZMB	Nanhai astrovirus LZMB	Virus	outer	1.0329425366039	0.73887056787661
+pathogen::Nanhai rhabdovirus 1	Nanhai rhabdovirus 1	Virus	outer	1.09254640575276	0.647489267306206
+pathogen::Opisthorchiidae sp. SZMB	Opisthorchiidae sp. SZMB	Eukaryota	outer	1.14408730863402	0.551329511474374
+pathogen::Polydactylus sextarius picornavirus	Polydactylus sextarius picornavirus	Virus	outer	1.18718487462072	0.451100957072572
+pathogen::Sarcocystidae sp. SZMB	Sarcocystidae sp. SZMB	Eukaryota	outer	1.22152104470966	0.34754328842811
+pathogen::Toxoplasma sp. LZY	Toxoplasma sp. LZY	Eukaryota	outer	1.2468424187892	0.241420758651551
+pathogen::Toxocara sp. LYS	Toxocara sp. LYS	Eukaryota	outer	1.2666096481142	0.092736181202528
+pathogen::Leiognathus ruconius picornavirus	Leiognathus ruconius picornavirus	Virus	outer	1.26544489866097	-0.107467243627721
+pathogen::Besnoitia sp. HKL	Besnoitia sp. HKL	Eukaryota	outer	1.24394902284	-0.255911759353533
+pathogen::Cystoisospora sp. DSLT-4	Cystoisospora sp. DSLT-4	Eukaryota	outer	1.21954486775373	-0.354415456118284
+pathogen::Cystoisospora_sp._DSLT-2	Cystoisospora_sp._DSLT-2	Eukaryota	outer	1.18735378669731	-0.450656171837856
+pathogen::Glugea plecoglossi	Glugea plecoglossi	Eukaryota	outer	1.14758132320728	-0.544019399126388
+pathogen::Micropterus salmoides reovirus	Micropterus salmoides reovirus	Virus	outer	1.10048142876752	-0.633909003673078
+pathogen::Nanhai filovirus 1	Nanhai filovirus 1	Virus	outer	1.0463548413016	-0.719751030624275
+pathogen::Nanhai filovirus 2	Nanhai filovirus 2	Virus	outer	0.985547164928518	-0.800997369347341
+pathogen::Nanhai filovirus 3	Nanhai filovirus 3	Virus	outer	0.918446663243048	-0.877129253176355
+pathogen::Nanhai paramyxovirus 1	Nanhai paramyxovirus 1	Virus	outer	0.845481780210639	-0.947660571793429
+pathogen::Sarcocystidae sp. DSLT	Sarcocystidae sp. DSLT	Eukaryota	outer	0.767118404506334	-1.01214097509569
+pathogen::Strigeidida sp. FJ	Strigeidida sp. FJ	Eukaryota	outer	0.683856894765159	-1.07015874872944
+pathogen::Thryssa dussumieri picornavirus	Thryssa dussumieri picornavirus	Virus	outer	0.596228884738082	-1.12134344293084
+pathogen::Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	Virus	outer	0.506411317535064	-1.16466629446911
+pathogen::Marble sleepy goby iridovirus	Marble sleepy goby iridovirus	Virus	outer	0.283437620558565	-1.23796733206175
+pathogen::Nanhai reo-like virus 4	Nanhai reo-like virus 4	Virus	outer	0.0507828107719292	-1.26898428127779
+pathogen::Bregmaceros mcclellandi picornavirus	Bregmaceros mcclellandi picornavirus	Virus	outer	-0.0489370948876788	-1.26905679965239
+pathogen::Nanhai retrovirus 1	Nanhai retrovirus 1	Virus	outer	-0.240513965499602	-1.24701765520768
+pathogen::Nanhai reo-like virus 7	Nanhai reo-like virus 7	Virus	outer	-0.337612418795697	-1.22430300770476
+pathogen::Odontamblyopus rubicundus hepacivirus	Odontamblyopus rubicundus hepacivirus	Virus	outer	-0.519085475094061	-1.15907302166273
+pathogen::Osteomugil cunnesius hepadna-like virus	Osteomugil cunnesius hepadna-like virus	Virus	outer	-0.776054609342591	-1.00530554724328
+pathogen::Toxocaridae sp. Z	Toxocaridae sp. Z	Eukaryota	outer	-0.919316029309855	-0.876218031230791
+pathogen::Nanhai retrovirus 2	Nanhai retrovirus 2	Virus	outer	-1.01620917442792	-0.761721020983749
+pathogen::Nanhai amnoonvirus 1	Nanhai amnoonvirus 1	Virus	outer	-1.14408730863402	-0.551329511474373
+pathogen::Cynoglossus gracilis hantavirus	Cynoglossus gracilis hantavirus	Virus	outer	-1.21531422637991	-0.368661540113167
+pathogen::Cynoglossus gracilis herpes-like virus	Cynoglossus gracilis herpes-like virus	Virus	outer	-1.24898545052824	-0.230076822754446
+pathogen::Nanhai hepadna-like virus 1	Nanhai hepadna-like virus 1	Virus	outer	-1.26690634382998	-0.0885907216550383
+pathogen::Nanhai paramyxovirus 2	Nanhai paramyxovirus 2	Virus	outer	-1.2699516422915	0.0110827000829363
+pathogen::Psenopsis anomala artervirus	Psenopsis anomala artervirus	Virus	outer	-1.26070169490482	0.153398945446518
+pathogen::Psenopsis anomala picornavirus	Psenopsis anomala picornavirus	Virus	outer	-1.23555366897351	0.293780753430324
+pathogen::Arius arius calicivirus	Arius arius calicivirus	Virus	outer	-1.20869509710087	0.389815549002752
+pathogen::Clostridium sp. SQHN	Clostridium sp. SQHN	Bacteria	outer	-1.15736811507932	0.522875746423329
+pathogen::Lepeophtheirus sp. SQHN	Lepeophtheirus sp. SQHN	Eukaryota	outer	-1.09144614260684	0.649342219317856
+pathogen::Caligus sp. RWXLT	Caligus sp. RWXLT	Eukaryota	outer	-0.909058769279309	0.886855204639623
+pathogen::Eimeriorina sp. RWXLT	Eimeriorina sp. RWXLT	Eukaryota	outer	-0.823217769550156	0.967063857197065
+pathogen::Nanhai papillomavirus ZBTTT	Nanhai papillomavirus ZBTTT	Virus	outer	-0.730332230022483	1.03899703261866
+pathogen::Paramonacanthus sulcatus filovirus	Paramonacanthus sulcatus filovirus	Virus	outer	-0.631197002197452	1.1020391755364
+pathogen::Pseudoloma sp. FJ	Pseudoloma sp. FJ	Eukaryota	outer	-0.526660418173424	1.15565081401321
+pathogen::Wenzhou pacific spadenose shark astrovirus 2	Wenzhou pacific spadenose shark astrovirus 2	Virus	outer	-0.434365582023598	1.1934096283981
+pathogen::Wenzhou pacific spadenose shark reovirus 2	Wenzhou pacific spadenose shark reovirus 2	Virus	outer	-0.248670467288234	1.24541679718023
+pathogen::Telatrygon zugei hepacivirus	Telatrygon zugei hepacivirus	Virus	outer	-0.100103406479311	1.26604869890982
+pathogen::Nanhai reo-like virus 5	Nanhai reo-like virus 5	Virus	inner	-0.107033371647064	0.356816768107311
+pathogen::Nanhai reo-like virus 6	Nanhai reo-like virus 6	Virus	inner	0.0660545783076234	0.469355470950868
+pathogen::Asian seabass Nervous Necrosis Virus	Asian seabass Nervous Necrosis Virus	Virus	inner	0.250266920724966	-0.278586602134975
+pathogen::Clostridium sp. Y	Clostridium sp. Y	Bacteria	inner	-0.142260532829811	-0.385128597674876
+pathogen::Aliivibrio fischeri	Aliivibrio fischeri	Bacteria	inner	-0.119276498126712	0.0950280137166242
+pathogen::Photobacterium sp.	Photobacterium sp.	Bacteria	inner	0.128872968506991	-0.206083527064753
+pathogen::Photobacterium damselae	Photobacterium damselae	Bacteria	inner	-0.368155390278626	0.0857014057587364
+pathogen::Photobacterium sp. QLXSD	Photobacterium sp. QLXSD	Bacteria	inner	0.411126557011842	0.187853086817067
+pathogen::Photobacterium swingsii	Photobacterium swingsii	Bacteria	inner	0.000665602326935361	0.173268830271689
+pathogen::Vibrio sp. Y	Vibrio sp. Y	Bacteria	inner	0.113014209098554	-0.0631488287778342
+pathogen::Vibrio ponticus	Vibrio ponticus	Bacteria	inner	-0.16728317481685	0.227577971706421
+pathogen::Acinetobacter johnsonii	Acinetobacter johnsonii	Bacteria	inner	0.251726061198695	-0.134742228904361
+pathogen::Toxocara sp. CTSZ	Toxocara sp. CTSZ	Eukaryota	inner	0.00818451070899953	0.0301440232501198
+pathogen::Toxocara sp. HBSXST	Toxocara sp. HBSXST	Eukaryota	inner	-0.115868371504377	-0.133659636959147
+pathogen::Taeniidae sp. HBSZ	Taeniidae sp. HBSZ	Eukaryota	inner	0.126110255137649	0.103244858350418
+pathogen::Taeniidae sp. QLXSDD	Taeniidae sp. QLXSDD	Eukaryota	inner	-0.272593764704992	-0.223481624026017
+pathogen::Hydatigera sp. SDYY	Hydatigera sp. SDYY	Eukaryota	inner	-0.476948525167322	-0.143413766855216

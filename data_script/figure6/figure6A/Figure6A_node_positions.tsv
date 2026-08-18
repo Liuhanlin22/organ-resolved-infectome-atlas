@@ -1,0 +1,118 @@
+node_id	label	node_type	node_zone	host_label	species	host_class	host_order	family	genus	classification	taxonomy	novelty	multi_tissue_distribution	connected_hosts	connected_orders	x	y	angle_degrees	radius
+host::Gy. reevesii	Gy. reevesii	Host species	host_ring	Gy. reevesii	Gymnothorax reevesii	Actinopteri	Anguilliformes	Muraenidae	Gymnothorax					NA	NA	6.00057113372965e-17	0.98	90	0.98
+host::Ha. nehereus	Ha. nehereus	Host species	host_ring	Ha. nehereus	Harpadon nehereus	Actinopteri	Aulopiformes	Synodontidae	Harpadon					NA	NA	-0.559842850792896	0.804348172383131	124.838709677419	0.98
+host::Sa. elongata	Sa. elongata	Host species	host_ring	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Synodontidae	Saurida					NA	NA	-0.638345033067778	0.743582960238935	130.645161290323	0.98
+host::Sa. undosquamis	Sa. undosquamis	Host species	host_ring	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Synodontidae	Saurida					NA	NA	-0.710296931484537	0.675187580694173	136.451612903226	0.98
+host::El. tetradactylum	El. tetradactylum	Host species	host_ring	El. tetradactylum	Eleutheronema tetradactylum	Actinopteri	Carangaria incertae sedis	Polynemidae	Eleutheronema					NA	NA	0.475595923280448	0.856859683821697	60.9677419354847	0.98
+host::Po. sextarius	Po. sextarius	Host species	host_ring	Po. sextarius	Polydactylus sextarius	Actinopteri	Carangaria incertae sedis	Polynemidae	Polydactylus					NA	NA	0.386468738011039	0.900578655387832	66.7741935483879	0.98
+host::De. maruadsi	De. maruadsi	Host species	host_ring	De. maruadsi	Decapterus maruadsi	Actinopteri	Carangiformes	Carangidae	Decapterus					NA	NA	-0.197272549686887	0.959939342427445	101.612903225806	0.98
+host::De. ruconius	De. ruconius	Host species	host_ring	De. ruconius	Deveximentum ruconius	Actinopteri	Chaetodontiformes	Leiognathidae	Deveximentum					NA	NA	0.293375860513894	-0.935056471272047	287.41935483871	0.98
+host::Co. mystus	Co. mystus	Host species	host_ring	Co. mystus	Coilia mystus	Actinopteri	Clupeiformes	Engraulidae	Coilia					NA	NA	-0.968698957841549	-0.148399221954485	188.709677419355	0.98
+host::Il. elongata	Il. elongata	Host species	host_ring	Il. elongata	Ilisha elongata	Actinopteri	Clupeiformes	Pristigasteridae	Ilisha					NA	NA	-0.879848448779327	-0.431586268526481	206.129032258064	0.98
+host::Il. melastoma	Il. melastoma	Host species	host_ring	Il. melastoma	Ilisha melastoma	Actinopteri	Clupeiformes	Pristigasteridae	Ilisha					NA	NA	-0.831671372344856	-0.518384730120423	211.935483870968	0.98
+host::Sa. fijiensis	Sa. fijiensis	Host species	host_ring	Sa. fijiensis	Sardinella fijiensis	Actinopteri	Clupeiformes	Clupeidae	Sardinella					NA	NA	-0.710296931484538	-0.675187580694173	223.548387096774	0.98
+host::Sa. lemuru	Sa. lemuru	Host species	host_ring	Sa. lemuru	Sardinella lemuru	Actinopteri	Clupeiformes	Clupeidae	Sardinella					NA	NA	-0.918997089504139	-0.340359147787923	200.322580645161	0.98
+host::Sa. melanura	Sa. melanura	Host species	host_ring	Sa. melanura	Sardinella melanura	Actinopteri	Clupeiformes	Clupeidae	Sardinella					NA	NA	-0.774960222198945	-0.599863862896709	217.741935483871	0.98
+host::Sa. zunasi	Sa. zunasi	Host species	host_ring	Sa. zunasi	Sardinella zunasi	Actinopteri	Clupeiformes	Clupeidae	Sardinella					NA	NA	-0.559842850792896	-0.804348172383131	235.161290322581	0.98
+host::Se. tenuifilis	Se. tenuifilis	Host species	host_ring	Se. tenuifilis	Setipinna tenuifilis	Actinopteri	Clupeiformes	Engraulidae	Setipinna					NA	NA	-0.94871557648888	-0.245639481613546	194.516129032258	0.98
+host::Th. dussumieri	Th. dussumieri	Host species	host_ring	Th. dussumieri	Thryssa dussumieri	Actinopteri	Clupeiformes	Engraulidae	Thryssa					NA	NA	-0.475595923280459	-0.856859683821691	240.967741935484	0.98
+host::Th. hamiltonii	Th. hamiltonii	Host species	host_ring	Th. hamiltonii	Thryssa hamiltonii	Actinopteri	Clupeiformes	Engraulidae	Thryssa					NA	NA	-0.386468738011052	-0.900578655387826	246.774193548387	0.98
+host::Th. kammalensis	Th. kammalensis	Host species	host_ring	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Engraulidae	Thryssa					NA	NA	-0.638345033067778	-0.743582960238935	229.354838709677	0.98
+host::Th. setirostris	Th. setirostris	Host species	host_ring	Th. setirostris	Thryssa setirostris	Actinopteri	Clupeiformes	Engraulidae	Thryssa					NA	NA	-0.29337586051389	-0.935056471272048	252.58064516129	0.98
+host::Jo. belangerii	Jo. belangerii	Host species	host_ring	Jo. belangerii	Johnius belangerii	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Johnius					NA	NA	0.968698957841548	0.148399221954495	8.70967741935541	0.98
+host::La. crocea	La. crocea	Host species	host_ring	La. crocea	Larimichthys crocea	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Larimichthys					NA	NA	0.978742177027631	0.0496361854619478	2.90322580645216	0.98
+host::Pe. macrocephala	Pe. macrocephala	Host species	host_ring	Pe. macrocephala	Pennahia macrocephala	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Pennahia					NA	NA	0.918997089504135	0.340359147787934	20.3225806451619	0.98
+host::Sc. argus	Sc. argus	Host species	host_ring	Sc. argus	Scatophagus argus	Actinopteri	Eupercaria incertae sedis	Scatophagidae	Scatophagus					NA	NA	0.978742177027632	-0.0496361854619298	357.096774193549	0.98
+host::Si. canaliculatus	Si. canaliculatus	Host species	host_ring	Si. canaliculatus	Siganus canaliculatus	Actinopteri	Eupercaria incertae sedis	Siganidae	Siganus					NA	NA	0.948715576488878	0.245639481613556	14.5161290322587	0.98
+host::Br. mcclellandi	Br. mcclellandi	Host species	host_ring	Br. mcclellandi	Bregmaceros mcclellandi	Actinopteri	Gadiformes	Bregmacerotidae	Bregmaceros					NA	NA	-0.978742177027632	0.0496361854619388	177.096774193548	0.98
+host::Od. rubicundus	Od. rubicundus	Host species	host_ring	Od. rubicundus	Odontamblyopus rubicundus	Actinopteri	Gobiiformes	Gobiidae	Odontamblyopus					NA	NA	0.831671372344859	-0.518384730120418	328.064516129033	0.98
+host::Lu. johnii	Lu. johnii	Host species	host_ring	Lu. johnii	Lutjanus johnii	Actinopteri	Lutjaniformes	Lutjanidae	Lutjanus					NA	NA	-0.831671372344856	0.518384730120423	148.064516129032	0.98
+host::Mo. cunnesius	Mo. cunnesius	Host species	host_ring	Mo. cunnesius	Moolgarda cunnesius	Actinopteri	Mugiliformes	Mugilidae	Moolgarda					NA	NA	-0.386468738011052	0.900578655387826	113.225806451613	0.98
+host::Be. pterotum	Be. pterotum	Host species	host_ring	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Myctophidae	Benthosema					NA	NA	0.638345033067768	0.743582960238943	49.3548387096782	0.98
+host::In. japonica	In. japonica	Host species	host_ring	In. japonica	Inegocia japonica	Actinopteri	Perciformes	Platycephalidae	Inegocia					NA	NA	0.475595923280463	-0.856859683821688	299.032258064516	0.98
+host::Ku. rodericensis	Ku. rodericensis	Host species	host_ring	Ku. rodericensis	Kumococius rodericensis	Actinopteri	Perciformes	Platycephalidae	Kumococius					NA	NA	0.559842850792901	-0.804348172383128	304.83870967742	0.98
+host::Cy. gracilis	Cy. gracilis	Host species	host_ring	Cy. gracilis	Cynoglossus gracilis	Actinopteri	Pleuronectiformes	Cynoglossidae	Cynoglossus					NA	NA	-0.94871557648888	0.245639481613546	165.483870967742	0.98
+host::Ze. zebrinus	Ze. zebrinus	Host species	host_ring	Ze. zebrinus	Zebrias zebrinus	Actinopteri	Pleuronectiformes	Soleidae	Zebrias					NA	NA	-0.918997089504139	0.340359147787924	159.677419354839	0.98
+host::Le. savala	Le. savala	Host species	host_ring	Le. savala	Lepturacanthus savala	Actinopteri	Scombriformes	Trichiuridae	Lepturacanthus					NA	NA	0.83167137234485	0.518384730120433	31.9354838709684	0.98
+host::Ps. anomala	Ps. anomala	Host species	host_ring	Ps. anomala	Psenopsis anomala	Actinopteri	Scombriformes	Centrolophidae	Psenopsis					NA	NA	0.774960222198937	0.599863862896719	37.7419354838717	0.98
+host::Ar. arius	Ar. arius	Host species	host_ring	Ar. arius	Arius arius	Actinopteri	Siluriformes	Ariidae	Arius					NA	NA	0.0991449555476864	-0.974971936924057	275.806451612903	0.98
+host::Ne. japonicus	Ne. japonicus	Host species	host_ring	Ne. japonicus	Nemipterus japonicus	Actinopteri	Spariformes	Nemipteridae	Nemipterus					NA	NA	-0.0991449555476815	-0.974971936924057	264.193548387097	0.98
+host::La. spadiceus	La. spadiceus	Host species	host_ring	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Tetraodontidae	Lagocephalus					NA	NA	0.918997089504141	-0.340359147787917	339.677419354839	0.98
+host::Pa. sulcatus	Pa. sulcatus	Host species	host_ring	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Monacanthidae	Paramonacanthus					NA	NA	0.948715576488882	-0.245639481613538	345.483870967742	0.98
+host::Sc. macrorhynchos	Sc. macrorhynchos	Host species	host_ring	Sc. macrorhynchos	Scoliodon macrorhynchos	Chondrichthyes	Carcharhiniformes	Carcharhinidae	Scoliodon					NA	NA	0.710296931484542	-0.675187580694169	316.451612903226	0.98
+host::Te. zugei	Te. zugei	Host species	host_ring	Te. zugei	Telatrygon zugei	Chondrichthyes	Myliobatiformes	Dasyatidae	Telatrygon					NA	NA	0.197272549686872	0.959939342427447	78.3870967741944	0.98
+pathogen::Wenzhou pacific spadenose shark astrovirus 2	Wenzhou pacific spadenose shark astrovirus 2	Virus	outer							RNA virus	Astro-Poty	Known	No	1	1	0.585763907583156	-0.960471574057719	301.377810446134	1.125
+pathogen::Nanhai astrovirus LZMB	Nanhai astrovirus LZMB	Virus	outer							RNA virus	Astro-Poty	Novel	No	1	1	0.466248626598212	1.02383456583341	65.5157414806165	1.125
+pathogen::Cynoglossus gracilis hantavirus	Cynoglossus gracilis hantavirus	Virus	outer							RNA virus	Bunya-Arena	Novel	No	1	1	-1.11125050866505	0.175349100344607	171.032982859927	1.125
+pathogen::Telatrygon zugei hepacivirus	Telatrygon zugei hepacivirus	Virus	outer							RNA virus	Flavi	Novel	No	1	1	0.114930046078709	1.1191139729752	84.136431135789	1.125
+pathogen::Odontamblyopus rubicundus hepacivirus	Odontamblyopus rubicundus hepacivirus	Virus	outer							RNA virus	Flavi	Novel	Yes	1	1	0.861781067834351	-0.723158620997002	319.998500101306	1.125
+pathogen::Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	Virus	outer							RNA virus	Flavi	Novel	Yes	1	1	1.12296496259727	0.0676364752106357	3.44677596337514	1.125
+pathogen::Bombay duck fish bornavirus	Bombay duck fish bornavirus	Virus	outer							RNA virus	Mono-Chu	Known	Yes	1	1	-0.585763907583156	0.960471574057719	121.377810446134	1.125
+pathogen::Paramonacanthus sulcatus filovirus	Paramonacanthus sulcatus filovirus	Virus	outer							RNA virus	Mono-Chu	Known	Yes	2	1	0.997090832466938	-0.520994118786756	332.412293204754	1.125
+pathogen::Nanhai filovirus 1	Nanhai filovirus 1	Virus	outer							RNA virus	Mono-Chu	Novel	No	1	1	-0.352819468885961	-1.06824314759095	251.722638032341	1.125
+pathogen::Nanhai filovirus 2	Nanhai filovirus 2	Virus	outer							RNA virus	Mono-Chu	Novel	No	1	1	-0.990775578396098	-0.532905951602979	208.274362170272	1.125
+pathogen::Nanhai filovirus 3	Nanhai filovirus 3	Virus	outer							RNA virus	Mono-Chu	Novel	No	1	1	-0.768753933032136	-0.821366173181987	226.895051825444	1.125
+pathogen::Nanhai rhabdovirus 1	Nanhai rhabdovirus 1	Virus	outer							RNA virus	Mono-Chu	Novel	No	1	1	0.352819468885961	1.06824314759095	71.7226380323407	1.125
+pathogen::Nanhai paramyxovirus 1	Nanhai paramyxovirus 1	Virus	outer							RNA virus	Mono-Chu	Novel	No	1	1	-0.675442160127881	-0.899668210131814	233.101948377168	1.125
+pathogen::Nanhai paramyxovirus 2	Nanhai paramyxovirus 2	Virus	outer							RNA virus	Mono-Chu	Novel	No	1	1	1.08217082296435	0.307459444357573	15.8605690668234	1.125
+pathogen::Psenopsis anomala artervirus	Psenopsis anomala artervirus	Virus	outer							RNA virus	Nido	Novel	Yes	1	1	1.04258487790472	0.422660351067387	22.0674656185476	1.125
+pathogen::Nanhai amnoonvirus 1	Nanhai amnoonvirus 1	Virus	outer							RNA virus	Orthomyxo	Novel	No	1	1	0.478484890648255	-1.01817346725464	295.17091389441	1.125
+pathogen::Arius arius calicivirus	Arius arius calicivirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1	1	0.00674118303825322	-1.12497980268592	270.343327687513	1.125
+pathogen::Bregmaceros mcclellandi picornavirus	Bregmaceros mcclellandi picornavirus	Virus	outer							RNA virus	Picorna	Novel	No	1	1	-1.12296496259727	-0.0676364752106355	183.446775963375	1.125
+pathogen::Thryssa dussumieri picornavirus	Thryssa dussumieri picornavirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1	1	-0.23525382548694	-1.10012755514702	257.929534584065	1.125
+pathogen::Leiognathus ruconius picornavirus	Leiognathus ruconius picornavirus	Virus	outer							RNA virus	Picorna	Novel	No	1	1	0.36559607585341	-1.06393820747287	288.964017342686	1.125
+pathogen::Polydactylus sextarius picornavirus	Polydactylus sextarius picornavirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1	1	0.23525382548694	1.10012755514702	77.9295345840648	1.125
+pathogen::Psenopsis anomala picornavirus	Psenopsis anomala picornavirus	Virus	outer							RNA virus	Picorna	Novel	No	1	1	0.990775578396098	0.53290595160298	28.2743621702718	1.125
+pathogen::Gymnothorax reevesii picornavirus	Gymnothorax reevesii picornavirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1	1	-0.00674118303825311	1.12497980268592	90.3433276875131	1.125
+pathogen::Micropterus salmoides reovirus	Micropterus salmoides reovirus	Virus	outer							RNA virus	Reo	Known	Yes	1	1	-0.114930046078709	-1.1191139729752	264.136431135789	1.125
+pathogen::Wenzhou pacific spadenose shark reovirus 2	Wenzhou pacific spadenose shark reovirus 2	Virus	outer							RNA virus	Reo	Known	Yes	1	1	0.686175378270692	-0.89150902982251	307.584706997858	1.125
+pathogen::Nanhai reo-like virus 1	Nanhai reo-like virus 1	Virus	outer							RNA virus	Reo	Novel	No	1	1	-0.86178106783435	0.723158620997003	139.998500101306	1.125
+pathogen::Nanhai reo-like virus 2	Nanhai reo-like virus 2	Virus	outer							RNA virus	Reo	Novel	Yes	1	1	-0.934916470558151	0.625744511025938	146.20539665303	1.125
+pathogen::Nanhai reo-like virus 4	Nanhai reo-like virus 4	Virus	outer							RNA virus	Reo	Novel	Yes	1	1	1.1236948831818	-0.054173882185472	357.239879411651	1.125
+pathogen::Nanhai reo-like virus 5	Nanhai reo-like virus 5	Virus	inner							RNA virus	Reo	Novel	Yes	3	3	0.659001621120763	-0.0362886119906249	356.848131307607	0.66
+pathogen::Nanhai reo-like virus 6	Nanhai reo-like virus 6	Virus	inner							RNA virus	Reo	Novel	Yes	2	2	-0.0845507000771841	0.26685335511706	107.580456774481	0.279927729996107
+pathogen::Nanhai reo-like virus 7	Nanhai reo-like virus 7	Virus	outer							RNA virus	Reo	Novel	Yes	1	1	0.778542070024136	-0.812094357327111	313.791603549582	1.125
+pathogen::Asian seabass Nervous Necrosis Virus	Asian seabass Nervous Necrosis Virus	Virus	inner							RNA virus	Tombus-Noda	Known	Yes	4	3	-0.578248257377376	-0.0225035520212239	182.22864178457	0.578685974439975
+pathogen::Nanhai retrovirus 1	Nanhai retrovirus 1	Virus	outer							RNA virus	Ortervirales	Novel	Yes	1	1	-1.10906930456294	-0.188653856775518	189.653672515099	1.125
+pathogen::Nanhai retrovirus 2	Nanhai retrovirus 2	Virus	outer							RNA virus	Ortervirales	Novel	Yes	1	1	0.927350341105535	0.636903717096586	34.4812587219959	1.125
+pathogen::Osteomugil cunnesius hepadna-like virus	Osteomugil cunnesius hepadna-like virus	Virus	outer							DNA virus	Blubervirales	Novel	No	1	1	-0.36559607585341	1.06393820747287	108.964017342686	1.125
+pathogen::Nanhai hepadna-like virus 1	Nanhai hepadna-like virus 1	Virus	outer							DNA virus	Blubervirales	Novel	No	1	1	-1.08577773796024	0.294468510625415	164.826086308203	1.125
+pathogen::Nanhai circo-like virus 2	Nanhai circo-like virus 2	Virus	outer							DNA virus	Cirlivirales	Novel	Yes	1	1	-0.778542070024137	0.81209435732711	133.791603549582	1.125
+pathogen::Cynoglossus gracilis herpes-like virus	Cynoglossus gracilis herpes-like virus	Virus	outer							DNA virus	Herpesvirales	Novel	No	1	1	-1.1236948831818	0.0541738821854718	177.239879411651	1.125
+pathogen::Nanhai parvovirus LTY1	Nanhai parvovirus LTY1	Virus	outer							DNA virus	Piccovirales	Novel	Yes	1	1	-0.686175378270692	0.89150902982251	127.584706997858	1.125
+pathogen::Marble sleepy goby iridovirus	Marble sleepy goby iridovirus	Virus	outer							DNA virus	Pimascovirales	Known	No	1	1	1.10906930456294	0.188653856775518	9.6536725150993	1.125
+pathogen::Nanhai papillomavirus ZBTTT	Nanhai papillomavirus ZBTTT	Virus	outer							DNA virus	Zurhausenvirales	Novel	Yes	1	1	0.934916470558151	-0.625744511025938	326.20539665303	1.125
+pathogen::Nanhai papillomavirus HM	Nanhai papillomavirus HM	Virus	outer							DNA virus	Zurhausenvirales	Novel	No	1	1	-0.128333377947614	1.11765627278898	96.5502242392372	1.125
+pathogen::Clostridium sp. SQHN	Clostridium sp. SQHN	Bacteria	outer							Bacteria	Bacillota	Novel	No	1	1	0.128333377947613	-1.11765627278898	276.550224239237	1.125
+pathogen::Clostridium sp. Y	Clostridium sp. Y	Bacteria	inner							Bacteria	Bacillota	Known	Yes	2	2	0.300250276255633	-0.585207122356361	297.160848115217	0.657736728827118
+pathogen::Aliivibrio fischeri	Aliivibrio fischeri	Bacteria	inner							Bacteria	Pseudomonadota	Known	Yes	4	3	0.0337559698782471	-0.607805968637219	273.178793710198	0.608742606536991
+pathogen::Photobacterium sp.	Photobacterium sp.	Bacteria	inner							Bacteria	Pseudomonadota	Novel	Yes	6	3	-0.452098962799306	-0.413699132444461	222.460484965121	0.612813547785546
+pathogen::Photobacterium damselae	Photobacterium damselae	Bacteria	inner							Bacteria	Pseudomonadota	Known	Yes	3	2	0.399295291831639	-0.525512387980613	307.228328549221	0.66
+pathogen::Photobacterium sp. QLXSD	Photobacterium sp. QLXSD	Bacteria	inner							Bacteria	Pseudomonadota	Known	No	2	2	-0.506310735355586	-0.309607724817915	211.445679644236	0.593470727166252
+pathogen::Photobacterium swingsii	Photobacterium swingsii	Bacteria	inner							Bacteria	Pseudomonadota	Known	No	2	2	-0.313265297673645	-0.58091725165762	241.663801149226	0.66
+pathogen::Vibrio sp. Y	Vibrio sp. Y	Bacteria	inner							Bacteria	Pseudomonadota	Novel	Yes	2	2	-0.169990769855549	-0.614267106570944	254.531235475174	0.637354642291967
+pathogen::Vibrio ponticus	Vibrio ponticus	Bacteria	inner							Bacteria	Pseudomonadota	Known	Yes	5	4	0.161207341036946	-0.634444233541328	284.256704632666	0.654604683971972
+pathogen::Acinetobacter johnsonii	Acinetobacter johnsonii	Bacteria	inner							Bacteria	Pseudomonadota	Known	No	3	2	-0.023054673495063	-0.0377166095804283	238.56420297086	0.0442047577553188
+pathogen::Pseudomonas aeruginosa	Pseudomonas aeruginosa	Bacteria	outer							Bacteria	Pseudomonadota	Known	No	1	1	-0.997090832466938	0.520994118786756	152.412293204754	1.125
+pathogen::Besnoitia sp. HKL	Besnoitia sp. HKL	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	-0.927350341105535	-0.636903717096586	214.481258721996	1.125
+pathogen::Cystoisospora_sp._DSLT-2	Cystoisospora_sp._DSLT-2	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	-0.853052768950013	-0.733434368833856	220.68815527372	1.125
+pathogen::Cystoisospora sp. DSLT-4	Cystoisospora sp. DSLT-4	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	-0.466248626598212	-1.02383456583341	245.515741480617	1.125
+pathogen::Sarcocystidae sp. SZMB	Sarcocystidae sp. SZMB	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	Yes	1	1	0.67544216012788	0.899668210131815	53.1019483771683	1.125
+pathogen::Sarcocystidae sp. DSLT	Sarcocystidae sp. DSLT	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	-0.574211445458783	-0.967422459892335	239.308844928892	1.125
+pathogen::Toxoplasma sp. LZY	Toxoplasma sp. LZY	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	0.574211445458782	0.967422459892335	59.3088449288924	1.125
+pathogen::Eimeriorina sp. RWXLT	Eimeriorina sp. RWXLT	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	1.08577773796024	-0.294468510625415	344.826086308203	1.125
+pathogen::Eimeria sp. SZMB	Eimeria sp. SZMB	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1	1	0.853052768950012	0.733434368833856	40.68815527372	1.125
+pathogen::Glugea plecoglossi	Glugea plecoglossi	Eukaryota	outer							Eukaryota	Microsporidia	Known	Yes	1	1	-1.04258487790472	-0.422660351067387	202.067465618548	1.125
+pathogen::Pseudoloma sp. FJ	Pseudoloma sp. FJ	Eukaryota	outer							Eukaryota	Microsporidia	Novel	No	1	1	1.11125050866505	-0.175349100344608	351.032982859927	1.125
+pathogen::Toxocaridae sp. Z	Toxocaridae sp. Z	Eukaryota	outer							Eukaryota	Nematoda	Novel	No	1	1	-0.478484890648255	1.01817346725464	115.17091389441	1.125
+pathogen::Toxocara sp. CTSZ	Toxocara sp. CTSZ	Eukaryota	inner							Eukaryota	Nematoda	Novel	Yes	10	8	0.158332183553388	0.335860950995572	64.7597868397383	0.371310730726213
+pathogen::Toxocara sp. HBSXST	Toxocara sp. HBSXST	Eukaryota	inner							Eukaryota	Nematoda	Novel	Yes	2	2	-0.656500855326219	0.0678721368157967	174.097463587681	0.66
+pathogen::Toxocara sp. LYS	Toxocara sp. LYS	Eukaryota	outer							Eukaryota	Nematoda	Novel	Yes	1	1	-0.248420981336865	1.09722924497647	102.757120790961	1.125
+pathogen::Strigeidida sp. FJ	Strigeidida sp. FJ	Eukaryota	outer							Eukaryota	Platyhelminthes	Novel	Yes	1	1	-1.08217082296435	-0.307459444357574	195.860569066823	1.125
+pathogen::Taeniidae sp. HBSZ	Taeniidae sp. HBSZ	Eukaryota	inner							Eukaryota	Platyhelminthes	Novel	Yes	3	3	-0.024219603247071	0.108080558127057	102.630661709779	0.110760986933584
+pathogen::Taeniidae sp. QLXSDD	Taeniidae sp. QLXSDD	Eukaryota	inner							Eukaryota	Platyhelminthes	Novel	No	4	4	0.457991635395448	0.186088900381071	22.1126480431015	0.494353534363044
+pathogen::Taeniidae sp. LZY	Taeniidae sp. LZY	Eukaryota	outer							Eukaryota	Platyhelminthes	Novel	No	1	1	-1.04757521601389	0.410135546854265	158.619189756479	1.125
+pathogen::Opisthorchiidae sp. SZMB	Opisthorchiidae sp. SZMB	Eukaryota	outer							Eukaryota	Platyhelminthes	Novel	No	1	1	0.768753933032135	0.821366173181988	46.8950518254441	1.125
+pathogen::Hydatigera sp. SDYY	Hydatigera sp. SDYY	Eukaryota	inner							Eukaryota	Platyhelminthes	Novel	No	2	2	0.529012836061407	0.394645941677178	36.7231032417882	0.66
+pathogen::Lepeophtheirus sp. SQHN	Lepeophtheirus sp. SQHN	Eukaryota	outer							Eukaryota	Arthropoda	Novel	No	1	1	0.248420981336865	-1.09722924497647	282.757120790961	1.125
+pathogen::Caligus sp. RWXLT	Caligus sp. RWXLT	Eukaryota	outer							Eukaryota	Arthropoda	Novel	No	1	1	1.04757521601389	-0.410135546854265	338.619189756479	1.125

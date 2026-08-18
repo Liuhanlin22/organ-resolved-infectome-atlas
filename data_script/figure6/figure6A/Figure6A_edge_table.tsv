@@ -1,0 +1,119 @@
+﻿source	target	host_label	host_species	host_class	host_order	pathogen	RPM	log10_RPM_plus1
+host::Sc. macrorhynchos	pathogen::Wenzhou pacific spadenose shark astrovirus 2	Sc. macrorhynchos	Scoliodon macrorhynchos	Chondrichthyes	Carcharhiniformes	Wenzhou pacific spadenose shark astrovirus 2	15.92392214	1.2285010186536944
+host::Po. sextarius	pathogen::Nanhai astrovirus LZMB	Po. sextarius	Polydactylus sextarius	Actinopteri	Carangaria incertae sedis	Nanhai astrovirus LZMB	46.85670635	1.6799428057851076
+host::Cy. gracilis	pathogen::Cynoglossus gracilis hantavirus	Cy. gracilis	Cynoglossus gracilis	Actinopteri	Pleuronectiformes	Cynoglossus gracilis hantavirus	9.130294431	1.0056220680552808
+host::Te. zugei	pathogen::Telatrygon zugei hepacivirus	Te. zugei	Telatrygon zugei	Chondrichthyes	Myliobatiformes	Telatrygon zugei hepacivirus	8.640509703	0.984099996075903
+host::Od. rubicundus	pathogen::Odontamblyopus rubicundus hepacivirus	Od. rubicundus	Odontamblyopus rubicundus	Actinopteri	Gobiiformes	Odontamblyopus rubicundus hepacivirus	476.13576449	2.678641971030767
+host::Jo. belangerii	pathogen::Johnius belangerii hepacivirus	Jo. belangerii	Johnius belangerii	Actinopteri	Eupercaria incertae sedis	Johnius belangerii hepacivirus	98.35979672100001	1.997210694315614
+host::Ha. nehereus	pathogen::Bombay duck fish bornavirus	Ha. nehereus	Harpadon nehereus	Actinopteri	Aulopiformes	Bombay duck fish bornavirus	5575.997104550001	3.7464004190158064
+host::La. spadiceus	pathogen::Paramonacanthus sulcatus filovirus	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Paramonacanthus sulcatus filovirus	2.35688469	0.5259364233579904
+host::Pa. sulcatus	pathogen::Paramonacanthus sulcatus filovirus	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Paramonacanthus sulcatus filovirus	14.61741959	1.1936092785553611
+host::Th. dussumieri	pathogen::Nanhai filovirus 1	Th. dussumieri	Thryssa dussumieri	Actinopteri	Clupeiformes	Nanhai filovirus 1	5.147319722	0.7886858013572974
+host::Il. elongata	pathogen::Nanhai filovirus 2	Il. elongata	Ilisha elongata	Actinopteri	Clupeiformes	Nanhai filovirus 2	0.634575993	0.21340511615124427
+host::Th. kammalensis	pathogen::Nanhai filovirus 3	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Nanhai filovirus 3	1.712438238	0.43335985811882866
+host::Po. sextarius	pathogen::Nanhai rhabdovirus 1	Po. sextarius	Polydactylus sextarius	Actinopteri	Carangaria incertae sedis	Nanhai rhabdovirus 1	0.354545296	0.13179353242118852
+host::Th. kammalensis	pathogen::Nanhai paramyxovirus 1	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Nanhai paramyxovirus 1	23.44087083	1.3881166757900751
+host::Ps. anomala	pathogen::Nanhai paramyxovirus 2	Ps. anomala	Psenopsis anomala	Actinopteri	Scombriformes	Nanhai paramyxovirus 2	98.95624699	1.9998099415107158
+host::Ps. anomala	pathogen::Psenopsis anomala artervirus	Ps. anomala	Psenopsis anomala	Actinopteri	Scombriformes	Psenopsis anomala artervirus	29.0580279	1.4779604832288131
+host::Ku. rodericensis	pathogen::Nanhai amnoonvirus 1	Ku. rodericensis	Kumococius rodericensis	Actinopteri	Perciformes	Nanhai amnoonvirus 1	0.267702116	0.10301721523669792
+host::Ar. arius	pathogen::Arius arius calicivirus	Ar. arius	Arius arius	Actinopteri	Siluriformes	Arius arius calicivirus	49.482616339	1.7031418547968096
+host::Br. mcclellandi	pathogen::Bregmaceros mcclellandi picornavirus	Br. mcclellandi	Bregmaceros mcclellandi	Actinopteri	Gadiformes	Bregmaceros mcclellandi picornavirus	146.3644565	2.1683927467024837
+host::Th. dussumieri	pathogen::Thryssa dussumieri picornavirus	Th. dussumieri	Thryssa dussumieri	Actinopteri	Clupeiformes	Thryssa dussumieri picornavirus	334.547838618	2.5257544457173564
+host::De. ruconius	pathogen::Leiognathus ruconius picornavirus	De. ruconius	Deveximentum ruconius	Actinopteri	Chaetodontiformes	Leiognathus ruconius picornavirus	33.162094928	1.533544495148508
+host::Po. sextarius	pathogen::Polydactylus sextarius picornavirus	Po. sextarius	Polydactylus sextarius	Actinopteri	Carangaria incertae sedis	Polydactylus sextarius picornavirus	888.459941682	2.949126393681091
+host::Ps. anomala	pathogen::Psenopsis anomala picornavirus	Ps. anomala	Psenopsis anomala	Actinopteri	Scombriformes	Psenopsis anomala picornavirus	1.561549497	0.40850275219607346
+host::Gy. reevesii	pathogen::Gymnothorax reevesii picornavirus	Gy. reevesii	Gymnothorax reevesii	Actinopteri	Anguilliformes	Gymnothorax reevesii picornavirus	295.119941474	2.471467654874958
+host::Th. setirostris	pathogen::Micropterus salmoides reovirus	Th. setirostris	Thryssa setirostris	Actinopteri	Clupeiformes	Micropterus salmoides reovirus	89.54396997399999	1.9568595325714582
+host::Sc. macrorhynchos	pathogen::Wenzhou pacific spadenose shark reovirus 2	Sc. macrorhynchos	Scoliodon macrorhynchos	Chondrichthyes	Carcharhiniformes	Wenzhou pacific spadenose shark reovirus 2	190.994086712	2.2832878529332583
+host::Sa. elongata	pathogen::Nanhai reo-like virus 1	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Nanhai reo-like virus 1	4.676004451	0.7540427273499151
+host::Sa. elongata	pathogen::Nanhai reo-like virus 2	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Nanhai reo-like virus 2	2629.200010397	3.4199887751471514
+host::Sc. argus	pathogen::Nanhai reo-like virus 4	Sc. argus	Scatophagus argus	Actinopteri	Eupercaria incertae sedis	Nanhai reo-like virus 4	4520.642293176999	3.6552962023604967
+host::Sa. elongata	pathogen::Nanhai reo-like virus 5	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Nanhai reo-like virus 5	48.528987515	1.6948594501075744
+host::Le. savala	pathogen::Nanhai reo-like virus 5	Le. savala	Lepturacanthus savala	Actinopteri	Scombriformes	Nanhai reo-like virus 5	15.298893839	1.2121581310346494
+host::Pa. sulcatus	pathogen::Nanhai reo-like virus 5	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Nanhai reo-like virus 5	30.797558941	1.5023937810175958
+host::Sa. elongata	pathogen::Nanhai reo-like virus 6	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Nanhai reo-like virus 6	15.825501536	1.2259680185763075
+host::Pa. sulcatus	pathogen::Nanhai reo-like virus 6	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Nanhai reo-like virus 6	6.137258916	0.8535314518011311
+host::Od. rubicundus	pathogen::Nanhai reo-like virus 7	Od. rubicundus	Odontamblyopus rubicundus	Actinopteri	Gobiiformes	Nanhai reo-like virus 7	2167.235718622	3.336106494532398
+host::Sa. elongata	pathogen::Asian seabass Nervous Necrosis Virus	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Asian seabass Nervous Necrosis Virus	0.534122431	0.1858600199688886
+host::Sa. lemuru	pathogen::Asian seabass Nervous Necrosis Virus	Sa. lemuru	Sardinella lemuru	Actinopteri	Clupeiformes	Asian seabass Nervous Necrosis Virus	1.382806351	0.37708874897279454
+host::Se. tenuifilis	pathogen::Asian seabass Nervous Necrosis Virus	Se. tenuifilis	Setipinna tenuifilis	Actinopteri	Clupeiformes	Asian seabass Nervous Necrosis Virus	1.831828347	0.45206692479102195
+host::Lu. johnii	pathogen::Asian seabass Nervous Necrosis Virus	Lu. johnii	Lutjanus johnii	Actinopteri	Lutjaniformes	Asian seabass Nervous Necrosis Virus	1.211018162	0.34459231002511126
+host::Br. mcclellandi	pathogen::Nanhai retrovirus 1	Br. mcclellandi	Bregmaceros mcclellandi	Actinopteri	Gadiformes	Nanhai retrovirus 1	737.7536184549999	2.8684996210922775
+host::Be. pterotum	pathogen::Nanhai retrovirus 2	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Nanhai retrovirus 2	240.82049814099997	2.383493111463595
+host::Mo. cunnesius	pathogen::Osteomugil cunnesius hepadna-like virus	Mo. cunnesius	Moolgarda cunnesius	Actinopteri	Mugiliformes	Osteomugil cunnesius hepadna-like virus	4.471772337	0.7381280194793304
+host::Ze. zebrinus	pathogen::Nanhai hepadna-like virus 1	Ze. zebrinus	Zebrias zebrinus	Actinopteri	Pleuronectiformes	Nanhai hepadna-like virus 1	9.478248646	1.020288699924535
+host::Sa. elongata	pathogen::Nanhai circo-like virus 2	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Nanhai circo-like virus 2	19.534856705	1.312491676634769
+host::Cy. gracilis	pathogen::Cynoglossus gracilis herpes-like virus	Cy. gracilis	Cynoglossus gracilis	Actinopteri	Pleuronectiformes	Cynoglossus gracilis herpes-like virus	0.250908855	0.09722566683761291
+host::Ha. nehereus	pathogen::Nanhai parvovirus LTY1	Ha. nehereus	Harpadon nehereus	Actinopteri	Aulopiformes	Nanhai parvovirus LTY1	32.992962236	1.5313890117938136
+host::Si. canaliculatus	pathogen::Marble sleepy goby iridovirus	Si. canaliculatus	Siganus canaliculatus	Actinopteri	Eupercaria incertae sedis	Marble sleepy goby iridovirus	65.1534762	1.8205526702137989
+host::La. spadiceus	pathogen::Nanhai papillomavirus ZBTTT	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Nanhai papillomavirus ZBTTT	33.784144671	1.5413813286874314
+host::Gy. reevesii	pathogen::Nanhai papillomavirus HM	Gy. reevesii	Gymnothorax reevesii	Actinopteri	Anguilliformes	Nanhai papillomavirus HM	1.538723882	0.4046154684811546
+host::Ar. arius	pathogen::Clostridium sp. SQHN	Ar. arius	Arius arius	Actinopteri	Siluriformes	Clostridium sp. SQHN	1.162309146	0.3349177852712322
+host::La. crocea	pathogen::Clostridium sp. Y	La. crocea	Larimichthys crocea	Actinopteri	Eupercaria incertae sedis	Clostridium sp. Y	2.756101081	0.5747372711153286
+host::In. japonica	pathogen::Clostridium sp. Y	In. japonica	Inegocia japonica	Actinopteri	Perciformes	Clostridium sp. Y	2.615264086	0.5581400269150578
+host::Th. hamiltonii	pathogen::Aliivibrio fischeri	Th. hamiltonii	Thryssa hamiltonii	Actinopteri	Clupeiformes	Aliivibrio fischeri	6.00254608	0.8452559753640644
+host::Ne. japonicus	pathogen::Aliivibrio fischeri	Ne. japonicus	Nemipterus japonicus	Actinopteri	Spariformes	Aliivibrio fischeri	1.453424224	0.38977264898623626
+host::La. spadiceus	pathogen::Aliivibrio fischeri	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Aliivibrio fischeri	2.314637466	0.5204360349653354
+host::Pa. sulcatus	pathogen::Aliivibrio fischeri	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Aliivibrio fischeri	4.92942613	0.773012662903127
+host::Sa. undosquamis	pathogen::Photobacterium sp.	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Photobacterium sp.	2.421909111	0.5342684701041537
+host::Il. melastoma	pathogen::Photobacterium sp.	Il. melastoma	Ilisha melastoma	Actinopteri	Clupeiformes	Photobacterium sp.	5.109144828	0.7859804209669523
+host::Sa. fijiensis	pathogen::Photobacterium sp.	Sa. fijiensis	Sardinella fijiensis	Actinopteri	Clupeiformes	Photobacterium sp.	1.021428867	0.3056584633481877
+host::Sa. melanura	pathogen::Photobacterium sp.	Sa. melanura	Sardinella melanura	Actinopteri	Clupeiformes	Photobacterium sp.	2.702156865	0.5684548164051619
+host::Th. kammalensis	pathogen::Photobacterium sp.	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Photobacterium sp.	1.608124087	0.4163282500266707
+host::Be. pterotum	pathogen::Photobacterium sp.	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Photobacterium sp.	10.334145641000001	1.0543887889192285
+host::In. japonica	pathogen::Photobacterium damselae	In. japonica	Inegocia japonica	Actinopteri	Perciformes	Photobacterium damselae	14.52063666	1.190909532144706
+host::La. spadiceus	pathogen::Photobacterium damselae	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Photobacterium damselae	1.195896024	0.3416117723572392
+host::Pa. sulcatus	pathogen::Photobacterium damselae	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Photobacterium damselae	5.304163195	0.7996274471481557
+host::Sa. undosquamis	pathogen::Photobacterium sp. QLXSD	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Photobacterium sp. QLXSD	3.084311603	0.6111188681604816
+host::Il. melastoma	pathogen::Photobacterium sp. QLXSD	Il. melastoma	Ilisha melastoma	Actinopteri	Clupeiformes	Photobacterium sp. QLXSD	1.05258471	0.31230108945842616
+host::Th. dussumieri	pathogen::Photobacterium swingsii	Th. dussumieri	Thryssa dussumieri	Actinopteri	Clupeiformes	Photobacterium swingsii	1.02073703	0.3055097999820289
+host::Pa. sulcatus	pathogen::Photobacterium swingsii	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Photobacterium swingsii	1.985962972	0.4750844178713296
+host::Th. hamiltonii	pathogen::Vibrio sp. Y	Th. hamiltonii	Thryssa hamiltonii	Actinopteri	Clupeiformes	Vibrio sp. Y	2.969720616	0.5987599427331068
+host::Pa. sulcatus	pathogen::Vibrio sp. Y	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Vibrio sp. Y	1.758047081	0.44060167548884543
+host::De. ruconius	pathogen::Vibrio ponticus	De. ruconius	Deveximentum ruconius	Actinopteri	Chaetodontiformes	Vibrio ponticus	1.056071791	0.313038274667023
+host::Th. hamiltonii	pathogen::Vibrio ponticus	Th. hamiltonii	Thryssa hamiltonii	Actinopteri	Clupeiformes	Vibrio ponticus	5.153902995	0.789150646108993
+host::Ar. arius	pathogen::Vibrio ponticus	Ar. arius	Arius arius	Actinopteri	Siluriformes	Vibrio ponticus	2.494855365	0.5434292071254317
+host::La. spadiceus	pathogen::Vibrio ponticus	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Vibrio ponticus	15.289710528	1.2119133668616549
+host::Pa. sulcatus	pathogen::Vibrio ponticus	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Vibrio ponticus	30.090706717	1.4926305940214817
+host::Il. melastoma	pathogen::Acinetobacter johnsonii	Il. melastoma	Ilisha melastoma	Actinopteri	Clupeiformes	Acinetobacter johnsonii	3.55145286010277	0.658150049054849
+host::Th. kammalensis	pathogen::Acinetobacter johnsonii	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Acinetobacter johnsonii	10.3798193086293	1.0561353662868003
+host::Pa. sulcatus	pathogen::Acinetobacter johnsonii	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Acinetobacter johnsonii	2.31390212827714	0.5203396779587456
+host::Sa. undosquamis	pathogen::Pseudomonas aeruginosa	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Pseudomonas aeruginosa	5.26856028229636	0.7971678066598292
+host::Il. melastoma	pathogen::Besnoitia sp. HKL	Il. melastoma	Ilisha melastoma	Actinopteri	Clupeiformes	Besnoitia sp. HKL	2.134007357	0.49610001162866363
+host::Th. kammalensis	pathogen::Cystoisospora_sp._DSLT-2	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Cystoisospora_sp._DSLT-2	3.862580862	0.6868668364681391
+host::Th. dussumieri	pathogen::Cystoisospora sp. DSLT-4	Th. dussumieri	Thryssa dussumieri	Actinopteri	Clupeiformes	Cystoisospora sp. DSLT-4	1.232336679	0.3487596951065348
+host::El. tetradactylum	pathogen::Sarcocystidae sp. SZMB	El. tetradactylum	Eleutheronema tetradactylum	Actinopteri	Carangaria incertae sedis	Sarcocystidae sp. SZMB	7.586652659999999	0.9338238955415198
+host::Th. kammalensis	pathogen::Sarcocystidae sp. DSLT	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Sarcocystidae sp. DSLT	1.18326763	0.33910697579526616
+host::El. tetradactylum	pathogen::Toxoplasma sp. LZY	El. tetradactylum	Eleutheronema tetradactylum	Actinopteri	Carangaria incertae sedis	Toxoplasma sp. LZY	3.407034189	0.6441464197035761
+host::Pa. sulcatus	pathogen::Eimeriorina sp. RWXLT	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Eimeriorina sp. RWXLT	1.781480045	0.4442759485560222
+host::El. tetradactylum	pathogen::Eimeria sp. SZMB	El. tetradactylum	Eleutheronema tetradactylum	Actinopteri	Carangaria incertae sedis	Eimeria sp. SZMB	4.878736848	0.7692840201449647
+host::Sa. lemuru	pathogen::Glugea plecoglossi	Sa. lemuru	Sardinella lemuru	Actinopteri	Clupeiformes	Glugea plecoglossi	104.135346771	2.021748751487824
+host::Pa. sulcatus	pathogen::Pseudoloma sp. FJ	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Pseudoloma sp. FJ	1.062634002	0.31442217270740214
+host::Mo. cunnesius	pathogen::Toxocaridae sp. Z	Mo. cunnesius	Moolgarda cunnesius	Actinopteri	Mugiliformes	Toxocaridae sp. Z	2.386423846	0.529741313624988
+host::Ha. nehereus	pathogen::Toxocara sp. CTSZ	Ha. nehereus	Harpadon nehereus	Actinopteri	Aulopiformes	Toxocara sp. CTSZ	96.396644391	1.988543994377831
+host::Sa. elongata	pathogen::Toxocara sp. CTSZ	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Toxocara sp. CTSZ	16.635919291	1.246398102654084
+host::Sa. undosquamis	pathogen::Toxocara sp. CTSZ	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Toxocara sp. CTSZ	18.287001847	1.2852647220709223
+host::Po. sextarius	pathogen::Toxocara sp. CTSZ	Po. sextarius	Polydactylus sextarius	Actinopteri	Carangaria incertae sedis	Toxocara sp. CTSZ	76.14337758900001	1.8872986497770057
+host::De. maruadsi	pathogen::Toxocara sp. CTSZ	De. maruadsi	Decapterus maruadsi	Actinopteri	Carangiformes	Toxocara sp. CTSZ	23.129465652	1.382547704546277
+host::Th. kammalensis	pathogen::Toxocara sp. CTSZ	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Toxocara sp. CTSZ	23.04784733	1.381076206092591
+host::Pe. macrocephala	pathogen::Toxocara sp. CTSZ	Pe. macrocephala	Pennahia macrocephala	Actinopteri	Eupercaria incertae sedis	Toxocara sp. CTSZ	83.59898453	1.9273651500879083
+host::Be. pterotum	pathogen::Toxocara sp. CTSZ	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Toxocara sp. CTSZ	732.462011847	2.8653776253743124
+host::Ps. anomala	pathogen::Toxocara sp. CTSZ	Ps. anomala	Psenopsis anomala	Actinopteri	Scombriformes	Toxocara sp. CTSZ	20.024380573	1.3227232093360193
+host::Pa. sulcatus	pathogen::Toxocara sp. CTSZ	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Toxocara sp. CTSZ	66.749845542	1.830908309430819
+host::Co. mystus	pathogen::Toxocara sp. HBSXST	Co. mystus	Coilia mystus	Actinopteri	Clupeiformes	Toxocara sp. HBSXST	9.736467075	1.0308613966105689
+host::Cy. gracilis	pathogen::Toxocara sp. HBSXST	Cy. gracilis	Cynoglossus gracilis	Actinopteri	Pleuronectiformes	Toxocara sp. HBSXST	45.88679285	1.6710505271473943
+host::De. maruadsi	pathogen::Toxocara sp. LYS	De. maruadsi	Decapterus maruadsi	Actinopteri	Carangiformes	Toxocara sp. LYS	24.438462713	1.4054908626590048
+host::Co. mystus	pathogen::Strigeidida sp. FJ	Co. mystus	Coilia mystus	Actinopteri	Clupeiformes	Strigeidida sp. FJ	7.430923247000001	0.9258751356120098
+host::Sa. undosquamis	pathogen::Taeniidae sp. HBSZ	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Taeniidae sp. HBSZ	1.886031544	0.4603010735732309
+host::Il. elongata	pathogen::Taeniidae sp. HBSZ	Il. elongata	Ilisha elongata	Actinopteri	Clupeiformes	Taeniidae sp. HBSZ	2.160702625	0.4997836371249858
+host::Le. savala	pathogen::Taeniidae sp. HBSZ	Le. savala	Lepturacanthus savala	Actinopteri	Scombriformes	Taeniidae sp. HBSZ	3.007589971	0.602883281112326
+host::Sa. zunasi	pathogen::Taeniidae sp. QLXSDD	Sa. zunasi	Sardinella zunasi	Actinopteri	Clupeiformes	Taeniidae sp. QLXSDD	1.987511183	0.4753095396318765
+host::Si. canaliculatus	pathogen::Taeniidae sp. QLXSDD	Si. canaliculatus	Siganus canaliculatus	Actinopteri	Eupercaria incertae sedis	Taeniidae sp. QLXSDD	1.980423402	0.4742779647777438
+host::Be. pterotum	pathogen::Taeniidae sp. QLXSDD	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Taeniidae sp. QLXSDD	8.83607253	0.9928217225130638
+host::Le. savala	pathogen::Taeniidae sp. QLXSDD	Le. savala	Lepturacanthus savala	Actinopteri	Scombriformes	Taeniidae sp. QLXSDD	15.52670313	1.2181862259094167
+host::Sa. undosquamis	pathogen::Taeniidae sp. LZY	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Taeniidae sp. LZY	9.097684226	1.0042217853483757
+host::El. tetradactylum	pathogen::Opisthorchiidae sp. SZMB	El. tetradactylum	Eleutheronema tetradactylum	Actinopteri	Carangaria incertae sedis	Opisthorchiidae sp. SZMB	1.240796743	0.3504024645685662
+host::Be. pterotum	pathogen::Hydatigera sp. SDYY	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Hydatigera sp. SDYY	3.35835967	0.6393230671793695
+host::Le. savala	pathogen::Hydatigera sp. SDYY	Le. savala	Lepturacanthus savala	Actinopteri	Scombriformes	Hydatigera sp. SDYY	4.430759522	0.7348605723413871
+host::Ar. arius	pathogen::Lepeophtheirus sp. SQHN	Ar. arius	Arius arius	Actinopteri	Siluriformes	Lepeophtheirus sp. SQHN	2.05640055529669	0.4852102699152664
+host::Pa. sulcatus	pathogen::Caligus sp. RWXLT	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Caligus sp. RWXLT	14.21760188222111	1.182346218047081

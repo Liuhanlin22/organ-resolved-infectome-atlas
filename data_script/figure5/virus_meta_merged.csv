@@ -1,0 +1,76 @@
+﻿virus_name,is_core,Species name,matrix_name,Genome Type,Kingdom,classification
+Osteomugil cunnesius hepadna-like virus,TRUE,Osteomugil cunnesius hepadna-like virus,Osteomugil cunnesius hepadna-like virus,partially dsDNA-RT,k__Viruses,DNA virus
+Nanhai hepadna-like virus 1,TRUE,Nanhai hepadna-like virus 1,Nanhai hepadna-like virus 1,partially dsDNA-RT,k__Viruses,DNA virus
+Nanhai circo-like virus 2,TRUE,Nanhai circo-like virus 2,Nanhai circo-like virus 2,ssDNA,k__Viruses,DNA virus
+Cynoglossus gracilis herpes-like virus,TRUE,Cynoglossus gracilis herpes-like virus,Cynoglossus gracilis herpes-like virus,dsDNA,k__Viruses,DNA virus
+Nanhai parvovirus LTY1,TRUE,Nanhai parvovirus LTY1,Nanhai parvovirus LTY1,ssDNA,k__Viruses,DNA virus
+Marble sleepy goby iridovirus,TRUE,Marble sleepy goby iridovirus,Marble sleepy goby iridovirus,dsDNA,k__Viruses,DNA virus
+Nanhai papillomavirus ZBTTT,TRUE,Nanhai papillomavirus ZBTTT,Nanhai papillomavirus ZBTTT,dsDNA,k__Viruses,DNA virus
+Nanhai papillomavirus HM,TRUE,Nanhai papillomavirus HM,Nanhai papillomavirus HM,dsDNA,k__Viruses,DNA virus
+Nanhai retrovirus 1,TRUE,Nanhai retrovirus 1,Nanhai retrovirus 1,+ssRNA-RT,k__Viruses,RNA virus
+Nanhai retrovirus 2,TRUE,Nanhai retrovirus 2,Nanhai retrovirus 2,+ssRNA-RT,k__Viruses,RNA virus
+Wenzhou pacific spadenose shark astrovirus 2,TRUE,Wenzhou pacific spadenose shark astrovirus 2,Wenzhou pacific spadenose shark astrovirus 2,+ssRNA,k__Viruses,RNA virus
+Nanhai astrovirus LZMB,TRUE,Nanhai astrovirus LZMB,Nanhai astrovirus LZMB,+ssRNA,k__Viruses,RNA virus
+Cynoglossus gracilis hantavirus,TRUE,Cynoglossus gracilis hantavirus,Cynoglossus gracilis hantavirus,tri-segmented −ssRNA,k__Viruses,RNA virus
+Odontamblyopus rubicundus hepacivirus,TRUE,Odontamblyopus rubicundus hepacivirus,Odontamblyopus rubicundus hepacivirus,+ssRNA,k__Viruses,RNA virus
+Johnius belangerii hepacivirus,TRUE,Johnius belangerii hepacivirus,Johnius belangerii hepacivirus,+ssRNA,k__Viruses,RNA virus
+Telatrygon zugei hepacivirus,TRUE,Telatrygon zugei hepacivirus,Telatrygon zugei hepacivirus,+ssRNA,k__Viruses,RNA virus
+Bombay duck fish bornavirus,TRUE,Bombay duck fish bornavirus,Bombay duck fish bornavirus,−ssRNA,k__Viruses,RNA virus
+Paramonacanthus sulcatus filovirus,TRUE,Paramonacanthus sulcatus filovirus,Paramonacanthus sulcatus filovirus,−ssRNA,k__Viruses,RNA virus
+Nanhai filovirus 1,TRUE,Nanhai filovirus 1,Nanhai filovirus 1,−ssRNA,k__Viruses,RNA virus
+Nanhai filovirus 2,TRUE,Nanhai filovirus 2,Nanhai filovirus 2,−ssRNA,k__Viruses,RNA virus
+Nanhai filovirus 3,TRUE,Nanhai filovirus 3,Nanhai filovirus 3,−ssRNA,k__Viruses,RNA virus
+Nanhai rhabdovirus 1,TRUE,Nanhai rhabdovirus 1,Nanhai rhabdovirus 1,−ssRNA,k__Viruses,RNA virus
+Nanhai paramyxovirus 1,TRUE,Nanhai paramyxovirus 1,Nanhai paramyxovirus 1,−ssRNA,k__Viruses,RNA virus
+Nanhai paramyxovirus 2,TRUE,Nanhai paramyxovirus 2,Nanhai paramyxovirus 2,−ssRNA,k__Viruses,RNA virus
+Psenopsis anomala artervirus,TRUE,Psenopsis anomala artervirus,Psenopsis anomala artervirus,+ssRNA,k__Viruses,RNA virus
+Nanhai amnoonvirus 1,TRUE,Nanhai amnoonvirus 1,Nanhai amnoonvirus 1,ten-segmented −ssRNA,k__Viruses,RNA virus
+Arius arius calicivirus,TRUE,Arius arius calicivirus,Arius arius calicivirus,+ssRNA,k__Viruses,RNA virus
+Psenopsis anomala picornavirus,TRUE,Psenopsis anomala picornavirus,Psenopsis anomala picornavirus,+ssRNA,k__Viruses,RNA virus
+Leiognathus ruconius picornavirus,TRUE,Leiognathus ruconius picornavirus,Leiognathus ruconius picornavirus,+ssRNA,k__Viruses,RNA virus
+Polydactylus sextarius picornavirus,TRUE,Polydactylus sextarius picornavirus,Polydactylus sextarius picornavirus,+ssRNA,k__Viruses,RNA virus
+Bregmaceros mcclellandi picornavirus,TRUE,Bregmaceros mcclellandi picornavirus,Bregmaceros mcclellandi picornavirus,+ssRNA,k__Viruses,RNA virus
+Gymnothorax reevesii picornavirus,TRUE,Gymnothorax reevesii picornavirus,Gymnothorax reevesii picornavirus,+ssRNA,k__Viruses,RNA virus
+Thryssa dussumieri picornavirus,TRUE,Thryssa dussumieri picornavirus,Thryssa dussumieri picornavirus,+ssRNA,k__Viruses,RNA virus
+Micropterus salmoides reovirus,TRUE,Micropterus salmoides reovirus,Micropterus salmoides reovirus,segmented dsRNA,k__Viruses,RNA virus
+Wenzhou pacific spadenose shark reovirus 2,TRUE,Wenzhou pacific spadenose shark reovirus 2,Wenzhou pacific spadenose shark reovirus 2,segmented dsRNA,k__Viruses,RNA virus
+Nanhai reo-like virus 1,TRUE,Nanhai reo-like virus 1,Nanhai reo-like virus 1,segmented dsRNA,k__Viruses,RNA virus
+Nanhai reo-like virus 2,TRUE,Nanhai reo-like virus 2,Nanhai reo-like virus 2,segmented dsRNA,k__Viruses,RNA virus
+Nanhai reo-like virus 4,TRUE,Nanhai reo-like virus 4,Nanhai reo-like virus 4,segmented dsRNA,k__Viruses,RNA virus
+Nanhai reo-like virus 5,TRUE,Nanhai reo-like virus 5,Nanhai reo-like virus 5,segmented dsRNA,k__Viruses,RNA virus
+Nanhai reo-like virus 6,TRUE,Nanhai reo-like virus 6,Nanhai reo-like virus 6,segmented dsRNA,k__Viruses,RNA virus
+Nanhai reo-like virus 7,TRUE,Nanhai reo-like virus 7,Nanhai reo-like virus 7,segmented dsRNA,k__Viruses,RNA virus
+Asian seabass Nervous Necrosis Virus,TRUE,Asian seabass Nervous Necrosis Virus,Asian seabass Nervous Necrosis Virus,bipartite +ssRNA,k__Viruses,RNA virus
+Aliivibrio fischeri,TRUE,Aliivibrio fischeri,Aliivibrio fischeri,dsDNA,k__Bacteria,Bacteria
+Acinetobacter johnsonii,TRUE,Acinetobacter johnsonii,Acinetobacter johnsonii,dsDNA,k__Bacteria,Bacteria
+Pseudomonas aeruginosa,TRUE,Pseudomonas aeruginosa,Pseudomonas aeruginosa,dsDNA,k__Bacteria,Bacteria
+Vibrio ponticus,TRUE,Vibrio ponticus,Vibrio ponticus,dsDNA,k__Bacteria,Bacteria
+Photobacterium swingsii,TRUE,Photobacterium swingsii,Photobacterium swingsii,dsDNA,k__Bacteria,Bacteria
+Photobacterium damselae,TRUE,Photobacterium damselae,Photobacterium damselae,dsDNA,k__Bacteria,Bacteria
+Photobacterium damselae QLXSD,TRUE,Photobacterium sp. QLXSD,Photobacterium damselae QLXSD,dsDNA,k__Bacteria,Bacteria
+Clostridium sp. Y,TRUE,Clostridium sp. Y,Clostridium sp. Y,dsDNA,k__Bacteria,Bacteria
+Photobacterium sp.,TRUE,Photobacterium sp.,Photobacterium sp.,dsDNA,k__Bacteria,Bacteria
+Vibrio sp. Y,TRUE,Vibrio sp. Y,Vibrio sp. Y,dsDNA,k__Bacteria,Bacteria
+Clostridium sp. SQHN,TRUE,Clostridium sp. SQHN,Clostridium sp. SQHN,dsDNA,k__Bacteria,Bacteria
+Pseudoloma sp. FJ,TRUE,Pseudoloma sp. FJ,Pseudoloma sp. FJ,dsDNA,k__Eukaryota,Eukaryota
+Glugea plecoglossi,TRUE,Glugea plecoglossi,Glugea plecoglossi,dsDNA,k__Eukaryota,Eukaryota
+Toxocara sp. CTSZ,TRUE,Toxocara sp. CTSZ,Toxocara sp. CTSZ,dsDNA,k__Eukaryota,Eukaryota
+Lepeophtheirus sp. SQHN,TRUE,Lepeophtheirus sp. SQHN,Lepeophtheirus sp. SQHN,dsDNA,k__Eukaryota,Eukaryota
+Toxocara sp. HBSXST,TRUE,Toxocara sp. HBSXST,Toxocara sp. HBSXST,dsDNA,k__Eukaryota,Eukaryota
+Toxoplasma sp. LZY,TRUE,Toxoplasma sp. LZY,Toxoplasma sp. LZY,dsDNA,k__Eukaryota,Eukaryota
+Toxocara sp. LYS,TRUE,Toxocara sp. LYS,Toxocara sp. LYS,dsDNA,k__Eukaryota,Eukaryota
+Besnoitia sp. HKL,TRUE,Besnoitia sp. HKL,Besnoitia sp. HKL,dsDNA,k__Eukaryota,Eukaryota
+Cystoisospora sp. DSLT-4,TRUE,Cystoisospora sp. DSLT-4,Cystoisospora sp. DSLT-4,dsDNA,k__Eukaryota,Eukaryota
+Caligus sp. RWXLT,TRUE,Caligus sp. RWXLT,Caligus sp. RWXLT,dsDNA,k__Eukaryota,Eukaryota
+Hydatigera sp. SDYY,TRUE,Hydatigera sp. SDYY,Hydatigera sp. SDYY,dsDNA,k__Eukaryota,Eukaryota
+Cystoisospora sp. DSLT-2,TRUE,Cystoisospora sp. DSLT-2,Cystoisospora sp. DSLT-2,dsDNA,k__Eukaryota,Eukaryota
+Sarcocystidae sp. DSLT,TRUE,Sarcocystidae sp. DSLT,Sarcocystidae sp. DSLT,dsDNA,k__Eukaryota,Eukaryota
+Sarcocystidae sp. SZMB,TRUE,Sarcocystidae sp. SZMB,Sarcocystidae sp. SZMB,dsDNA,k__Eukaryota,Eukaryota
+Toxocaridae sp. Z,TRUE,Toxocaridae sp. Z,Toxocaridae sp. Z,dsDNA,k__Eukaryota,Eukaryota
+Eimeria sp. SZMB,TRUE,Eimeria sp. SZMB,Eimeria sp. SZMB,dsDNA,k__Eukaryota,Eukaryota
+Taeniidae sp. QLXSDD,TRUE,Taeniidae sp. QLXSDD,Taeniidae sp. QLXSDD,dsDNA,k__Eukaryota,Eukaryota
+Taeniidae sp. LZY,TRUE,Taeniidae sp. LZY,Taeniidae sp. LZY,dsDNA,k__Eukaryota,Eukaryota
+Taeniidae sp. HBSZ,TRUE,Taeniidae sp. HBSZ,Taeniidae sp. HBSZ,dsDNA,k__Eukaryota,Eukaryota
+Opisthorchiidae sp. SZMB,TRUE,Opisthorchiidae sp. SZMB,Opisthorchiidae sp. SZMB,dsDNA,k__Eukaryota,Eukaryota
+Eimeriorina sp. RWXLT,TRUE,Eimeriorina sp. RWXLT,Eimeriorina sp. RWXLT,dsDNA,k__Eukaryota,Eukaryota
+Strigeidida sp. FJ,TRUE,Strigeidida sp. FJ,Strigeidida sp. FJ,dsDNA,k__Eukaryota,Eukaryota

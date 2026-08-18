@@ -1,0 +1,601 @@
+"Pathogen","Pathogen taxa","Classification","Category","Tissue","Positive_libraries","Detected"
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Intestine",1,TRUE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Spleen",0,FALSE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Kidney",0,FALSE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Skin",0,FALSE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Gill",0,FALSE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Liver",0,FALSE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Muscles",0,FALSE
+"Wenzhou pacific spadenose shark astrovirus 2","Astro-Poty","RNA virus","RNA","Brain",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Intestine",1,TRUE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Kidney",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Skin",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Gill",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Liver",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai astrovirus LZMB","Astro-Poty","RNA virus","RNA","Brain",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Intestine",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Spleen",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Kidney",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Skin",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Gill",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Liver",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Muscles",0,FALSE
+"Cynoglossus gracilis hantavirus","Bunya-Arena","RNA virus","RNA","Brain",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Intestine",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Spleen",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Kidney",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Skin",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Gill",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Liver",1,TRUE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Muscles",0,FALSE
+"Telatrygon zugei hepacivirus","Flavi","RNA virus","RNA","Brain",0,FALSE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Intestine",1,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Spleen",2,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Kidney",1,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Skin",1,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Gill",1,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Liver",2,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Muscles",1,TRUE
+"Odontamblyopus rubicundus hepacivirus","Flavi","RNA virus","RNA","Brain",0,FALSE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Intestine",0,FALSE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Spleen",1,TRUE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Kidney",1,TRUE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Skin",1,TRUE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Gill",1,TRUE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Liver",1,TRUE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Muscles",1,TRUE
+"Johnius belangerii hepacivirus","Flavi","RNA virus","RNA","Brain",0,FALSE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Intestine",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Spleen",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Kidney",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Skin",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Gill",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Liver",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Muscles",2,TRUE
+"Bombay duck fish bornavirus","Mono-Chu","RNA virus","RNA","Brain",2,TRUE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Intestine",0,FALSE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Spleen",1,TRUE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Kidney",1,TRUE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Skin",1,TRUE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Gill",1,TRUE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Paramonacanthus sulcatus filovirus","Mono-Chu","RNA virus","RNA","Brain",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Kidney",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Skin",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Gill",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai filovirus 1","Mono-Chu","RNA virus","RNA","Brain",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Kidney",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Skin",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Gill",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai filovirus 2","Mono-Chu","RNA virus","RNA","Brain",1,TRUE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Kidney",1,TRUE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Skin",0,FALSE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Gill",0,FALSE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai filovirus 3","Mono-Chu","RNA virus","RNA","Brain",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Intestine",1,TRUE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Kidney",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Skin",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Gill",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai rhabdovirus 1","Mono-Chu","RNA virus","RNA","Brain",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Kidney",1,TRUE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Skin",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Gill",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai paramyxovirus 1","Mono-Chu","RNA virus","RNA","Brain",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Kidney",1,TRUE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Skin",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Gill",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Liver",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai paramyxovirus 2","Mono-Chu","RNA virus","RNA","Brain",0,FALSE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Intestine",0,FALSE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Spleen",1,TRUE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Kidney",1,TRUE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Skin",1,TRUE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Gill",1,TRUE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Liver",0,FALSE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Muscles",0,FALSE
+"Psenopsis anomala artervirus","Nido","RNA virus","RNA","Brain",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Spleen",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Kidney",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Skin",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Gill",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Liver",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai amnoonvirus 1","Orthomyxo","RNA virus","RNA","Brain",1,TRUE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Intestine",0,FALSE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Spleen",1,TRUE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Kidney",1,TRUE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Skin",1,TRUE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Gill",0,FALSE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Liver",2,TRUE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Muscles",1,TRUE
+"Arius arius calicivirus","Picorna","RNA virus","RNA","Brain",1,TRUE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Intestine",1,TRUE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Spleen",0,FALSE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Kidney",0,FALSE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Skin",0,FALSE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Gill",0,FALSE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Liver",0,FALSE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Muscles",0,FALSE
+"Bregmaceros mcclellandi picornavirus","Picorna","RNA virus","RNA","Brain",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Intestine",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Spleen",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Kidney",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Skin",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Gill",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Liver",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Muscles",0,FALSE
+"Thryssa dussumieri picornavirus","Picorna","RNA virus","RNA","Brain",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Intestine",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Spleen",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Kidney",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Skin",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Gill",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Liver",2,TRUE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Muscles",0,FALSE
+"Leiognathus ruconius picornavirus","Picorna","RNA virus","RNA","Brain",0,FALSE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Intestine",0,FALSE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Spleen",0,FALSE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Kidney",1,TRUE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Skin",1,TRUE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Gill",0,FALSE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Liver",1,TRUE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Muscles",1,TRUE
+"Polydactylus sextarius picornavirus","Picorna","RNA virus","RNA","Brain",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Intestine",1,TRUE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Spleen",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Kidney",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Skin",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Gill",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Liver",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Muscles",0,FALSE
+"Psenopsis anomala picornavirus","Picorna","RNA virus","RNA","Brain",0,FALSE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Intestine",1,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Spleen",2,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Kidney",1,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Skin",4,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Gill",4,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Liver",1,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Muscles",4,TRUE
+"Gymnothorax reevesii picornavirus","Picorna","RNA virus","RNA","Brain",1,TRUE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Intestine",1,TRUE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Spleen",1,TRUE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Kidney",1,TRUE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Skin",0,FALSE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Gill",0,FALSE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Liver",1,TRUE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Muscles",0,FALSE
+"Micropterus salmoides reovirus","Reo","RNA virus","RNA","Brain",0,FALSE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Intestine",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Spleen",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Kidney",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Skin",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Gill",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Liver",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Muscles",1,TRUE
+"Wenzhou pacific spadenose shark reovirus 2","Reo","RNA virus","RNA","Brain",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Spleen",1,TRUE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Kidney",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Skin",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Gill",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Liver",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai reo-like virus 1","Reo","RNA virus","RNA","Brain",0,FALSE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Spleen",2,TRUE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Kidney",2,TRUE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Skin",1,TRUE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Gill",0,FALSE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Liver",0,FALSE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai reo-like virus 2","Reo","RNA virus","RNA","Brain",0,FALSE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Intestine",1,TRUE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Spleen",2,TRUE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Kidney",1,TRUE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Skin",0,FALSE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Gill",1,TRUE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Liver",1,TRUE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Muscles",1,TRUE
+"Nanhai reo-like virus 4","Reo","RNA virus","RNA","Brain",1,TRUE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Spleen",5,TRUE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Kidney",3,TRUE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Skin",1,TRUE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Gill",1,TRUE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Liver",0,FALSE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai reo-like virus 5","Reo","RNA virus","RNA","Brain",0,FALSE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Intestine",0,FALSE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Spleen",5,TRUE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Kidney",3,TRUE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Skin",1,TRUE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Gill",0,FALSE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Liver",0,FALSE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Muscles",0,FALSE
+"Nanhai reo-like virus 6","Reo","RNA virus","RNA","Brain",0,FALSE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Intestine",1,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Spleen",2,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Kidney",2,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Skin",2,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Gill",1,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Liver",1,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Muscles",2,TRUE
+"Nanhai reo-like virus 7","Reo","RNA virus","RNA","Brain",1,TRUE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Intestine",0,FALSE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Spleen",0,FALSE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Kidney",0,FALSE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Skin",2,TRUE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Gill",0,FALSE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Liver",0,FALSE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Muscles",0,FALSE
+"Asian seabass Nervous Necrosis Virus","Tombus-Noda","RNA virus","RNA","Brain",1,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Intestine",3,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Spleen",2,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Kidney",2,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Skin",3,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Gill",3,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Liver",3,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Muscles",2,TRUE
+"Nanhai retrovirus 1","Ortervirales","RNA virus","RNA","Brain",3,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Intestine",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Spleen",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Kidney",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Skin",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Gill",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Liver",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Muscles",1,TRUE
+"Nanhai retrovirus 2","Ortervirales","RNA virus","RNA","Brain",1,TRUE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Intestine",0,FALSE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Spleen",0,FALSE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Kidney",0,FALSE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Skin",1,TRUE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Gill",0,FALSE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Liver",0,FALSE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Muscles",0,FALSE
+"Osteomugil cunnesius hepadna-like virus","Blubervirales","DNA virus","DNA","Brain",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Intestine",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Spleen",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Kidney",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Skin",1,TRUE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Gill",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Liver",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Muscles",0,FALSE
+"Nanhai hepadna-like virus 1","Blubervirales","DNA virus","DNA","Brain",0,FALSE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Intestine",1,TRUE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Spleen",1,TRUE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Kidney",1,TRUE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Skin",1,TRUE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Gill",1,TRUE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Liver",0,FALSE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Muscles",0,FALSE
+"Nanhai circo-like virus 2","Cirlivirales","DNA virus","DNA","Brain",1,TRUE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Intestine",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Spleen",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Kidney",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Skin",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Gill",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Liver",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Muscles",0,FALSE
+"Cynoglossus gracilis herpes-like virus","Herpesvirales","DNA virus","DNA","Brain",0,FALSE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Intestine",1,TRUE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Spleen",0,FALSE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Kidney",1,TRUE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Skin",0,FALSE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Gill",1,TRUE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Liver",0,FALSE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Muscles",0,FALSE
+"Nanhai parvovirus LTY1","Piccovirales","DNA virus","DNA","Brain",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Intestine",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Spleen",2,TRUE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Kidney",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Skin",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Gill",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Liver",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Muscles",0,FALSE
+"Marble sleepy goby iridovirus","Pimascovirales","DNA virus","DNA","Brain",0,FALSE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Intestine",1,TRUE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Spleen",1,TRUE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Kidney",0,FALSE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Skin",0,FALSE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Gill",0,FALSE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Liver",0,FALSE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Muscles",0,FALSE
+"Nanhai papillomavirus ZBTTT","Zurhausenvirales","DNA virus","DNA","Brain",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Intestine",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Spleen",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Kidney",1,TRUE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Skin",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Gill",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Liver",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Muscles",0,FALSE
+"Nanhai papillomavirus HM","Zurhausenvirales","DNA virus","DNA","Brain",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Intestine",1,TRUE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Skin",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Gill",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Liver",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Clostridium sp. SQHN","Bacillota","Bacteria","BACTERIA","Brain",0,FALSE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Intestine",1,TRUE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Skin",0,FALSE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Gill",0,FALSE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Liver",1,TRUE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Clostridium sp. Y","Bacillota","Bacteria","BACTERIA","Brain",1,TRUE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Intestine",3,TRUE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Skin",2,TRUE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Aliivibrio fischeri","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Intestine",6,TRUE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Spleen",1,TRUE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Skin",1,TRUE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Gill",1,TRUE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Muscles",1,TRUE
+"Photobacterium sp.","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Intestine",2,TRUE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Spleen",1,TRUE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Skin",0,FALSE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Liver",1,TRUE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Muscles",1,TRUE
+"Photobacterium damselae","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Intestine",2,TRUE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Skin",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Photobacterium damselae QLXSD","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Intestine",1,TRUE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Skin",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Photobacterium swingsii","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Intestine",1,TRUE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Skin",2,TRUE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Vibrio sp. Y","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Intestine",6,TRUE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Skin",4,TRUE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Vibrio ponticus","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Intestine",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Kidney",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Skin",3,TRUE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Acinetobacter johnsonii","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Intestine",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Spleen",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Kidney",1,TRUE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Skin",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Gill",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Liver",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Muscles",0,FALSE
+"Pseudomonas aeruginosa","Pseudomonadota","Bacteria","BACTERIA","Brain",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Besnoitia sp. HKL","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",1,TRUE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Cystoisospora sp. DSLT-2","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Cystoisospora sp. DSLT-4","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",1,TRUE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",1,TRUE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Sarcocystidae sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Sarcocystidae sp. DSLT","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Toxoplasma sp. LZY","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Eimeriorina sp. RWXLT","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Eimeria sp. SZMB","Apicomplexa","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Spleen",1,TRUE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Kidney",1,TRUE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Skin",2,TRUE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Liver",1,TRUE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Muscles",1,TRUE
+"Glugea plecoglossi","Microsporidia","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Pseudoloma sp. FJ","Microsporidia","Eukaryota","EUKARYOTA","Brain",1,TRUE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Muscles",1,TRUE
+"Toxocaridae sp. Z","Nematoda","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Intestine",13,TRUE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Spleen",8,TRUE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Kidney",1,TRUE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Liver",4,TRUE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Muscles",1,TRUE
+"Toxocara sp. CTSZ","Nematoda","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Toxocara sp. HBSXST","Nematoda","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Spleen",1,TRUE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Toxocara sp. LYS","Nematoda","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Strigeidida sp. FJ","Platyhelminthes","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Intestine",2,TRUE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Gill",1,TRUE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Taeniidae sp. HBSZ","Platyhelminthes","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Intestine",4,TRUE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Taeniidae sp. QLXSDD","Platyhelminthes","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Intestine",1,TRUE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Taeniidae sp. LZY","Platyhelminthes","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Gill",1,TRUE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Opisthorchiidae sp. SZMB","Platyhelminthes","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Intestine",3,TRUE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Hydatigera sp. SDYY","Platyhelminthes","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Skin",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Gill",1,TRUE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Lepeophtheirus sp. SQHN","Arthropoda","Eukaryota","EUKARYOTA","Brain",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Intestine",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Spleen",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Kidney",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Skin",2,TRUE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Gill",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Liver",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Muscles",0,FALSE
+"Caligus sp. RWXLT","Arthropoda","Eukaryota","EUKARYOTA","Brain",0,FALSE

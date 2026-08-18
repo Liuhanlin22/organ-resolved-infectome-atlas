@@ -1,0 +1,60 @@
+lib_id	Host class	Host order	Organ type
+Gy. reevesii	Actinopteri	Anguilliformes	NA
+Ha. nehereus	Actinopteri	Aulopiformes	NA
+Sa. elongata	Actinopteri	Aulopiformes	NA
+Sa. undosquamis	Actinopteri	Aulopiformes	NA
+El. tetradactylum	Actinopteri	Carangaria incertae sedis	NA
+Po. sextarius	Actinopteri	Carangaria incertae sedis	NA
+De. maruadsi	Actinopteri	Carangiformes	NA
+De. ruconius	Actinopteri	Chaetodontiformes	NA
+Cl. thrissa	Actinopteri	Clupeiformes	NA
+Co. mystus	Actinopteri	Clupeiformes	NA
+En. heteroloba	Actinopteri	Clupeiformes	NA
+En. punctifer	Actinopteri	Clupeiformes	NA
+Il. elongata	Actinopteri	Clupeiformes	NA
+Il. melastoma	Actinopteri	Clupeiformes	NA
+Ne. japonica	Actinopteri	Clupeiformes	NA
+Sa. fijiensis	Actinopteri	Clupeiformes	NA
+Sa. lemuru	Actinopteri	Clupeiformes	NA
+Sa. melanura	Actinopteri	Clupeiformes	NA
+Sa. zunasi	Actinopteri	Clupeiformes	NA
+Se. tenuifilis	Actinopteri	Clupeiformes	NA
+Th. dussumieri	Actinopteri	Clupeiformes	NA
+Th. hamiltonii	Actinopteri	Clupeiformes	NA
+Th. kammalensis	Actinopteri	Clupeiformes	NA
+Th. setirostris	Actinopteri	Clupeiformes	NA
+Jo. belangerii	Actinopteri	Eupercaria incertae sedis	NA
+La. crocea	Actinopteri	Eupercaria incertae sedis	NA
+Ot. ruber	Actinopteri	Eupercaria incertae sedis	NA
+Pe. macrocephala	Actinopteri	Eupercaria incertae sedis	NA
+Sc. argus	Actinopteri	Eupercaria incertae sedis	NA
+Si. canaliculatus	Actinopteri	Eupercaria incertae sedis	NA
+Si. fuscescens	Actinopteri	Eupercaria incertae sedis	NA
+Si. sihama	Actinopteri	Eupercaria incertae sedis	NA
+Br. mcclellandi	Actinopteri	Gadiformes	NA
+Od. rubicundus	Actinopteri	Gobiiformes	NA
+Lu. johnii	Actinopteri	Lutjaniformes	NA
+Ch. carinatus	Actinopteri	Mugiliformes	NA
+Mo. cunnesius	Actinopteri	Mugiliformes	NA
+Be. pterotum	Actinopteri	Myctophiformes	NA
+In. japonica	Actinopteri	Perciformes	NA
+Ku. rodericensis	Actinopteri	Perciformes	NA
+Cy. gracilis	Actinopteri	Pleuronectiformes	NA
+Ze. zebrinus	Actinopteri	Pleuronectiformes	NA
+Le. savala	Actinopteri	Scombriformes	NA
+Pa. argenteus	Actinopteri	Scombriformes	NA
+Ps. anomala	Actinopteri	Scombriformes	NA
+Ar. arius	Actinopteri	Siluriformes	NA
+Ne. japonicus	Actinopteri	Spariformes	NA
+La. spadiceus	Actinopteri	Tetraodontiformes	NA
+Pa. sulcatus	Actinopteri	Tetraodontiformes	NA
+Sc. macrorhynchos	Chondrichthyes	Carcharhiniformes	NA
+Te. zugei	Chondrichthyes	Myliobatiformes	NA
+Brain	NA	NA	Brain
+Gill	NA	NA	Gill
+Liver	NA	NA	Liver
+Intestine	NA	NA	Intestine
+Kidney	NA	NA	Kidney
+Muscles	NA	NA	Muscle
+Skin	NA	NA	Skin
+Spleen	NA	NA	Spleen

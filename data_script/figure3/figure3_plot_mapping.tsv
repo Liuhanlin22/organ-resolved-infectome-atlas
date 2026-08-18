@@ -1,0 +1,198 @@
+Organ	Input_row	Full_name	Display_name	Abundance	Positive_count	Classification	Known_pathogen
+Brain	2	Nanhai retrovirus 1	Nanhai retrovirus 1	1.44691743996867	3	RNA virus	FALSE
+Brain	3	Bombay duck fish bornavirus	Bombay duck fish bornavirus	2.32238151240647	2	RNA virus	TRUE
+Brain	4	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	0.901957063790096	1	RNA virus	FALSE
+Brain	5	Nanhai reo-like virus 7	Nanhai reo-like virus 7	0.744548975747499	1	RNA virus	FALSE
+Brain	6	Nanhai reo-like virus 4	Nanhai reo-like virus 4	0.624716705077323	1	RNA virus	FALSE
+Brain	7	Nanhai circo-like virus 2	Nanhai circo-like virus 2	0.607856296378335	1	DNA virus	FALSE
+Brain	8	Arius arius calicivirus	Arius arius calicivirus	0.532750484843638	1	RNA virus	FALSE
+Brain	9	Nanhai retrovirus 2	Nanhai retrovirus 2	0.451963384140904	1	RNA virus	FALSE
+Brain	10	Clostridium sp. Y	Clostridium sp. Y	0.403539216394583	1	Bacteria	TRUE
+Brain	11	Pseudoloma sp. FJ	Pseudoloma sp. FJ	0.314422172707402	1	Eukaryota	FALSE
+Brain	12	Nanhai filovirus 2	Nanhai filovirus 2	0.213405116151244	1	RNA virus	FALSE
+Brain	13	Asian seabass Nervous Necrosis Virus	Asian seabass NN Virus	0.185860019968889	1	RNA virus	TRUE
+Brain	14	Nanhai amnoonvirus 1	Nanhai amnoonvirus 1	0.103017215236698	1	RNA virus	FALSE
+Gill	2	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	0.698068519423864	4	RNA virus	FALSE
+Gill	3	Nanhai retrovirus 1	Nanhai retrovirus 1	1.56458985974396	3	RNA virus	FALSE
+Gill	4	Bombay duck fish bornavirus	Bombay duck fish bornavirus	2.47658610266762	2	RNA virus	TRUE
+Gill	5	Cynoglossus gracilis hantavirus	Cyno. gracilis hantavirus	1.00562206805528	1	RNA virus	FALSE
+Gill	6	Cynoglossus gracilis herpes-like virus	Cyno. gracilis herpes-like virus	0.0972256668376129	1	DNA virus	FALSE
+Gill	7	Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	0.320294907419233	1	RNA virus	FALSE
+Gill	8	Lepeophtheirus sp. SQHN	Lepeophtheirus sp. SQHN	0.485210269915266	1	Eukaryota	FALSE
+Gill	9	Nanhai circo-like virus 2	Nanhai circo-like virus 2	0.425679995567297	1	DNA virus	FALSE
+Gill	10	Nanhai parvovirus LTY1	Nanhai parvovirus LTY1	1.49043881145283	1	DNA virus	FALSE
+Gill	11	Nanhai reo-like virus 4	Nanhai reo-like virus 4	2.03526949198628	1	RNA virus	FALSE
+Gill	12	Nanhai reo-like virus 5	Nanhai reo-like virus 5	0.52207525293461	1	RNA virus	FALSE
+Gill	13	Nanhai reo-like virus 7	Nanhai reo-like virus 7	1.88505704649667	1	RNA virus	FALSE
+Gill	14	Nanhai retrovirus 2	Nanhai retrovirus 2	1.06802633984561	1	RNA virus	FALSE
+Gill	15	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	1.62943508705715	1	RNA virus	FALSE
+Gill	16	Opisthorchiidae sp. SZMB	Opisthorchiidae sp. SZMB	0.350402464568566	1	Eukaryota	FALSE
+Gill	17	Paramonacanthus sulcatus filovirus	Para. sulcatus filovirus	0.881238514062754	1	RNA virus	TRUE
+Gill	18	Photobacterium sp.	Photobacterium sp.	0.558662580991454	1	Bacteria	FALSE
+Gill	19	Psenopsis anomala artervirus	Psenopsis anomala artervirus	0.635787765444844	1	RNA virus	FALSE
+Gill	20	Strigeidida sp. FJ	Strigeidida sp. FJ	0.494805680520992	1	Eukaryota	FALSE
+Gill	21	Taeniidae sp. HBSZ	Taeniidae sp. HBSZ	0.499783637124986	1	Eukaryota	FALSE
+Gill	22	Toxocara sp. LYS	Toxocara sp. LYS	0.308313624987752	1	Eukaryota	FALSE
+Gill	23	Wenzhou pacific spadenose shark reovirus 2	Wenzhou ps shark reovirus 2	0.948494805019362	1	RNA virus	TRUE
+Intestine	2	Toxocara sp. CTSZ	Toxocara sp. CTSZ	1.33135305357137	14	Eukaryota	FALSE
+Intestine	3	Vibrio ponticus	Vibrio ponticus	0.906520695580562	6	Bacteria	TRUE
+Intestine	4	Photobacterium sp.	Photobacterium sp.	0.562849458917513	6	Bacteria	FALSE
+Intestine	5	Taeniidae sp. QLXSDD	Taeniidae sp. QLXSDD	0.823874563815895	5	Eukaryota	FALSE
+Intestine	6	Thryssa dussumieri picornavirus	Thryssa dussumieri picornavirus	2.04402653753292	3	RNA virus	FALSE
+Intestine	7	Nanhai retrovirus 1	Nanhai retrovirus 1	1.94898874536779	3	RNA virus	FALSE
+Intestine	8	Aliivibrio fischeri	Aliivibrio fischeri	0.590971346936003	3	Bacteria	TRUE
+Intestine	9	Hydatigera sp. SDYY	Hydatigera sp. SDYY	0.555864736240524	3	Eukaryota	FALSE
+Intestine	10	Bombay duck fish bornavirus	Bombay duck fish bornavirus	2.06386693910222	2	RNA virus	TRUE
+Intestine	11	Toxocara sp. LYS	Toxocara sp. LYS	0.908818558921311	2	Eukaryota	FALSE
+Intestine	12	Photobacterium damselae	Photobacterium damselae	0.62839195574388	2	Bacteria	TRUE
+Intestine	13	Taeniidae sp. HBSZ	Taeniidae sp. HBSZ	0.537417439709186	2	Eukaryota	FALSE
+Intestine	14	Photobacterium sp. QLXSD	Photobacterium sp. QLXSD	0.486918789983914	2	Bacteria	TRUE
+Intestine	15	Photobacterium swingsii	Photobacterium swingsii	0.398521573889657	2	Bacteria	TRUE
+Intestine	16	Bregmaceros mcclellandi picornavirus	Breg. mcclellandi picornavirus	2.16839274670248	1	RNA virus	FALSE
+Intestine	17	Nanhai astrovirus LZMB	Nanhai astrovirus LZMB	1.67994280578511	1	RNA virus	FALSE
+Intestine	18	Toxocara sp. HBSXST	Toxocara sp. HBSXST	1.67105052714739	1	Eukaryota	FALSE
+Intestine	19	Glugea plecoglossi	Glugea plecoglossi	1.6634227643552	1	Eukaryota	TRUE
+Intestine	20	Nanhai papillomavirus ZBTTT	Nanhai papillomavirus ZBTTT	1.52219537838839	1	DNA virus	FALSE
+Intestine	21	Wenzhou pacific spadenose shark astrovirus 2	Wenzhou ps shark astrovirus 2	1.22850101865369	1	RNA virus	TRUE
+Intestine	22	Taeniidae sp. LZY	Taeniidae sp. LZY	1.00422178534838	1	Eukaryota	FALSE
+Intestine	23	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	0.975634628275342	1	RNA virus	FALSE
+Intestine	24	Wenzhou pacific spadenose shark reovirus 2	Wenzhou ps shark reovirus 2	0.929233765108857	1	RNA virus	TRUE
+Intestine	25	Nanhai reo-like virus 4	Nanhai reo-like virus 4	0.876403653867457	1	RNA virus	FALSE
+Intestine	26	Eimeria sp. SZMB	Eimeria sp. SZMB	0.769284020144965	1	Eukaryota	FALSE
+Intestine	27	Micropterus salmoides reovirus	Micropterus salmoides reovirus	0.767315034123673	1	RNA virus	TRUE
+Intestine	28	Toxoplasma sp. LZY	Toxoplasma sp. LZY	0.644146419703576	1	Eukaryota	FALSE
+Intestine	29	Sarcocystidae sp. SZMB	Sarcocystidae sp. SZMB	0.638238144888781	1	Eukaryota	FALSE
+Intestine	30	Clostridium sp. Y	Clostridium sp. Y	0.574737271115329	1	Bacteria	TRUE
+Intestine	31	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	0.521208515586692	1	RNA virus	FALSE
+Intestine	32	Nanhai reo-like virus 7	Nanhai reo-like virus 7	0.499040427313612	1	RNA virus	FALSE
+Intestine	33	Besnoitia sp. HKL	Besnoitia sp. HKL	0.496100011628664	1	Eukaryota	FALSE
+Intestine	34	Nanhai circo-like virus 2	Nanhai circo-like virus 2	0.448185081669444	1	DNA virus	FALSE
+Intestine	35	Eimeriorina sp. RWXLT	Eimeriorina sp. RWXLT	0.444275948556022	1	Eukaryota	FALSE
+Intestine	36	Vibrio sp. Y	Vibrio sp. Y	0.440601675488845	1	Bacteria	FALSE
+Intestine	37	Psenopsis anomala picornavirus	Psenopsis anomala picornavirus	0.408502752196073	1	RNA virus	FALSE
+Intestine	38	Cystoisospora sp. DSLT-4	Cystoisospora sp. DSLT-4	0.348759695106535	1	Eukaryota	FALSE
+Intestine	39	Cystoisospora sp. DSLT-2	Cystoisospora sp. DSLT-2	0.339106975795266	1	Eukaryota	FALSE
+Intestine	40	Nanhai retrovirus 2	Nanhai retrovirus 2	0.335041889110637	1	RNA virus	FALSE
+Intestine	41	Clostridium sp. SQHN	Clostridium sp. SQHN	0.334917785271232	1	Bacteria	FALSE
+Intestine	42	Nanhai parvovirus LTY1	Nanhai parvovirus LTY1	0.319316916095395	1	DNA virus	FALSE
+Intestine	43	Nanhai rhabdovirus 1	Nanhai rhabdovirus 1	0.131793532421189	1	RNA virus	FALSE
+Kidney	2	Nanhai reo-like virus 5	Nanhai reo-like virus 5	0.953817332650241	3	RNA virus	FALSE
+Kidney	3	Nanhai reo-like virus 6	Nanhai reo-like virus 6	0.504371755879488	3	RNA virus	FALSE
+Kidney	4	Bombay duck fish bornavirus	Bombay duck fish bornavirus	1.86825302991256	2	RNA virus	TRUE
+Kidney	5	Nanhai reo-like virus 2	Nanhai reo-like virus 2	2.21971177147929	2	RNA virus	FALSE
+Kidney	6	Nanhai reo-like virus 7	Nanhai reo-like virus 7	2.30297856400045	2	RNA virus	FALSE
+Kidney	7	Nanhai retrovirus 1	Nanhai retrovirus 1	1.44815041121178	2	RNA virus	FALSE
+Kidney	8	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	1.16844983609405	1	RNA virus	FALSE
+Kidney	9	Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	0.686156234213179	1	RNA virus	FALSE
+Kidney	10	Paramonacanthus sulcatus filovirus	Para. sulcatus filovirus	0.52593642335799	1	RNA virus	TRUE
+Kidney	11	Nanhai filovirus 3	Nanhai filovirus 3	0.433359858118829	1	RNA virus	FALSE
+Kidney	12	Nanhai paramyxovirus 1	Nanhai paramyxovirus 1	1.38811667579008	1	RNA virus	FALSE
+Kidney	13	Nanhai paramyxovirus 2	Nanhai paramyxovirus 2	1.99980994151072	1	RNA virus	FALSE
+Kidney	14	Psenopsis anomala artervirus	Psenopsis anomala artervirus	0.5991163270065	1	RNA virus	FALSE
+Kidney	15	Arius arius calicivirus	Arius arius calicivirus	0.858133795095928	1	RNA virus	FALSE
+Kidney	16	Polydactylus sextarius picornavirus	Poly. sextarius picornavirus 1	0.554653455536765	1	RNA virus	FALSE
+Kidney	17	Gymnothorax reevesii picornavirus	Gym. reevesii picornavirus	0.617429200923316	1	RNA virus	FALSE
+Kidney	18	Micropterus salmoides reovirus	Micropterus salmoides reovirus	1.63907122380655	1	RNA virus	TRUE
+Kidney	19	Wenzhou pacific spadenose shark reovirus 2	Wenzhou ps shark reovirus 2	0.423513962445211	1	RNA virus	TRUE
+Kidney	20	Nanhai reo-like virus 4	Nanhai reo-like virus 4	3.26903269184773	1	RNA virus	FALSE
+Kidney	21	Nanhai circo-like virus 2	Nanhai circo-like virus 2	0.482855086984325	1	DNA virus	FALSE
+Kidney	22	Nanhai parvovirus LTY1	Nanhai parvovirus LTY1	0.473159150090063	1	DNA virus	FALSE
+Kidney	23	Nanhai papillomavirus HM	Nanhai papillomavirus HM	0.404615468481155	1	DNA virus	FALSE
+Kidney	24	Nanhai retrovirus 2	Nanhai retrovirus 2	1.4785483356449	1	RNA virus	FALSE
+Kidney	25	Pseudomonas aeruginosa	Pseudomonas aeruginosa	0.797167806659829	1	Bacteria	TRUE
+Kidney	26	Sarcocystidae sp. SZMB	Sarcocystidae sp. SZMB	0.315232531474665	1	Eukaryota	FALSE
+Kidney	27	Glugea plecoglossi	Glugea plecoglossi	0.978099327060336	1	Eukaryota	TRUE
+Kidney	28	Toxocara sp. CTSZ	Toxocara sp. CTSZ	0.420495516731695	1	Eukaryota	FALSE
+Liver	2	Toxocara sp. CTSZ	Toxocara sp. CTSZ	0.842803607372989	5	Eukaryota	FALSE
+Liver	3	Nanhai retrovirus 1	Nanhai retrovirus 1	1.65968303276068	3	RNA virus	FALSE
+Liver	4	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	2.525534656308	2	RNA virus	FALSE
+Liver	5	Bombay duck fish bornavirus	Bombay duck fish bornavirus	1.95602220439503	2	RNA virus	TRUE
+Liver	6	Arius arius calicivirus	Arius arius calicivirus	0.922638733698569	2	RNA virus	FALSE
+Liver	7	Leiognathus ruconius picornavirus	Leio. ruconius picornavirus	1.24504474640803	2	RNA virus	FALSE
+Liver	8	Telatrygon zugei hepacivirus	Telatrygon zugei hepacivirus	0.984099996075903	1	RNA virus	FALSE
+Liver	9	Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	1.87089482448608	1	RNA virus	FALSE
+Liver	10	Thryssa dussumieri picornavirus	Thryssa dussumieri picornavirus	0.664243856431819	1	RNA virus	FALSE
+Liver	11	Polydactylus sextarius picornavirus	Poly. sextarius picornavirus	2.94628117456044	1	RNA virus	FALSE
+Liver	12	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	0.301732580000568	1	RNA virus	FALSE
+Liver	13	Micropterus salmoides reovirus	Micropterus salmoides reovirus	1.56230996342397	1	RNA virus	TRUE
+Liver	14	Wenzhou pacific spadenose shark reovirus 2	Wenzhou ps shark reovirus 2	0.552383764104114	1	RNA virus	TRUE
+Liver	15	Nanhai reo-like virus 4	Nanhai reo-like virus 4	1.52685200499903	1	RNA virus	FALSE
+Liver	16	Nanhai reo-like virus 7	Nanhai reo-like virus 7	0.754098342590723	1	RNA virus	FALSE
+Liver	17	Nanhai retrovirus 2	Nanhai retrovirus 2	0.792201792792778	1	RNA virus	FALSE
+Liver	18	Clostridium sp. Y	Clostridium sp. Y	0.318652528289703	1	Bacteria	TRUE
+Liver	19	Photobacterium damselae	Photobacterium damselae	0.997566550919052	1	Bacteria	TRUE
+Liver	20	Glugea plecoglossi	Glugea plecoglossi	0.547622487165034	1	Eukaryota	TRUE
+Muscle	2	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	1.63088708874938	4	RNA virus	FALSE
+Muscle	3	Bombay duck fish bornavirus	Bombay duck fish bornavirus	2.84762567082003	2	RNA virus	TRUE
+Muscle	4	Nanhai reo-like virus 7	Nanhai reo-like virus 7	0.643861541987424	2	RNA virus	FALSE
+Muscle	5	Nanhai retrovirus 1	Nanhai retrovirus 1	0.73526760306819	2	RNA virus	FALSE
+Muscle	6	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	0.738215226429835	1	RNA virus	FALSE
+Muscle	7	Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	0.651517969169403	1	RNA virus	FALSE
+Muscle	8	Arius arius calicivirus	Arius arius calicivirus	1.05074267554233	1	RNA virus	FALSE
+Muscle	9	Polydactylus sextarius picornavirus	Poly. sextarius picornavirus 1	0.49304771019047	1	RNA virus	FALSE
+Muscle	10	Asian seabass Nervous Necrosis Virus	Asian seabass NN Virus	0.344592310025111	1	RNA virus	TRUE
+Muscle	11	Wenzhou pacific spadenose shark reovirus 2	Wenzhou pS shark reovirus 2	1.98340122810956	1	RNA virus	TRUE
+Muscle	12	Nanhai reo-like virus 4	Nanhai reo-like virus 4	1.19547021447696	1	RNA virus	FALSE
+Muscle	13	Nanhai retrovirus 2	Nanhai retrovirus 2	0.66716090534084	1	RNA virus	FALSE
+Muscle	14	Photobacterium sp.	Photobacterium sp.	0.474433933438856	1	Bacteria	FALSE
+Muscle	15	Photobacterium damselae	Photobacterium damselae	0.472098200471493	1	Bacteria	TRUE
+Muscle	16	Glugea plecoglossi	Glugea plecoglossi	0.815735296125928	1	Eukaryota	TRUE
+Muscle	17	Toxocaridae sp. Z	Toxocaridae sp. Z	0.529741313624988	1	Eukaryota	FALSE
+Muscle	18	Toxocara sp. CTSZ	Toxocara sp. CTSZ	1.38107620609259	1	Eukaryota	FALSE
+Muscle	19	Strigeidida sp. FJ	Strigeidida sp. FJ	0.799770652682558	1	Eukaryota	FALSE
+Skin	2	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	2.23087791112931	4	RNA virus	FALSE
+Skin	3	Vibrio ponticus	Vibrio ponticus	0.593966054718376	4	Bacteria	TRUE
+Skin	4	Nanhai retrovirus 1	Nanhai retrovirus 1	0.641047041435524	3	RNA virus	FALSE
+Skin	5	Acinetobacter johnsonii	Acinetobacter johnsonii	0.807200593986423	3	Bacteria	TRUE
+Skin	6	Bombay duck fish bornavirus	Bombay duck fish bornavirus	2.83043556883889	2	RNA virus	TRUE
+Skin	7	Asian seabass Nervous Necrosis Virus	Asian seabass NN Virus	0.416193894433252	2	RNA virus	TRUE
+Skin	8	Nanhai reo-like virus 7	Nanhai reo-like virus 7	0.461421666216133	2	RNA virus	FALSE
+Skin	9	Aliivibrio fischeri	Aliivibrio fischeri	0.602198187899719	2	Bacteria	TRUE
+Skin	10	Vibrio sp. Y	Vibrio sp. Y	0.395301978916428	2	Bacteria	FALSE
+Skin	11	Glugea plecoglossi	Glugea plecoglossi	1.25621089010416	2	Eukaryota	TRUE
+Skin	12	Caligus sp. RWXLT	Caligus sp. RWXLT	0.908956639271716	2	Eukaryota	FALSE
+Skin	13	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	0.315199511851077	1	RNA virus	FALSE
+Skin	14	Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	0.394258223821675	1	RNA virus	FALSE
+Skin	15	Paramonacanthus sulcatus filovirus	Para. sulcatus filovirus	0.87709536398956	1	RNA virus	TRUE
+Skin	16	Psenopsis anomala artervirus	Psenopsis anomala artervirus	0.404218444994853	1	RNA virus	FALSE
+Skin	17	Arius arius calicivirus	Arius arius calicivirus	0.59666789744706	1	RNA virus	FALSE
+Skin	18	Polydactylus sextarius picornavirus	Poly. sextarius picornavirus	0.324222865389292	1	RNA virus	FALSE
+Skin	19	Wenzhou pacific spadenose shark reovirus 2	Wenzhou ps shark reovirus 2	0.322625457756779	1	RNA virus	TRUE
+Skin	20	Nanhai reo-like virus 2	Nanhai reo-like virus 2	0.375960417620187	1	RNA virus	FALSE
+Skin	21	Nanhai reo-like virus 5	Nanhai reo-like virus 5	0.813831604494263	1	RNA virus	FALSE
+Skin	22	Nanhai reo-like virus 6	Nanhai reo-like virus 6	0.422726252545801	1	RNA virus	FALSE
+Skin	23	Osteomugil cunnesius hepadna-like virus	Os. cunnesius hepadna-like virus	0.73812801947933	1	DNA virus	FALSE
+Skin	24	Nanhai hepadna-like virus 1	Nanhai hepadna-like virus 1	1.02028869992454	1	DNA virus	FALSE
+Skin	25	Nanhai circo-like virus 2	Nanhai circo-like virus 2	1.01990621690459	1	DNA virus	FALSE
+Skin	26	Nanhai retrovirus 2	Nanhai retrovirus 2	0.441232915717015	1	RNA virus	FALSE
+Skin	27	Photobacterium sp.	Photobacterium sp.	0.416328250026671	1	Bacteria	FALSE
+Spleen	2	Toxocara sp. CTSZ	Toxocara sp. CTSZ	1.96968559062165	9	Eukaryota	FALSE
+Spleen	3	Nanhai reo-like virus 5	Nanhai reo-like virus 5	1.13232970098486	5	RNA virus	FALSE
+Spleen	4	Nanhai reo-like virus 6	Nanhai reo-like virus 6	0.573640024286244	5	RNA virus	FALSE
+Spleen	5	Odontamblyopus rubicundus hepacivirus	Odon. rubicundus hepacivirus	1.1448710153998	2	RNA virus	FALSE
+Spleen	6	Bombay duck fish bornavirus	Bombay duck fish bornavirus	2.79615578459411	2	RNA virus	TRUE
+Spleen	7	Gymnothorax reevesii picornavirus	Gymn. reevesii picornavirus	0.452308640930322	2	RNA virus	FALSE
+Spleen	8	Nanhai reo-like virus 2	Nanhai reo-like virus 2	3.06072167227029	2	RNA virus	FALSE
+Spleen	9	Nanhai reo-like virus 4	Nanhai reo-like virus 4	3.09711432726425	2	RNA virus	FALSE
+Spleen	10	Nanhai reo-like virus 7	Nanhai reo-like virus 7	2.92845894392729	2	RNA virus	FALSE
+Spleen	11	Marble sleepy goby iridovirus	Marble sleepy goby iridovirus	1.52603850317847	2	DNA virus	TRUE
+Spleen	12	Nanhai retrovirus 1	Nanhai retrovirus 1	1.60644975838617	2	RNA virus	FALSE
+Spleen	13	Toxocara sp. LYS	Toxocara sp. LYS	1.59941195991007	2	Eukaryota	FALSE
+Spleen	14	Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	1.20868737584102	1	RNA virus	FALSE
+Spleen	15	Paramonacanthus sulcatus filovirus	Para. sulcatus filovirus	0.393534826043654	1	RNA virus	TRUE
+Spleen	16	Nanhai filovirus 1	Nanhai filovirus 1	0.788685801357297	1	RNA virus	FALSE
+Spleen	17	Psenopsis anomala artervirus	Psenopsis anomala artervirus	1.34685386718866	1	RNA virus	FALSE
+Spleen	18	Arius arius calicivirus	Arius arius calicivirus	1.14403405157994	1	RNA virus	FALSE
+Spleen	19	Thryssa dussumieri picornavirus	Thryssa dussumieri picornavirus	0.466073897923334	1	RNA virus	FALSE
+Spleen	20	Micropterus salmoides reovirus	Micropterus salmoides reovirus	0.882641671699335	1	RNA virus	TRUE
+Spleen	21	Wenzhou pacific spadenose shark reovirus 2	Wenzhou ps shark reovirus 2	1.88106874566582	1	RNA virus	TRUE
+Spleen	22	Nanhai reo-like virus 1	Nanhai reo-like virus 1	0.754042727349915	1	RNA virus	FALSE
+Spleen	23	Nanhai circo-like virus 2	Nanhai circo-like virus 2	0.398060560252032	1	DNA virus	FALSE
+Spleen	24	Nanhai papillomavirus ZBTTT	Nanhai papillomavirus ZBTTT	0.398499096549634	1	DNA virus	FALSE
+Spleen	25	Nanhai retrovirus 2	Nanhai retrovirus 2	2.27514025397322	1	RNA virus	FALSE
+Spleen	26	Photobacterium sp.	Photobacterium sp.	0.313780670558767	1	Bacteria	FALSE
+Spleen	27	Photobacterium damselae	Photobacterium damselae	0.663796097049779	1	Bacteria	TRUE
+Spleen	28	Cystoisospora sp. DSLT-2	Cystoisospora sp. DSLT-2	0.686866836468139	1	Eukaryota	FALSE
+Spleen	29	Sarcocystidae sp. SZMB	Sarcocystidae sp. SZMB	0.620415166418006	1	Eukaryota	FALSE
+Spleen	30	Glugea plecoglossi	Glugea plecoglossi	0.973480504284911	1	Eukaryota	TRUE
+Spleen	31	Toxocara sp. HBSXST	Toxocara sp. HBSXST	1.03086139661057	1	Eukaryota	FALSE

@@ -1,0 +1,118 @@
+﻿node_id	label	node_type	node_zone	host_label	species	host_class	host_order	family	genus	classification	taxonomy	novelty	multi_tissue_distribution	connected_hosts	connected_orders
+host::Gy. reevesii	Gy. reevesii	Host species	host_ring	Gy. reevesii	Gymnothorax reevesii	Actinopteri	Anguilliformes	Muraenidae	Gymnothorax						
+host::Ha. nehereus	Ha. nehereus	Host species	host_ring	Ha. nehereus	Harpadon nehereus	Actinopteri	Aulopiformes	Synodontidae	Harpadon						
+host::Sa. elongata	Sa. elongata	Host species	host_ring	Sa. elongata	Saurida elongata	Actinopteri	Aulopiformes	Synodontidae	Saurida						
+host::Sa. undosquamis	Sa. undosquamis	Host species	host_ring	Sa. undosquamis	Saurida undosquamis	Actinopteri	Aulopiformes	Synodontidae	Saurida						
+host::El. tetradactylum	El. tetradactylum	Host species	host_ring	El. tetradactylum	Eleutheronema tetradactylum	Actinopteri	Carangaria incertae sedis	Polynemidae	Eleutheronema						
+host::Po. sextarius	Po. sextarius	Host species	host_ring	Po. sextarius	Polydactylus sextarius	Actinopteri	Carangaria incertae sedis	Polynemidae	Polydactylus						
+host::De. maruadsi	De. maruadsi	Host species	host_ring	De. maruadsi	Decapterus maruadsi	Actinopteri	Carangiformes	Carangidae	Decapterus						
+host::De. ruconius	De. ruconius	Host species	host_ring	De. ruconius	Deveximentum ruconius	Actinopteri	Chaetodontiformes	Leiognathidae	Deveximentum						
+host::Co. mystus	Co. mystus	Host species	host_ring	Co. mystus	Coilia mystus	Actinopteri	Clupeiformes	Engraulidae	Coilia						
+host::Il. elongata	Il. elongata	Host species	host_ring	Il. elongata	Ilisha elongata	Actinopteri	Clupeiformes	Pristigasteridae	Ilisha						
+host::Il. melastoma	Il. melastoma	Host species	host_ring	Il. melastoma	Ilisha melastoma	Actinopteri	Clupeiformes	Pristigasteridae	Ilisha						
+host::Sa. fijiensis	Sa. fijiensis	Host species	host_ring	Sa. fijiensis	Sardinella fijiensis	Actinopteri	Clupeiformes	Clupeidae	Sardinella						
+host::Sa. lemuru	Sa. lemuru	Host species	host_ring	Sa. lemuru	Sardinella lemuru	Actinopteri	Clupeiformes	Clupeidae	Sardinella						
+host::Sa. melanura	Sa. melanura	Host species	host_ring	Sa. melanura	Sardinella melanura	Actinopteri	Clupeiformes	Clupeidae	Sardinella						
+host::Sa. zunasi	Sa. zunasi	Host species	host_ring	Sa. zunasi	Sardinella zunasi	Actinopteri	Clupeiformes	Clupeidae	Sardinella						
+host::Se. tenuifilis	Se. tenuifilis	Host species	host_ring	Se. tenuifilis	Setipinna tenuifilis	Actinopteri	Clupeiformes	Engraulidae	Setipinna						
+host::Th. dussumieri	Th. dussumieri	Host species	host_ring	Th. dussumieri	Thryssa dussumieri	Actinopteri	Clupeiformes	Engraulidae	Thryssa						
+host::Th. hamiltonii	Th. hamiltonii	Host species	host_ring	Th. hamiltonii	Thryssa hamiltonii	Actinopteri	Clupeiformes	Engraulidae	Thryssa						
+host::Th. kammalensis	Th. kammalensis	Host species	host_ring	Th. kammalensis	Thryssa kammalensis	Actinopteri	Clupeiformes	Engraulidae	Thryssa						
+host::Th. setirostris	Th. setirostris	Host species	host_ring	Th. setirostris	Thryssa setirostris	Actinopteri	Clupeiformes	Engraulidae	Thryssa						
+host::Jo. belangerii	Jo. belangerii	Host species	host_ring	Jo. belangerii	Johnius belangerii	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Johnius						
+host::La. crocea	La. crocea	Host species	host_ring	La. crocea	Larimichthys crocea	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Larimichthys						
+host::Pe. macrocephala	Pe. macrocephala	Host species	host_ring	Pe. macrocephala	Pennahia macrocephala	Actinopteri	Eupercaria incertae sedis	Sciaenidae	Pennahia						
+host::Sc. argus	Sc. argus	Host species	host_ring	Sc. argus	Scatophagus argus	Actinopteri	Eupercaria incertae sedis	Scatophagidae	Scatophagus						
+host::Si. canaliculatus	Si. canaliculatus	Host species	host_ring	Si. canaliculatus	Siganus canaliculatus	Actinopteri	Eupercaria incertae sedis	Siganidae	Siganus						
+host::Br. mcclellandi	Br. mcclellandi	Host species	host_ring	Br. mcclellandi	Bregmaceros mcclellandi	Actinopteri	Gadiformes	Bregmacerotidae	Bregmaceros						
+host::Od. rubicundus	Od. rubicundus	Host species	host_ring	Od. rubicundus	Odontamblyopus rubicundus	Actinopteri	Gobiiformes	Gobiidae	Odontamblyopus						
+host::Lu. johnii	Lu. johnii	Host species	host_ring	Lu. johnii	Lutjanus johnii	Actinopteri	Lutjaniformes	Lutjanidae	Lutjanus						
+host::Mo. cunnesius	Mo. cunnesius	Host species	host_ring	Mo. cunnesius	Moolgarda cunnesius	Actinopteri	Mugiliformes	Mugilidae	Moolgarda						
+host::Be. pterotum	Be. pterotum	Host species	host_ring	Be. pterotum	Benthosema pterotum	Actinopteri	Myctophiformes	Myctophidae	Benthosema						
+host::In. japonica	In. japonica	Host species	host_ring	In. japonica	Inegocia japonica	Actinopteri	Perciformes	Platycephalidae	Inegocia						
+host::Ku. rodericensis	Ku. rodericensis	Host species	host_ring	Ku. rodericensis	Kumococius rodericensis	Actinopteri	Perciformes	Platycephalidae	Kumococius						
+host::Cy. gracilis	Cy. gracilis	Host species	host_ring	Cy. gracilis	Cynoglossus gracilis	Actinopteri	Pleuronectiformes	Cynoglossidae	Cynoglossus						
+host::Ze. zebrinus	Ze. zebrinus	Host species	host_ring	Ze. zebrinus	Zebrias zebrinus	Actinopteri	Pleuronectiformes	Soleidae	Zebrias						
+host::Le. savala	Le. savala	Host species	host_ring	Le. savala	Lepturacanthus savala	Actinopteri	Scombriformes	Trichiuridae	Lepturacanthus						
+host::Ps. anomala	Ps. anomala	Host species	host_ring	Ps. anomala	Psenopsis anomala	Actinopteri	Scombriformes	Centrolophidae	Psenopsis						
+host::Ar. arius	Ar. arius	Host species	host_ring	Ar. arius	Arius arius	Actinopteri	Siluriformes	Ariidae	Arius						
+host::Ne. japonicus	Ne. japonicus	Host species	host_ring	Ne. japonicus	Nemipterus japonicus	Actinopteri	Spariformes	Nemipteridae	Nemipterus						
+host::La. spadiceus	La. spadiceus	Host species	host_ring	La. spadiceus	Lagocephalus spadiceus	Actinopteri	Tetraodontiformes	Tetraodontidae	Lagocephalus						
+host::Pa. sulcatus	Pa. sulcatus	Host species	host_ring	Pa. sulcatus	Paramonacanthus sulcatus	Actinopteri	Tetraodontiformes	Monacanthidae	Paramonacanthus						
+host::Sc. macrorhynchos	Sc. macrorhynchos	Host species	host_ring	Sc. macrorhynchos	Scoliodon macrorhynchos	Chondrichthyes	Carcharhiniformes	Carcharhinidae	Scoliodon						
+host::Te. zugei	Te. zugei	Host species	host_ring	Te. zugei	Telatrygon zugei	Chondrichthyes	Myliobatiformes	Dasyatidae	Telatrygon						
+pathogen::Wenzhou pacific spadenose shark astrovirus 2	Wenzhou pacific spadenose shark astrovirus 2	Virus	outer							RNA virus	Astro-Poty	Known	No	1.0	1.0
+pathogen::Nanhai astrovirus LZMB	Nanhai astrovirus LZMB	Virus	outer							RNA virus	Astro-Poty	Novel	No	1.0	1.0
+pathogen::Cynoglossus gracilis hantavirus	Cynoglossus gracilis hantavirus	Virus	outer							RNA virus	Bunya-Arena	Novel	No	1.0	1.0
+pathogen::Telatrygon zugei hepacivirus	Telatrygon zugei hepacivirus	Virus	outer							RNA virus	Flavi	Novel	No	1.0	1.0
+pathogen::Odontamblyopus rubicundus hepacivirus	Odontamblyopus rubicundus hepacivirus	Virus	outer							RNA virus	Flavi	Novel	Yes	1.0	1.0
+pathogen::Johnius belangerii hepacivirus	Johnius belangerii hepacivirus	Virus	outer							RNA virus	Flavi	Novel	Yes	1.0	1.0
+pathogen::Bombay duck fish bornavirus	Bombay duck fish bornavirus	Virus	outer							RNA virus	Mono-Chu	Known	Yes	1.0	1.0
+pathogen::Paramonacanthus sulcatus filovirus	Paramonacanthus sulcatus filovirus	Virus	outer							RNA virus	Mono-Chu	Known	Yes	2.0	1.0
+pathogen::Nanhai filovirus 1	Nanhai filovirus 1	Virus	outer							RNA virus	Mono-Chu	Novel	No	1.0	1.0
+pathogen::Nanhai filovirus 2	Nanhai filovirus 2	Virus	outer							RNA virus	Mono-Chu	Novel	No	1.0	1.0
+pathogen::Nanhai filovirus 3	Nanhai filovirus 3	Virus	outer							RNA virus	Mono-Chu	Novel	No	1.0	1.0
+pathogen::Nanhai rhabdovirus 1	Nanhai rhabdovirus 1	Virus	outer							RNA virus	Mono-Chu	Novel	No	1.0	1.0
+pathogen::Nanhai paramyxovirus 1	Nanhai paramyxovirus 1	Virus	outer							RNA virus	Mono-Chu	Novel	No	1.0	1.0
+pathogen::Nanhai paramyxovirus 2	Nanhai paramyxovirus 2	Virus	outer							RNA virus	Mono-Chu	Novel	No	1.0	1.0
+pathogen::Psenopsis anomala artervirus	Psenopsis anomala artervirus	Virus	outer							RNA virus	Nido	Novel	Yes	1.0	1.0
+pathogen::Nanhai amnoonvirus 1	Nanhai amnoonvirus 1	Virus	outer							RNA virus	Orthomyxo	Novel	No	1.0	1.0
+pathogen::Arius arius calicivirus	Arius arius calicivirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1.0	1.0
+pathogen::Bregmaceros mcclellandi picornavirus	Bregmaceros mcclellandi picornavirus	Virus	outer							RNA virus	Picorna	Novel	No	1.0	1.0
+pathogen::Thryssa dussumieri picornavirus	Thryssa dussumieri picornavirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1.0	1.0
+pathogen::Leiognathus ruconius picornavirus	Leiognathus ruconius picornavirus	Virus	outer							RNA virus	Picorna	Novel	No	1.0	1.0
+pathogen::Polydactylus sextarius picornavirus	Polydactylus sextarius picornavirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1.0	1.0
+pathogen::Psenopsis anomala picornavirus	Psenopsis anomala picornavirus	Virus	outer							RNA virus	Picorna	Novel	No	1.0	1.0
+pathogen::Gymnothorax reevesii picornavirus	Gymnothorax reevesii picornavirus	Virus	outer							RNA virus	Picorna	Novel	Yes	1.0	1.0
+pathogen::Micropterus salmoides reovirus	Micropterus salmoides reovirus	Virus	outer							RNA virus	Reo	Known	Yes	1.0	1.0
+pathogen::Wenzhou pacific spadenose shark reovirus 2	Wenzhou pacific spadenose shark reovirus 2	Virus	outer							RNA virus	Reo	Known	Yes	1.0	1.0
+pathogen::Nanhai reo-like virus 1	Nanhai reo-like virus 1	Virus	outer							RNA virus	Reo	Novel	No	1.0	1.0
+pathogen::Nanhai reo-like virus 2	Nanhai reo-like virus 2	Virus	outer							RNA virus	Reo	Novel	Yes	1.0	1.0
+pathogen::Nanhai reo-like virus 4	Nanhai reo-like virus 4	Virus	outer							RNA virus	Reo	Novel	Yes	1.0	1.0
+pathogen::Nanhai reo-like virus 5	Nanhai reo-like virus 5	Virus	inner							RNA virus	Reo	Novel	Yes	3.0	3.0
+pathogen::Nanhai reo-like virus 6	Nanhai reo-like virus 6	Virus	inner							RNA virus	Reo	Novel	Yes	2.0	2.0
+pathogen::Nanhai reo-like virus 7	Nanhai reo-like virus 7	Virus	outer							RNA virus	Reo	Novel	Yes	1.0	1.0
+pathogen::Asian seabass Nervous Necrosis Virus	Asian seabass Nervous Necrosis Virus	Virus	inner							RNA virus	Tombus-Noda	Known	Yes	4.0	3.0
+pathogen::Nanhai retrovirus 1	Nanhai retrovirus 1	Virus	outer							RNA virus	Ortervirales	Novel	Yes	1.0	1.0
+pathogen::Nanhai retrovirus 2	Nanhai retrovirus 2	Virus	outer							RNA virus	Ortervirales	Novel	Yes	1.0	1.0
+pathogen::Osteomugil cunnesius hepadna-like virus	Osteomugil cunnesius hepadna-like virus	Virus	outer							DNA virus	Blubervirales	Novel	No	1.0	1.0
+pathogen::Nanhai hepadna-like virus 1	Nanhai hepadna-like virus 1	Virus	outer							DNA virus	Blubervirales	Novel	No	1.0	1.0
+pathogen::Nanhai circo-like virus 2	Nanhai circo-like virus 2	Virus	outer							DNA virus	Cirlivirales	Novel	Yes	1.0	1.0
+pathogen::Cynoglossus gracilis herpes-like virus	Cynoglossus gracilis herpes-like virus	Virus	outer							DNA virus	Herpesvirales	Novel	No	1.0	1.0
+pathogen::Nanhai parvovirus LTY1	Nanhai parvovirus LTY1	Virus	outer							DNA virus	Piccovirales	Novel	Yes	1.0	1.0
+pathogen::Marble sleepy goby iridovirus	Marble sleepy goby iridovirus	Virus	outer							DNA virus	Pimascovirales	Known	No	1.0	1.0
+pathogen::Nanhai papillomavirus ZBTTT	Nanhai papillomavirus ZBTTT	Virus	outer							DNA virus	Zurhausenvirales	Novel	Yes	1.0	1.0
+pathogen::Nanhai papillomavirus HM	Nanhai papillomavirus HM	Virus	outer							DNA virus	Zurhausenvirales	Novel	No	1.0	1.0
+pathogen::Clostridium sp. SQHN	Clostridium sp. SQHN	Bacteria	outer							Bacteria	Bacillota	Novel	No	1.0	1.0
+pathogen::Clostridium sp. Y	Clostridium sp. Y	Bacteria	inner							Bacteria	Bacillota	Known	Yes	2.0	2.0
+pathogen::Aliivibrio fischeri	Aliivibrio fischeri	Bacteria	inner							Bacteria	Pseudomonadota	Known	Yes	4.0	3.0
+pathogen::Photobacterium sp.	Photobacterium sp.	Bacteria	inner							Bacteria	Pseudomonadota	Novel	Yes	6.0	3.0
+pathogen::Photobacterium damselae	Photobacterium damselae	Bacteria	inner							Bacteria	Pseudomonadota	Known	Yes	3.0	2.0
+pathogen::Photobacterium sp. QLXSD	Photobacterium sp. QLXSD	Bacteria	inner							Bacteria	Pseudomonadota	Known	No	2.0	2.0
+pathogen::Photobacterium swingsii	Photobacterium swingsii	Bacteria	inner							Bacteria	Pseudomonadota	Known	No	2.0	2.0
+pathogen::Vibrio sp. Y	Vibrio sp. Y	Bacteria	inner							Bacteria	Pseudomonadota	Novel	Yes	2.0	2.0
+pathogen::Vibrio ponticus	Vibrio ponticus	Bacteria	inner							Bacteria	Pseudomonadota	Known	Yes	5.0	4.0
+pathogen::Acinetobacter johnsonii	Acinetobacter johnsonii	Bacteria	inner							Bacteria	Pseudomonadota	Known	No	3.0	2.0
+pathogen::Pseudomonas aeruginosa	Pseudomonas aeruginosa	Bacteria	outer							Bacteria	Pseudomonadota	Known	No	1.0	1.0
+pathogen::Besnoitia sp. HKL	Besnoitia sp. HKL	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Cystoisospora_sp._DSLT-2	Cystoisospora_sp._DSLT-2	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Cystoisospora sp. DSLT-4	Cystoisospora sp. DSLT-4	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Sarcocystidae sp. SZMB	Sarcocystidae sp. SZMB	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	Yes	1.0	1.0
+pathogen::Sarcocystidae sp. DSLT	Sarcocystidae sp. DSLT	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Toxoplasma sp. LZY	Toxoplasma sp. LZY	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Eimeriorina sp. RWXLT	Eimeriorina sp. RWXLT	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Eimeria sp. SZMB	Eimeria sp. SZMB	Eukaryota	outer							Eukaryota	Apicomplexa	Novel	No	1.0	1.0
+pathogen::Glugea plecoglossi	Glugea plecoglossi	Eukaryota	outer							Eukaryota	Microsporidia	Known	Yes	1.0	1.0
+pathogen::Pseudoloma sp. FJ	Pseudoloma sp. FJ	Eukaryota	outer							Eukaryota	Microsporidia	Novel	No	1.0	1.0
+pathogen::Toxocaridae sp. Z	Toxocaridae sp. Z	Eukaryota	outer							Eukaryota	Nematoda	Novel	No	1.0	1.0
+pathogen::Toxocara sp. CTSZ	Toxocara sp. CTSZ	Eukaryota	inner							Eukaryota	Nematoda	Novel	Yes	10.0	8.0
+pathogen::Toxocara sp. HBSXST	Toxocara sp. HBSXST	Eukaryota	inner							Eukaryota	Nematoda	Novel	Yes	2.0	2.0
+pathogen::Toxocara sp. LYS	Toxocara sp. LYS	Eukaryota	outer							Eukaryota	Nematoda	Novel	Yes	1.0	1.0
+pathogen::Strigeidida sp. FJ	Strigeidida sp. FJ	Eukaryota	outer							Eukaryota	Platyhelminthes	Novel	Yes	1.0	1.0
+pathogen::Taeniidae sp. HBSZ	Taeniidae sp. HBSZ	Eukaryota	inner							Eukaryota	Platyhelminthes	Novel	Yes	3.0	3.0
+pathogen::Taeniidae sp. QLXSDD	Taeniidae sp. QLXSDD	Eukaryota	inner							Eukaryota	Platyhelminthes	Novel	No	4.0	4.0
+pathogen::Taeniidae sp. LZY	Taeniidae sp. LZY	Eukaryota	outer							Eukaryota	Platyhelminthes	Novel	No	1.0	1.0
+pathogen::Opisthorchiidae sp. SZMB	Opisthorchiidae sp. SZMB	Eukaryota	outer							Eukaryota	Platyhelminthes	Novel	No	1.0	1.0
+pathogen::Hydatigera sp. SDYY	Hydatigera sp. SDYY	Eukaryota	inner							Eukaryota	Platyhelminthes	Novel	No	2.0	2.0
+pathogen::Lepeophtheirus sp. SQHN	Lepeophtheirus sp. SQHN	Eukaryota	outer							Eukaryota	Arthropoda	Novel	No	1.0	1.0
+pathogen::Caligus sp. RWXLT	Caligus sp. RWXLT	Eukaryota	outer							Eukaryota	Arthropoda	Novel	No	1.0	1.0

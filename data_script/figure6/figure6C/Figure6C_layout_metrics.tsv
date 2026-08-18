@@ -1,0 +1,6 @@
+metric	value
+host_columns	27
+pathogen_rows	11
+column_group_gaps	2;15;16;18;19;20;21;22
+row_group_gaps	1;2;4;8;9;10
+first_host_column_retained	TRUE

@@ -1,0 +1,12 @@
+virus_species	Family	Viruses
+Micropterus_salmoides_reovirus	unclassified Reovirales	RNA virus
+Asian_seabass_Nervous_Necrosis_Virus	Nodaviridae	RNA virus
+Marble_sleepy_goby_iridovirus	Iridoviridae	DNA virus
+Acetes_erythraeus_iridovirus	Iridoviridae	DNA virus
+Aliivibrio_fischeri	Vibrionaceae	Bacteria
+Photobacterium_damselae	Vibrionaceae	Bacteria
+Photobacterium_swingsii	Vibrionaceae	Bacteria
+Vibrio_ponticus	Vibrionaceae	Bacteria
+Acinetobacter_johnsonii	Moraxellaceae	Bacteria
+Pseudomonas_aeruginosa	Pseudomonadaceae	Bacteria
+Glugea_plecoglossi	Glugeidae	Eukaryota

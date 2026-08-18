@@ -1,0 +1,49 @@
+﻿kind,old_name,updated_source_name,canonical_display_name,action
+pathogen,Nanhai_reo-like_virus_5,Nanhai reo-like virus 5,Nanhai reo-like virus 5,unchanged
+pathogen,Nanhai_reo-like_virus_6,Nanhai reo-like virus 6,Nanhai reo-like virus 6,unchanged
+pathogen,Asian_seabass_Nervous_Necrosis_Virus,Asian seabass Nervous Necrosis Virus,Asian seabass Nervous Necrosis Virus,unchanged
+pathogen,Acinetobacter_johnsonii,Acinetobacter johnsonii,Acinetobacter johnsonii,unchanged
+pathogen,Aliivibrio_fischeri,Aliivibrio fischeri,Aliivibrio fischeri,unchanged
+pathogen,Clostridium_sp._Y,Clostridium sp. Y,Clostridium sp. Y,unchanged
+pathogen,Photobacterium_sp.,Photobacterium sp.,Photobacterium sp.,unchanged
+pathogen,Photobacterium_damselae,Photobacterium damselae,Photobacterium damselae,unchanged
+pathogen,Photobacterium_damselae_QLXSD,Photobacterium damselae QLXSD,Photobacterium sp. QLXSD,renamed
+pathogen,Photobacterium_swingsii,Photobacterium swingsii,Photobacterium swingsii,unchanged
+pathogen,Vibrio_sp._Y,Vibrio sp. Y,Vibrio sp. Y,unchanged
+pathogen,Vibrio_ponticus,Vibrio ponticus,Vibrio ponticus,unchanged
+pathogen,Toxocara_sp._CTSZ-2,Toxocara sp. CTSZ,Toxocara sp. CTSZ,renamed
+pathogen,Toxocara_sp._HBSXST,Toxocara sp. HBSXST,Toxocara sp. HBSXST,unchanged
+pathogen,Taeniidae_sp._HBSZ,Taeniidae sp. HBSZ,Taeniidae sp. HBSZ,unchanged
+pathogen,Taeniidae_sp._QLXSDD,Taeniidae sp. QLXSDD,Taeniidae sp. QLXSDD,unchanged
+pathogen,Hydatigera_sp._SDYY,Hydatigera sp. SDYY,Hydatigera sp. SDYY,unchanged
+host,Larimichthys_crocea,Larimichthys crocea,La. crocea,unchanged
+host,Pennahia_macrocephalus,Pennahia macrocephala,Pe. macrocephala,renamed
+host,Harpadon_nehereus,Harpadon nehereus,Ha. nehereus,unchanged
+host,Saurida_elongata,Saurida elongata,Sa. elongata,unchanged
+host,Saurida_undosquamis,Saurida undosquamis,Sa. undosquamis,unchanged
+host,Decapterus_akaadsi,Decapterus maruadsi,De. maruadsi,renamed
+host,Decapterus_maruadsi,Decapterus maruadsi,De. maruadsi,merged
+host,Coilia_mystus,Coilia mystus,Co. mystus,unchanged
+host,Ilisha_elongata,Ilisha elongata,Il. elongata,unchanged
+host,Ilisha_melastoma,Ilisha melastoma,Il. melastoma,unchanged
+host,Sardinella_jussieu,Sardinella fijiensis,Sa. fijiensis,renamed
+host,Sardinella_lemuru,Sardinella lemuru,Sa. lemuru,unchanged
+host,Sardinella_melanura,Sardinella melanura,Sa. melanura,unchanged
+host,Sardinella_zunasi,Sardinella zunasi,Sa. zunasi,unchanged
+host,Setipinna_tenuifilis,Setipinna tenuifilis,Se. tenuifilis,unchanged
+host,Thryssa_dussumieri,Thryssa dussumieri,Th. dussumieri,unchanged
+host,Thryssa_hamiltonii,Thryssa hamiltonii,Th. hamiltonii,unchanged
+host,Thryssa_kammalensis,Thryssa kammalensis,Th. kammalensis,unchanged
+host,Benthosema_pterotum,Benthosema pterotum,Be. pterotum,unchanged
+host,Leiognathus_ruconius,Deveximentum ruconius,De. ruconius,renamed
+host,Lutjanus_johnii,Lutjanus johnii,Lu. johnii,unchanged
+host,Polydactylus_sextarius,Polydactylus sextarius,Po. sextarius,unchanged
+host,Siganus_canaliculatus,Siganus canaliculatus,Si. canaliculatus,unchanged
+host,Cynoglossus_gracilis,Cynoglossus gracilis,Cy. gracilis,unchanged
+host,Lepturacanthus_savala,Lepturacanthus savala,Le. savala,unchanged
+host,Psenopsis_anomala,Psenopsis anomala,Ps. anomala,unchanged
+host,Suggrundus_sp.,Inegocia japonica,In. japonica,renamed
+host,Arius_arius,Arius arius,Ar. arius,unchanged
+host,Nemipterus_japonicus,Nemipterus japonicus,Ne. japonicus,unchanged
+host,Lagocephalus_spadiceus,Lagocephalus spadiceus,La. spadiceus,unchanged
+host,Paramonacanthus_sulcatus,Paramonacanthus sulcatus,Pa. sulcatus,unchanged
