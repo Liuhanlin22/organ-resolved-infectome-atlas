@@ -1,0 +1,23 @@
+individual_id	organ_count	missing_organ_codes	missing_tissues
+YS-FJ-2	7	P	Skin
+YS-FJ-3	7	K	Kidney
+YS-HBSXST-2	7	P	Skin
+YS-HBSXST-3	7	S	Spleen
+YS-HUAJI-1	7	P	Skin
+YS-HUAJI-2	7	S	Spleen
+YS-HYH-1	7	B	Brain
+YS-LYS-1	7	B	Brain
+YS-LYS-2	7	B	Brain
+YS-QLXSDD-2	7	P	Skin
+YS-QLXSDD-3	7	P	Skin
+YS-FJ-1	6	M,P	Muscles, Skin
+YS-HYH-2	6	H,S	Liver, Spleen
+YS-HYH-3	6	G,S	Gill, Spleen
+YS-QLXSDD-1	6	K,M	Kidney, Muscles
+YS-DSLT-4	5	B,M,P	Brain, Muscles, Skin
+YS-DSLT-6	5	K,M,P	Kidney, Muscles, Skin
+YS-HBSXST-1	5	B,P,S	Brain, Skin, Spleen
+YS-YSDD-1	5	H,M,S	Liver, Muscles, Spleen
+YS-DSLT-5	4	B,K,M,P	Brain, Kidney, Muscles, Skin
+YS-YSDD-2	3	G,I,K,P,S	Gill, Intestine, Kidney, Skin, Spleen
+YS-YSDD-3	3	B,I,K,P,S	Brain, Intestine, Kidney, Skin, Spleen
