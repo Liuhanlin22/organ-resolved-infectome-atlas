@@ -86,4 +86,4 @@ The repository contains generated figure files for direct inspection. The R scri
 
 ## License and data use
 
-No license is currently specified. Please confirm the applicable data-sharing, sequence-accession and publication restrictions before redistributing the repository or its associated biological data.
+The analysis code in this repository is released under the MIT License. 
