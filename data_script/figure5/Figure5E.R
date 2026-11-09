@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5E: individual-level pathogen-composition t-SNE
-# Each row is one fish after summing its eight organ libraries.
-# Only pathogen-positive fish are included (72 fish x 75 pathogens).
 
 required <- c("readr", "dplyr", "ggplot2", "Rtsne", "vegan")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
@@ -50,8 +47,6 @@ stopifnot(nrow(x) == 72L, ncol(x) == 75L)
 stopifnot(!anyNA(x), all(x >= 0), all(rowSums(x) > 0))
 stopifnot(!any(duplicated(as.data.frame(x))))
 
-# Fixed display scheme requested by the author. Current-order values outside
-# these six orders are grouped as Others; taxonomy in lib_meta.csv is unchanged.
 group_levels <- c(
   "Anguilliformes", "Aulopiformes", "Clupeiformes",
   "Gadiformes", "Gobiiformes", "Others", "Scorpaeniformes"
@@ -87,14 +82,11 @@ tsne <- Rtsne(
 plot_data <- meta %>%
   mutate(tSNE1 = tsne$Y[, 1], tSNE2 = tsne$Y[, 2])
 
-# PERMANOVA is calculated from Bray-Curtis distances in the original
-# log1p-abundance space, never from the t-SNE coordinates.
 bray <- vegdist(x_log, method = "bray")
 stats_group <- droplevels(meta$plot_group)
 set.seed(20260814)
 permanova <- adonis2(bray ~ stats_group, permutations = 9999)
 
-# Test multivariate dispersion because unequal dispersion can affect PERMANOVA.
 dispersion <- betadisper(
   bray,
   stats_group,

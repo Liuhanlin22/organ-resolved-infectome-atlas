@@ -92,7 +92,6 @@ save_plot <- function(plot, base, width, height) {
 save_plot(p_b, file.path(script_dir, "FigureS6B_R_rendered"), 5.6, 4.6)
 save_plot(p_c, file.path(script_dir, "FigureS6C_R_rendered"), 4.8, 4.2)
 
-# Combined panel export without requiring patchwork or gridExtra.
 pdf(file.path(script_dir, "FigureS6B_C_R_rendered.pdf"), width = 10.8, height = 4.6, useDingbats = FALSE)
 grid.newpage()
 pushViewport(viewport(layout = grid.layout(1, 2, widths = unit(c(1.35, 1), "null"))))

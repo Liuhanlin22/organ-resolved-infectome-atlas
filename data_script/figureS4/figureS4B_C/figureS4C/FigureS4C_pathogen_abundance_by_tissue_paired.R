@@ -1,4 +1,3 @@
-# Figure S4C: pathogen abundance across eight paired tissue types
 
 required_packages <- c("ggplot2", "readxl", "dplyr", "tidyr", "writexl", "ragg")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
@@ -41,7 +40,6 @@ if (!file.exists(abundance_file) || !file.exists(metadata_file)) {
   stop("Both input workbooks must be stored beside this R script.")
 }
 
-# The abundance workbook is a 75-pathogen x 896-library RPM matrix.
 abundance_matrix <- read_excel(abundance_file, sheet = 1)
 pathogen_column <- names(abundance_matrix)[1]
 sample_columns <- trimws(names(abundance_matrix)[-1])
@@ -140,7 +138,6 @@ if (nrow(paired_log) != 112 || anyNA(paired_log) || anyNA(paired_raw)) {
   stop("The paired wide-format data are incomplete.")
 }
 
-# Overall repeated-measures test across the eight tissues.
 friedman_fit <- friedman.test(as.matrix(paired_log[, tissue_order]))
 friedman_stats <- tibble(
   test = "Friedman rank-sum test",
@@ -165,7 +162,6 @@ rank_biserial_paired <- function(difference) {
   (w_positive - w_negative) / (w_positive + w_negative)
 }
 
-# Two-sided paired Wilcoxon signed-rank tests; positive effects mean group1 > group2.
 pair_list <- combn(tissue_order, 2, simplify = FALSE)
 pairwise_stats <- bind_rows(lapply(pair_list, function(pair) {
   x <- paired_log[[pair[1]]]
@@ -350,9 +346,6 @@ ggsave(pdf_file, figure_s4c, width = 4.35, height = 6.2, units = "in", device = 
 svg(svg_file, width = 4.35, height = 6.2, bg = "white", onefile = TRUE)
 print(figure_s4c)
 dev.off()
-# Some Windows raster devices cannot write directly to a non-ASCII path. Use
-# the ASCII temporary directory for rasterization, then copy the finished files
-# back to the requested figure directory.
 raster_dir <- file.path(tempdir(), "figureS4C_raster")
 dir.create(raster_dir, recursive = TRUE, showWarnings = FALSE)
 png_stage <- file.path(raster_dir, basename(png_file))

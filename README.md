@@ -7,13 +7,13 @@ This repository contains the analysis scripts, input tables, phylogenetic files 
 ```text
 github_upload/
 ├── data_script/
-│   ├── figure1/          Host phylogeny and library quality control
+│   ├── figure1/          Figure 1B host phylogeny and Figure 1C library counts
 │   ├── figure2/          Pathogen overview, heatmaps and abundance summaries
 │   ├── figure3/          Organ-specific pathogen abundance plots
 │   ├── figure4/          Organ distribution, prevalence, richness and PCoA
 │   ├── figure5/          Host-level summaries, ordination and co-infection analyses
 │   ├── figure6/          Host-pathogen network and updated heatmap analyses
-│   ├── figureS1/         Viral host-genus composition
+│   ├── figureS1/         Field photographs, host-genus composition and read QC
 │   ├── figureS4/         Organ preference and complete-eight-organ analyses
 │   ├── figureS5/         Pathogen-by-individual UpSet analysis
 │   └── figureS6/         Updated host-species heatmap and cross-range summaries
@@ -52,13 +52,15 @@ BiocManager::install("ggtree")
 
 The Sankey workflow may additionally require a local PhantomJS installation for `webshot`. Some scripts use optional packages only for specific output formats or font/rendering devices.
 
-The helper script `data_script/figure6/figure6A/prepare_Figure6A_input.py` requires Python 3 with `pandas`, `numpy` and `openpyxl`.
+The helper script `data_script/figure6/figure6A/prepare_Figure6A_input.py` requires Python 3 with `pandas`, `numpy` and `openpyxl`. The Figure 1 and S1 input-preparation script `data_script/figure1/prepare_figure1_S1_inputs.py` requires Python 3 and `openpyxl`.
 
 ## Running a figure script
 
 Run a script from the repository root or from its own figure directory. For example:
 
 ```bash
+Rscript data_script/figure1/figure1c/figure1C.R
+Rscript data_script/figureS1/FigureS1C_read_counts_and_percentages.R
 Rscript data_script/figure4/Figure4E_richness_complete8.R
 Rscript data_script/figureS4/figureS4B_C/FigureS4B_prepare_and_plot.R
 Rscript data_script/figureS4/figureS4B_C/figureS4C/FigureS4C_pathogen_abundance_by_tissue_paired.R

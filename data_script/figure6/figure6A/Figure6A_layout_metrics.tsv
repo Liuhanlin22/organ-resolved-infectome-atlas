@@ -6,9 +6,9 @@ pathogen_nodes	75
 edges	118
 host_orders	20
 host_radius_mean	0.98
-host_radius_cv	6.61997338795638e-17
+host_radius_cv	5.59489867502088e-17
 outer_radius_mean	1.125
-outer_radius_cv	4.52804675474445e-17
+outer_radius_cv	3.69713469352973e-17
 outer_radius_target	1.125
 within_order_gap_radians	0.101341698502897
 between_order_gap_radians	0.202683397005793
@@ -27,6 +27,6 @@ order_band_white_gap_radians	0.059704497234752
 order_band_white_gap_degrees	3.42081570950179
 order_band_count	20
 cross_zero_order_count	1
-order_sequence	Anguilliformes;Carangiformes;Mugiliformes;Aulopiformes;Lutjaniformes;Pleuronectiformes;Gadiformes;Clupeiformes;Spariformes;Siluriformes;Chaetodontiformes;Perciformes;Carcharhiniformes;Gobiiformes;Tetraodontiformes;Eupercaria incertae sedis;Scombriformes;Myctophiformes;Carangaria incertae sedis;Myliobatiformes
-crossing_reduction_percent	76.71
-min_inner_node_distance	0.115643315512148
+order_sequence	Anguilliformes;Myliobatiformes;Aulopiformes;Lutjaniformes;Pleuronectiformes;Gobiiformes;Clupeiformes;Chaetodontiformes;Siluriformes;Spariformes;Mugiliformes;Tetraodontiformes;Perciformes;Eupercaria incertae sedis;Carcharhiniformes;Myctophiformes;Gadiformes;Scombriformes;Carangaria incertae sedis;Carangiformes
+crossing_reduction_percent	79
+min_inner_node_distance	0.107026751490623

@@ -1,15 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 4E — pathogen richness across eight paired organs
-#
-# Design:
-#   - Retain only individuals represented by all eight organs.
-#   - Richness = number of pathogen taxa with RPM > 0 in each library.
-#   - Overall test: Friedman test (eight repeated measurements per individual).
-#   - Post-hoc tests: paired Wilcoxon signed-rank tests with BH correction.
-#
-# The script exports the extracted 896-library abundance matrix, plotting data,
-# statistical results, and Figure 4E. Existing source files are not overwritten.
 
 required_packages <- c("openxlsx", "ggplot2")
 missing_packages <- required_packages[
@@ -59,7 +49,6 @@ organ_map <- c(
   S = "Spleen"
 )
 
-# Required display order, retained from the manuscript figure.
 tissue_order <- c(
   "Intestine", "Spleen", "Skin", "Kidney",
   "Liver", "Gill", "Muscles", "Brain"
@@ -76,7 +65,6 @@ tissue_fill <- c(
   Brain     = "#E2B7B9"
 )
 
-# ----------------------------- Data extraction -----------------------------
 
 raw_data <- read.xlsx(abundance_file, sheet = 1, check.names = FALSE)
 if (ncol(raw_data) < 2 || nrow(raw_data) < 1) {
@@ -108,7 +96,6 @@ library_meta <- data.frame(
   stringsAsFactors = FALSE
 )
 
-# One and only one library per organ is required for a complete individual.
 individual_qc <- aggregate(
   organ_code ~ individual_id,
   data = library_meta,
@@ -129,7 +116,6 @@ complete_individuals <- individual_qc$individual_id[
 ]
 complete_meta <- library_meta[library_meta$individual_id %in% complete_individuals, ]
 
-# Stable order: individual, followed by B/G/H/I/K/M/P/S.
 complete_meta$organ_code <- factor(complete_meta$organ_code, levels = names(organ_map))
 complete_meta <- complete_meta[order(complete_meta$individual_id, complete_meta$organ_code), ]
 complete_meta$organ_code <- as.character(complete_meta$organ_code)
@@ -159,13 +145,11 @@ plot_data <- complete_meta
 plot_data$Richness <- as.integer(richness[plot_data$lib_id])
 plot_data$Tissue <- factor(plot_data$Tissue, levels = tissue_order)
 
-# Confirm the paired block is exactly 112 x 8.
 pair_table <- table(plot_data$individual_id, plot_data$Tissue)
 if (!all(dim(pair_table) == c(112L, 8L)) || !all(pair_table == 1L)) {
   stop("The extracted data are not a complete 112-individual x 8-organ paired design.")
 }
 
-# ------------------------------ Export inputs ------------------------------
 
 complete_matrix_export <- data.frame(
   Pathogen = pathogen_names,
@@ -202,7 +186,6 @@ write.table(
   sep = "\t", quote = FALSE, row.names = FALSE
 )
 
-# ---------------------------- Paired statistics ----------------------------
 
 friedman_result <- friedman.test(Richness ~ Tissue | individual_id, data = plot_data)
 friedman_export <- data.frame(
@@ -295,14 +278,10 @@ write.xlsx(
   overwrite = TRUE
 )
 
-# --------------------------------- Figure ---------------------------------
 
 set.seed(20260814)
 y_max <- max(plot_data$Richness)
 
-# To keep the narrow panel readable, display the six strongest significant
-# paired comparisons (BH-adjusted P < 0.05). The Excel output retains all 28
-# pairwise tests. Increase this value if more comparison lines are required.
 n_pairwise_annotations <- 6L
 significant_annotations <- paired_results[
   !is.na(paired_results$p_adjust_BH) & paired_results$p_adjust_BH < 0.05,
@@ -323,8 +302,6 @@ if (nrow(significant_annotations) > 0) {
     significant_annotations$x_start + significant_annotations$x_end
   ) / 2
 
-  # The smallest adjusted P value is placed at the highest level, matching
-  # the visual hierarchy in the reference figure.
   annotation_step <- 0.55
   annotation_base <- y_max + 0.48
   significant_annotations$annotation_y <- annotation_base +

@@ -1,0 +1,52 @@
+host_order	species	species_abbreviation	library_count	order_position	species_position
+Anguilliformes	Gymnothorax reevesii	Gy. reevesii	32	1	1
+Aulopiformes	Harpadon nehereus	Ha. nehereus	24	2	2
+Aulopiformes	Saurida elongata	Sa. elongata	24	2	3
+Aulopiformes	Saurida undosquamis	Sa. undosquamis	24	2	4
+Carangaria incertae sedis	Eleutheronema tetradactylum	El. tetradactylum	8	3	5
+Carangaria incertae sedis	Polydactylus sextarius	Po. sextarius	24	3	6
+Carangiformes	Decapterus maruadsi	De. maruadsi	22	4	7
+Chaetodontiformes	Deveximentum ruconius	De. ruconius	24	5	8
+Clupeiformes	Clupanodon thrissa	Cl. thrissa	14	6	9
+Clupeiformes	Coilia mystus	Co. mystus	20	6	10
+Clupeiformes	Encrasicholina heteroloba	En. heteroloba	16	6	11
+Clupeiformes	Encrasicholina punctifer	En. punctifer	8	6	12
+Clupeiformes	Ilisha elongata	Il. elongata	16	6	13
+Clupeiformes	Ilisha melastoma	Il. melastoma	24	6	14
+Clupeiformes	Nematalosa japonica	Ne. japonica	24	6	15
+Clupeiformes	Sardinella fijiensis	Sa. fijiensis	8	6	16
+Clupeiformes	Sardinella lemuru	Sa. lemuru	24	6	17
+Clupeiformes	Sardinella melanura	Sa. melanura	16	6	18
+Clupeiformes	Sardinella zunasi	Sa. zunasi	20	6	19
+Clupeiformes	Setipinna tenuifilis	Se. tenuifilis	48	6	20
+Clupeiformes	Thryssa dussumieri	Th. dussumieri	14	6	21
+Clupeiformes	Thryssa hamiltonii	Th. hamiltonii	24	6	22
+Clupeiformes	Thryssa kammalensis	Th. kammalensis	48	6	23
+Clupeiformes	Thryssa setirostris	Th. setirostris	24	6	24
+Eupercaria incertae sedis	Johnius belangerii	Jo. belangerii	24	7	25
+Eupercaria incertae sedis	Larimichthys crocea	La. crocea	16	7	26
+Eupercaria incertae sedis	Otolithes ruber	Ot. ruber	19	7	27
+Eupercaria incertae sedis	Pennahia macrocephala	Pe. macrocephala	24	7	28
+Eupercaria incertae sedis	Scatophagus argus	Sc. argus	24	7	29
+Eupercaria incertae sedis	Siganus canaliculatus	Si. canaliculatus	16	7	30
+Eupercaria incertae sedis	Siganus fuscescens	Si. fuscescens	8	7	31
+Eupercaria incertae sedis	Sillago sihama	Si. sihama	16	7	32
+Gadiformes	Bregmaceros mcclellandi	Br. mcclellandi	24	8	33
+Gobiiformes	Odontamblyopus rubicundus	Od. rubicundus	24	9	34
+Lutjaniformes	Lutjanus johnii	Lu. johnii	11	10	35
+Mugiliformes	Chelon carinatus	Ch. carinatus	8	11	36
+Mugiliformes	Moolgarda cunnesius	Mo. cunnesius	24	11	37
+Myctophiformes	Benthosema pterotum	Be. pterotum	24	12	38
+Perciformes	Inegocia japonica	In. japonica	16	13	39
+Perciformes	Kumococius rodericensis	Ku. rodericensis	8	13	40
+Pleuronectiformes	Cynoglossus gracilis	Cy. gracilis	19	14	41
+Pleuronectiformes	Zebrias zebrinus	Ze. zebrinus	8	14	42
+Scombriformes	Lepturacanthus savala	Le. savala	24	15	43
+Scombriformes	Pampus argenteus	Pa. argenteus	8	15	44
+Scombriformes	Psenopsis anomala	Ps. anomala	24	15	45
+Siluriformes	Arius arius	Ar. arius	24	16	46
+Spariformes	Nemipterus japonicus	Ne. japonicus	24	17	47
+Tetraodontiformes	Lagocephalus spadiceus	La. spadiceus	24	18	48
+Tetraodontiformes	Paramonacanthus sulcatus	Pa. sulcatus	24	18	49
+Carcharhiniformes	Scoliodon macrorhynchos	Sc. macrorhynchos	8	19	50
+Myliobatiformes	Telatrygon zugei	Te. zugei	24	20	51

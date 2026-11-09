@@ -8,19 +8,28 @@ suppressPackageStartupMessages({
 })
 
 script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+source_paths <- vapply(sys.frames(), function(frame) {
+  if (is.null(frame$ofile)) "" else as.character(frame$ofile)
+}, character(1))
+source_paths <- source_paths[nzchar(source_paths)]
 script_dir <- if (length(script_arg) == 1) {
   dirname(normalizePath(sub("^--file=", "", script_arg), winslash = "/"))
+} else if (length(source_paths) > 0) {
+  dirname(normalizePath(tail(source_paths, 1), winslash = "/"))
 } else {
   getwd()
 }
 
-input_file <- file.path(script_dir, "processed_viral_data_normalized.xlsx")
-# This panel is Figure S1B; keep the panel marker as the reference-style "b".
+input_file <- file.path(script_dir, "FigureS1B_host_genus_composition_input.xlsx")
 output_pdf <- file.path(script_dir, "FigureS1B_host_genus_composition.pdf")
 output_png <- file.path(script_dir, "FigureS1B_host_genus_composition_600dpi.png")
 
 data <- read_excel(input_file, sheet = "main")
 stopifnot(names(data)[1] == "order_order_level_lineage")
+if (any(!is.finite(as.matrix(data[-1]))) || any(as.matrix(data[-1]) < 0) ||
+    any(abs(rowSums(as.matrix(data[-1])) - 1) > 1e-10)) {
+  stop("Host-genus proportions must be nonnegative and sum to one within each order.")
+}
 
 long_data <- data %>%
   pivot_longer(
@@ -92,8 +101,6 @@ plot <- ggplot(
   aes(x = order_order_level_lineage, y = proportion, fill = host_genus)
 ) +
   geom_col(width = 0.70, color = NA) +
-  annotate("text", x = -Inf, y = Inf, label = "b", hjust = -0.65, vjust = 1.05,
-           family = "Arial", fontface = "bold", size = 7.5) +
   scale_fill_manual(values = host_genus_colors, breaks = genus_levels, drop = FALSE) +
   scale_y_continuous(
     breaks = seq(0, 1, 0.25),
@@ -101,15 +108,15 @@ plot <- ggplot(
     expand = expansion(mult = c(0, 0))
   ) +
   scale_x_discrete(drop = FALSE, expand = expansion(add = 0.45)) +
-  labs(x = NULL, y = "Sample composition", fill = "Host genus") +
+  labs(x = NULL, y = "Sample composition", fill = "Host genus", tag = "b") +
   guides(
     fill = guide_legend(
-      ncol = 2,
-      byrow = FALSE,
+      nrow = 4,
+      byrow = TRUE,
       title.position = "top",
       title.hjust = 0,
-      keyheight = grid::unit(0.37, "cm"),
-      keywidth = grid::unit(0.37, "cm")
+      keyheight = grid::unit(0.30, "cm"),
+      keywidth = grid::unit(0.32, "cm")
     )
   ) +
   theme_classic(base_family = "Arial", base_size = 11) +
@@ -121,14 +128,21 @@ plot <- ggplot(
     ),
     axis.ticks.x = element_blank(),
     panel.border = element_rect(color = "#888888", fill = NA, linewidth = 0.45),
-    legend.position = "right",
-    legend.title = element_text(size = 11, face = "bold.italic"),
+    legend.position = "top",
+    legend.direction = "horizontal",
+    legend.justification = "left",
+    legend.box.just = "left",
+    legend.title = element_text(size = 11, face = "bold"),
     legend.text = element_text(size = 8.2, face = "italic"),
     legend.spacing.y = grid::unit(0.03, "cm"),
-    legend.box.margin = margin(0, 0, 0, 6),
+    legend.box.margin = margin(0, 0, 6, 0),
+    plot.tag = element_text(size = 18, face = "bold", family = "Arial"),
+    plot.tag.position = "topleft",
     plot.margin = margin(8, 8, 8, 12)
   ) +
   coord_cartesian(ylim = c(0, 1.045), clip = "off")
 
-ggsave(output_pdf, plot = plot, width = 16.0, height = 7.0, units = "in", device = cairo_pdf)
+grDevices::pdfFonts(Arial = grDevices::pdfFonts("ArialMT")[[1]])
+ggsave(output_pdf, plot = plot, width = 16.0, height = 7.0, units = "in",
+       device = grDevices::pdf, useDingbats = FALSE)
 ggsave(output_png, plot = plot, width = 16.0, height = 7.0, units = "in", dpi = 600, bg = "white")

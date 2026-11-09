@@ -1,15 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 3 — organ-specific pathogen prevalence and abundance
-#
-# Inputs (in the same directory as this script):
-#   figure3_brain.xlsx, figure3_gill.xlsx, figure3_intestine.xlsx,
-#   figure3_kidney.xlsx, figure3_liver.xlsx, figure3_muscle.xlsx,
-#   figure3_skin.xlsx, figure3_spleen.xlsx
-#   Supplement_Table3_Pathogens info, related to figure2-figure3-revised.xlsx
-#
-# Output:
-#   figure3_combined_2rows_4cols.pdf
 
 required_packages <- c("openxlsx", "ggplot2", "gridExtra")
 missing_packages <- required_packages[
@@ -30,7 +20,6 @@ suppressPackageStartupMessages({
   library(grid)
 })
 
-# ---------------------------- user-adjustable parameters --------------------
 font_family <- "Arial"
 
 classification_colors <- c(
@@ -53,7 +42,6 @@ point_size <- 1.35
 combined_width_in <- 22.0
 combined_height_in <- 15.0
 
-# ---------------------------- path handling ---------------------------------
 get_script_dir <- function() {
   file_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
   if (length(file_arg) == 1) {
@@ -85,7 +73,6 @@ if (length(missing_inputs) > 0) {
   stop("Missing input file(s):\n", paste(missing_inputs, collapse = "\n"))
 }
 
-# ---------------------------- name and data helpers -------------------------
 normalize_name <- function(x) {
   x <- trimws(as.character(x))
   x <- gsub("_", " ", x, fixed = TRUE)
@@ -150,8 +137,6 @@ nice_integer_breaks <- function(maximum, n = 4) {
 }
 
 read_s3 <- function(path) {
-  # Detect the header row instead of assuming it is always row 2. This also
-  # tolerates openxlsx versions that convert spaces in column names to dots.
   preview <- read.xlsx(
     path, sheet = "Sheet3", rows = 1:10, colNames = FALSE,
     skipEmptyRows = FALSE, skipEmptyCols = FALSE
@@ -187,7 +172,6 @@ read_s3 <- function(path) {
   pathogen_col <- find_s3_column("pathogen characteristics")
   kingdom_col <- find_s3_column("kingdom")
 
-  # Remove any completely empty trailing rows before matching.
   keep <- !is.na(x[[species_col]]) & nzchar(trimws(as.character(x[[species_col]])))
   x <- x[keep, , drop = FALSE]
   x$match_name <- normalize_name(x[[species_col]])
@@ -216,7 +200,6 @@ read_organ_summary <- function(path, organ, s3) {
   abundance_col <- find_one_column(names(dat), "average log10|non zero avg log", path)
   count_col <- find_one_column(names(dat), "positive individuals|non zero count", path)
 
-  # The first two columns are full operational name and display label.
   full_original <- trimws(as.character(dat[[1]]))
   display_original <- trimws(as.character(dat[[2]]))
   full_name <- normalize_name(full_original)
@@ -260,13 +243,10 @@ read_organ_summary <- function(path, organ, s3) {
          paste(unique(out$Display_name[duplicated(out$Display_name)]), collapse = ", "))
   }
 
-  # Do not arrange or sort: this factor reverses only the plotting direction so
-  # row 1 appears at the top while retaining the Excel summary order exactly.
   out$Display_factor <- factor(out$Display_name, levels = rev(out$Display_name))
   out
 }
 
-# ---------------------------- plot construction -----------------------------
 make_organ_plot <- function(dat, organ) {
   count_top <- max(1, ceiling(max(dat$Positive_count, na.rm = TRUE)))
   abundance_pretty <- pretty(c(0, max(dat$Abundance, na.rm = TRUE)), n = 4)
@@ -293,9 +273,6 @@ make_organ_plot <- function(dat, organ) {
       size = point_size,
       stroke = 0
     ) +
-    # Draw every species label manually so known pathogens can be red while all
-    # other labels remain black. Anchor at x = 0 (inside the scale) and extend
-    # left with hjust; negative x values would be discarded by scale limits.
     geom_text(
       aes(
         x = 0,
@@ -433,7 +410,6 @@ save_grob_pdf <- function(grob, filename, width, height) {
   dev.off()
 }
 
-# ---------------------------- read, plot, save -------------------------------
 s3 <- read_s3(s3_file)
 organ_data <- setNames(vector("list", length(organ_order)), organ_order)
 plots <- setNames(vector("list", length(organ_order)), organ_order)
@@ -443,7 +419,6 @@ for (organ in organ_order) {
   plots[[organ]] <- make_organ_plot(organ_data[[organ]], organ)
 }
 
-# Convert to gtables and enforce identical widths before arranging 2 rows × 4 columns.
 plot_gtables <- lapply(plots[organ_order], ggplotGrob)
 common_widths <- Reduce(grid::unit.pmax, lapply(plot_gtables, `[[`, "widths"))
 plot_gtables <- lapply(plot_gtables, function(g) {
@@ -475,7 +450,6 @@ save_grob_pdf(
   height = combined_height_in
 )
 
-# Machine-readable audit of the exact plotted rows, in unchanged input order.
 plot_audit <- do.call(rbind, lapply(organ_data, function(x) {
   x[, c(
     "Organ", "Input_row", "Full_name", "Display_name", "Abundance",

@@ -8,7 +8,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PACKAGE_ROOT = SCRIPT_DIR.parents[1]
-TABLE_S1 = PACKAGE_ROOT / "figure1" / "figure1cd" / "Supplement_Table1_Info_sample, related to figure1-revised.xlsx"
+TABLE_S1 = PACKAGE_ROOT / "figure1" / "Table_S1_final_host_reads.xlsx"
 TABLE_S4 = PACKAGE_ROOT / "figure2" / "figure2b" / "Supplement_Table4_Normalized abundance, related to figure2-revised-S3-annotations.xlsx"
 OUT = SCRIPT_DIR
 
@@ -21,14 +21,14 @@ def write_sheet(ws, frame):
     ws.append(list(frame.columns))
     for row in frame.itertuples(index=False, name=None):
         ws.append(list(row))
-    fill = PatternFill("solid", fgColor="E8EEF4")
+    fill = PatternFill(fill_type=None)
     for cell in ws[1]:
-        cell.font = Font(name="Arial", bold=True)
+        cell.font = Font(name="Arial", bold=True, color="000000")
         cell.fill = fill
         cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
     for row in ws.iter_rows(min_row=2):
         for cell in row:
-            cell.font = Font(name="Arial", size=9)
+            cell.font = Font(name="Arial", size=9, color="000000")
             cell.alignment = Alignment(vertical="center")
     ws.freeze_panes = "B2"
     ws.auto_filter.ref = ws.dimensions

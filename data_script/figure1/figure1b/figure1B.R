@@ -1,16 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 1A — COX1 host phylogeny
-#
-# Input annotation table (tab-separated; header required):
-# original_id, display_species, family
-#
-# Run (edit the two paths below, or provide them as command-line arguments):
-# Rscript figure1A.R cox1_rooted.treefile.nwk cox1_tree_annotation.tsv figure1A
-#
-# The script exports a publication-quality PDF and PNG.  Tips with an ID that
-# contains "YS-" are the study sequences and receive species-specific dots and
-# matching pale backgrounds.
 
 options(stringsAsFactors = FALSE)
 
@@ -44,12 +33,24 @@ suppressPackageStartupMessages({
   library(grid)
 })
 
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+source_paths <- vapply(sys.frames(), function(frame) {
+  if (is.null(frame$ofile)) "" else as.character(frame$ofile)
+}, character(1))
+source_paths <- source_paths[nzchar(source_paths)]
+script_dir <- if (length(script_arg) == 1) {
+  dirname(normalizePath(sub("^--file=", "", script_arg), winslash = "/"))
+} else if (length(source_paths) > 0) {
+  dirname(normalizePath(tail(source_paths, 1), winslash = "/"))
+} else {
+  getwd()
+}
+
 args <- commandArgs(trailingOnly = TRUE)
 
-# Default paths: modify only if you do not use command-line arguments.
-tree_file_default <- "cox1_rooted.treefile.nwk"
-annotation_file_default <- "cox1_tree_annotation.tsv"
-output_prefix_default <- "figure1A"
+tree_file_default <- file.path(script_dir, "cox1_rooted.treefile.nwk")
+annotation_file_default <- file.path(script_dir, "cox1_tree_annotation.tsv")
+output_prefix_default <- file.path(script_dir, "figure1B")
 
 tree_file <- if (length(args) >= 1) args[1] else tree_file_default
 annotation_file <- if (length(args) >= 2) args[2] else annotation_file_default
@@ -58,7 +59,6 @@ output_prefix <- if (length(args) >= 3) args[3] else output_prefix_default
 if (!file.exists(tree_file)) stop("Tree file not found: ", tree_file)
 if (!file.exists(annotation_file)) stop("Annotation file not found: ", annotation_file)
 
-# Appearance parameters (adjust here when needed)
 tip_size <- 2.8
 family_size <- 3.20
 tree_panel_width <- 0.2
@@ -96,8 +96,6 @@ if (any(ann$display_species == "" | is.na(ann$display_species)) ||
   stop("display_species and family must be filled for every sequence.")
 }
 
-# Attach metadata to ggtree data.  The internal-node numeric labels are retained
-# as ultrafast-bootstrap values from IQ-TREE.
 p <- ggtree(tree, size = 0.15, colour = "#222222")
 p$data <- p$data %>%
   left_join(ann, by = c("label" = "original_id"))
@@ -110,9 +108,6 @@ if (any(is.na(tip_data$display_species)) || any(is.na(tip_data$family))) {
   stop("Metadata join failed for at least one tip; check original_id exactly matches tree labels.")
 }
 
-# A single right-side bracket is meaningful only when a family's tips are one
-# continuous block in the displayed tree.  Warn about non-contiguous families;
-# their bracket still shows the complete y-range, so these should be checked.
 family_ranges <- tip_data %>%
   arrange(y) %>%
   group_by(family) %>%
@@ -123,9 +118,6 @@ family_ranges <- tip_data %>%
   ) %>%
   arrange(desc(ymax))
 
-# Each study species receives its own colour.  Its dot uses the saturated
-# colour and its label background uses a light version of that same colour.
-# Reference-sequence labels remain black, keeping the study samples prominent.
 study_species <- tip_data %>%
   filter(sequence_source == "Study sequence") %>%
   distinct(display_species) %>%
@@ -153,9 +145,6 @@ if (nrow(non_contiguous) > 0) {
   )
 }
 
-# This fixed-width canvas makes `tree_panel_width` a true visual-width control.
-# Merely multiplying all branch lengths does not work: ggplot rescales the
-# complete x-axis and the plotted tree keeps the same apparent width.
 x_tree_max <- max(tip_data$x)
 x_range <- diff(range(p$data$x))
 if (x_range == 0) x_range <- 1
@@ -168,8 +157,6 @@ bracket_tick <- 0.025 * x_range
 family_ranges <- family_ranges %>%
   mutate(y_mid = (ymin + ymax) / 2)
 
-# Reference sequences are plain italic text. Study sequences are labels with a
-# background box, which is more legible than colouring the entire text line.
 p <- p +
   geom_segment(
   data = tip_data,
@@ -219,7 +206,6 @@ p <- p +
     colour = "black"
   )
 
-# Put a manual scale bar in the upper-left using the original branch-length unit.
 scale_x0 <- 0.020 * x_range
 scale_width <- 0.05
 scale_y <- max(tip_data$y) - 4.0
@@ -231,7 +217,6 @@ p <- p +
   annotate("text", x = scale_x0 + scale_width / 2, y = scale_y - 1.15,
            label = "0.05", hjust = 0.5, size = 3.0)
 
-# The fixed x-limit makes tree_panel_width affect the actual rendered width.
 p <- p +
   xlim(0, canvas_xmax) +
   scale_colour_manual(values = species_palette, guide = "none") +
@@ -245,8 +230,6 @@ p <- p +
 pdf_file <- paste0(output_prefix, ".pdf")
 png_file <- paste0(output_prefix, ".png")
 
-# The dynamic canvas is compact while retaining an enlarged, readable species
-# font.  Adjust 0.09 downward slightly if the final export still has excess gap.
 fig_height <- max(14, nrow(tip_data) * 0.09 + 1.5)
 ggsave(pdf_file, p, width = 18, height = fig_height, units = "in",
        limitsize = FALSE, device = grDevices::pdf)

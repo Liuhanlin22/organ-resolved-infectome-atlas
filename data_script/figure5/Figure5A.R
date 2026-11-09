@@ -1,7 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5A: individual-level pathogen richness and abundance
-# Input: Figure5A_input.xlsx (stored beside this script)
 
 required_packages <- c("openxlsx", "ggplot2")
 missing_packages <- required_packages[

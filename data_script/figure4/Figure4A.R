@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 4A — organ composition of each pathogen group
-# Input:  figure4A.xlsx
-# Output: Figure4A.pdf, Figure4A.png, Figure4A_group_percentages.tsv
 
 required_packages <- c("openxlsx", "ggplot2")
 missing_packages <- required_packages[
@@ -21,10 +18,8 @@ suppressPackageStartupMessages({
   library(ggplot2)
 })
 
-# ---------------------------- adjustable parameters -------------------------
 font_family <- "Arial"
 
-# Legend order and default within-column order.
 organ_order <- c(
   "Brain", "Gill", "Intestine", "Liver",
   "Skin", "Muscles", "Spleen", "Kidney"
@@ -41,15 +36,11 @@ organ_colors <- c(
   "Kidney"    = "#649DAD"
 )
 
-# Group blocks are arranged by the organ with the largest percentage.
-# Within every block, that dominant-organ percentage decreases left to right.
 dominant_organ_priority <- c(
   "Brain", "Gill", "Intestine", "Skin",
   "Liver", "Muscles", "Spleen", "Kidney"
 )
 
-# Anchor the dominant organ to a common edge within its group block.
-# This makes the left-to-right decrease directly comparable.
 bottom_anchored_organs <- c("Brain", "Gill", "Intestine", "Liver")
 top_anchored_organs <- c("Skin", "Muscles", "Spleen", "Kidney")
 
@@ -61,7 +52,6 @@ axis_title_size <- 10
 legend_text_size <- 9
 bar_width <- 0.84
 
-# ---------------------------- path handling ---------------------------------
 get_script_dir <- function() {
   file_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
   if (length(file_arg) == 1) {
@@ -81,7 +71,6 @@ normalize_header <- function(x) {
   trimws(gsub("[[:space:]]+", " ", x))
 }
 
-# ---------------------------- read and validate ------------------------------
 dat <- read.xlsx(input_file, sheet = 1, check.names = FALSE)
 original_names <- names(dat)
 header_keys <- normalize_header(original_names)
@@ -114,8 +103,6 @@ for (organ in organ_order) {
   dat[[organ]] <- values
 }
 
-# ---------------------------- aggregate and calculate -----------------------
-# Sum all pathogens belonging to the same Group.
 group_sum <- aggregate(
   dat[, organ_order, drop = FALSE],
   by = list(Group = dat$Group_for_plot),
@@ -139,7 +126,6 @@ group_pct[, organ_order] <- 100 * sweep(
   "/"
 )
 
-# Resolve ties according to dominant_organ_priority.
 group_pct$Dominant_organ <- vapply(seq_len(nrow(group_pct)), function(i) {
   values <- as.numeric(unlist(
     group_pct[i, dominant_organ_priority, drop = FALSE],
@@ -157,8 +143,6 @@ group_pct$Dominant_rank <- match(
   dominant_organ_priority
 )
 
-# Organ blocks follow the requested priority; percentages decline left to right
-# inside each block. Alphabetical Group order is only the final tie-breaker.
 sort_index <- order(
   group_pct$Dominant_rank,
   -group_pct$Dominant_percentage,
@@ -167,9 +151,6 @@ sort_index <- order(
 group_pct <- group_pct[sort_index, , drop = FALSE]
 group_levels <- group_pct$Group
 
-# Build explicit rectangle coordinates because the stack order is allowed to
-# differ between group blocks. The dominant organ is placed at the requested
-# common baseline (bottom or top) for every column in that block.
 plot_data <- do.call(rbind, lapply(seq_len(nrow(group_pct)), function(i) {
   dominant <- group_pct$Dominant_organ[i]
 
@@ -201,7 +182,6 @@ plot_data$Group <- factor(plot_data$Group, levels = group_levels)
 plot_data$Organ <- factor(plot_data$Organ, levels = organ_order)
 plot_data$Group_index <- match(as.character(plot_data$Group), group_levels)
 
-# Save the exact values and plotting order for verification.
 percentage_output <- group_pct[, c(
   "Group", organ_order, "Total", "Dominant_organ", "Dominant_percentage"
 )]
@@ -211,7 +191,6 @@ write.table(
   sep = "\t", quote = FALSE, row.names = FALSE, fileEncoding = "UTF-8"
 )
 
-# ---------------------------- plot -------------------------------------------
 p <- ggplot(plot_data, aes(fill = Organ)) +
   geom_rect(
     aes(
@@ -238,8 +217,6 @@ p <- ggplot(plot_data, aes(fill = Organ)) +
     labels = function(x) paste0(x, "%"),
     expand = expansion(mult = c(0, 0))
   ) +
-  # Use a coordinate window instead of scale limits. Percentage sums can be
-  # 100 + a tiny floating-point error; scale limits would delete the top tile.
   coord_cartesian(ylim = c(0, 100), expand = FALSE, clip = "on") +
   labs(
     x = NULL,

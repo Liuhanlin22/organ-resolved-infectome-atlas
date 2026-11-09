@@ -1,10 +1,5 @@
-# Figure S5: pathogen-by-individual UpSet-style abundance plot
-#
-# Detection is defined as RPM > 0. The input contains the 68 curated pathogen
-# taxa with canonical names from Figure6A_input.xlsx and 72 pathogen-positive
-# individuals from the 112 complete individuals.
 
-required_packages <- c("openxlsx", "ggplot2", "dplyr", "tidyr", "cowplot")
+required_packages <- c("openxlsx", "dplyr", "tidyr")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
 ]
@@ -14,10 +9,8 @@ if (length(missing_packages) > 0) {
 
 suppressPackageStartupMessages({
   library(openxlsx)
-  library(ggplot2)
   library(dplyr)
   library(tidyr)
-  library(cowplot)
 })
 
 script_arguments <- commandArgs(trailingOnly = FALSE)
@@ -155,13 +148,6 @@ pathogen_summary <- tibble(
     Classification = factor(Classification, levels = category_order)
   )
 
-matrix_frame <- as.data.frame(binary, check.names = FALSE)
-matrix_frame$Pathogen <- rownames(binary)
-matrix_long <- matrix_frame %>%
-  pivot_longer(-Pathogen, names_to = "Sample", values_to = "Presence") %>%
-  left_join(sample_summary %>% select(Sample, Sample_order), by = "Sample") %>%
-  left_join(pathogen_summary %>% select(Pathogen, y), by = "Pathogen")
-
 rpm_frame <- as.data.frame(rpm, check.names = FALSE)
 rpm_frame$Pathogen <- rownames(rpm)
 detected_pairs <- rpm_frame %>%
@@ -174,187 +160,126 @@ detected_pairs <- rpm_frame %>%
 
 sample_count <- nrow(sample_summary)
 pathogen_count <- nrow(pathogen_summary)
-group_ranges <- sample_summary %>%
-  group_by(Multiplicity_group) %>%
-  summarise(
-    xmin = min(Sample_order) - 0.5,
-    xmax = max(Sample_order) + 0.5,
-    .groups = "drop"
-  ) %>%
-  mutate(
-    label = ifelse(
-      as.character(Multiplicity_group) == "Quintuple and more",
-      "Quintuple\nand more",
-      as.character(Multiplicity_group)
-    )
-  )
+figure_width <- 12
+figure_height <- 11.6
+canvas_width <- 1328
+canvas_height <- 1284
+matrix_left <- 274
+matrix_right <- 1166
+matrix_top <- 221
+matrix_bottom <- 1274
+right_left <- 1178
+right_right <- 1308
+band_top <- 44
+band_bottom <- 74
+top_baseline <- 211
+top_plot_top <- band_bottom
+font_scale <- figure_width * 72 / canvas_width
 
-group_band <- ggplot(group_ranges) +
-  geom_rect(
-    aes(xmin = xmin, xmax = xmax, ymin = 0, ymax = 1, fill = Multiplicity_group),
-    color = "black",
-    linewidth = 0.35
-  ) +
-  geom_text(
-    aes(x = (xmin + xmax) / 2, y = 0.5, label = label),
-    family = "Arial",
-    size = 3.0,
-    lineheight = 0.85
-  ) +
-  scale_fill_manual(values = group_band_colors, drop = FALSE) +
-  scale_x_continuous(limits = c(0.5, sample_count + 0.5), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) +
-  theme_void() +
-  theme(legend.position = "none", plot.margin = margin(0, 0, 0, 0))
+sample_x <- matrix_left + (sample_summary$Sample_order - 0.5) *
+  (matrix_right - matrix_left) / sample_count
+pathogen_y <- matrix_top + (pathogen_summary$Pathogen_order - 0.5) *
+  (matrix_bottom - matrix_top) / pathogen_count
+row_step <- (matrix_bottom - matrix_top) / pathogen_count
+column_step <- (matrix_right - matrix_left) / sample_count
 
-top_plot <- ggplot(sample_summary, aes(x = Sample_order, y = log10_RPM_plus1)) +
-  geom_col(aes(fill = Multiplicity_group), width = 0.76) +
-  scale_fill_manual(values = top_bar_colors, drop = FALSE) +
-  scale_x_continuous(limits = c(0.5, sample_count + 0.5), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0, 4), breaks = 0:4, expand = c(0, 0)) +
-  labs(x = NULL, y = expression(log[10](RPM + 1))) +
-  theme_classic(base_family = "Arial", base_size = 8) +
-  theme(
-    legend.position = "none",
-    axis.text.x = element_blank(),
-    axis.ticks.x = element_blank(),
-    axis.title.y = element_text(size = 8.5, margin = margin(r = 4)),
-    axis.text.y = element_text(size = 7.5, color = "black"),
-    panel.border = element_rect(color = "black", fill = NA, linewidth = 0.35),
-    plot.margin = margin(0, 0, 0, 0)
-  )
-
-legend_data <- tibble(
-  Classification = factor(category_order, levels = category_order),
-  y = rev(seq_along(category_order))
-)
-taxa_legend <- ggplot(legend_data) +
-  geom_tile(aes(x = 0.11, y = y, fill = Classification), width = 0.13, height = 0.52) +
-  geom_text(
-    aes(x = 0.21, y = y, label = as.character(Classification)),
-    hjust = 0,
-    family = "Arial",
-    size = 3.3
-  ) +
-  annotate(
-    "text",
-    x = 0.02,
-    y = 4.8,
-    label = "Taxa",
-    hjust = 0,
-    vjust = 1,
-    family = "Arial",
-    fontface = "bold",
-    size = 4.8
-  ) +
-  scale_fill_manual(values = category_colors, drop = FALSE) +
-  scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0.3, 5), expand = c(0, 0)) +
-  theme_void() +
-  theme(legend.position = "none", plot.margin = margin(0, 0, 0, 0))
-
-label_plot <- ggplot(pathogen_summary) +
-  geom_text(
-    aes(x = 0.93, y = y, label = Display_label),
-    hjust = 1,
-    family = "Arial",
-    size = 1.95
-  ) +
-  geom_tile(
-    aes(x = 0.975, y = y, fill = Classification),
-    width = 0.035,
-    height = 0.84
-  ) +
-  scale_fill_manual(values = category_colors, drop = FALSE) +
-  scale_x_continuous(limits = c(0, 1), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0.5, pathogen_count + 0.5), expand = c(0, 0)) +
-  theme_void() +
-  theme(legend.position = "none", plot.margin = margin(0, 0, 0, 0))
-
-segments <- matrix_long %>%
-  filter(Presence == 1) %>%
-  group_by(Sample, Sample_order) %>%
-  summarise(ymin = min(y), ymax = max(y), point_count = n(), .groups = "drop") %>%
-  filter(point_count > 1)
-
-matrix_plot <- ggplot(matrix_long, aes(x = Sample_order, y = y)) +
-  geom_point(color = "#D5D5D5", size = 0.75) +
-  geom_segment(
-    data = segments,
-    aes(x = Sample_order, xend = Sample_order, y = ymin, yend = ymax),
-    inherit.aes = FALSE,
-    color = "#4A4A4A",
-    linewidth = 0.28,
-    alpha = 0.82
-  ) +
-  geom_point(
-    data = matrix_long %>% filter(Presence == 1),
-    color = "#222222",
-    size = 1.25
-  ) +
-  scale_x_continuous(limits = c(0.5, sample_count + 0.5), expand = c(0, 0)) +
-  scale_y_continuous(limits = c(0.5, pathogen_count + 0.5), expand = c(0, 0)) +
-  theme_void() +
-  theme(plot.margin = margin(0, 0, 0, 0))
-
-right_plot <- ggplot(
-  pathogen_summary,
-  aes(x = log10_RPM_plus1, y = y, fill = Multiplicity_group)
-) +
-  geom_col(width = 0.72, orientation = "y") +
-  scale_fill_manual(values = right_bar_colors, drop = FALSE) +
-  scale_x_continuous(
-    position = "top",
-    limits = c(0, 4),
-    breaks = 0:4,
-    expand = c(0, 0)
-  ) +
-  scale_y_continuous(limits = c(0.5, pathogen_count + 0.5), expand = c(0, 0)) +
-  labs(x = expression(log[10](RPM + 1)), y = NULL) +
-  theme_minimal(base_family = "Arial", base_size = 8) +
-  theme(
-    legend.position = "none",
-    axis.text.y = element_blank(),
-    axis.ticks.y = element_blank(),
-    axis.text.x = element_text(size = 7.5, color = "black"),
-    axis.title.x = element_text(size = 8.5, margin = margin(b = 3)),
-    panel.grid.major.y = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.grid.major.x = element_line(color = "#D0D0D0", linewidth = 0.3),
-    plot.margin = margin(0, 0, 0, 0)
-  )
-
-top_center <- plot_grid(
-  group_band,
-  top_plot,
-  ncol = 1,
-  rel_heights = c(0.23, 1),
-  align = "v",
-  axis = "lr"
-)
-blank_plot <- ggplot() + theme_void()
-top_row <- plot_grid(
-  taxa_legend,
-  top_center,
-  blank_plot,
-  ncol = 3,
-  rel_widths = c(3.35, 8, 2.05)
-)
-bottom_row <- plot_grid(
-  label_plot,
-  matrix_plot,
-  right_plot,
-  ncol = 3,
-  rel_widths = c(3.35, 8, 2.05),
-  align = "h",
-  axis = "tb"
-)
-figure_s5 <- plot_grid(
-  top_row,
-  bottom_row,
-  ncol = 1,
-  rel_heights = c(1.6, 8.4)
-)
+figure_s5 <- function() {
+  grid::grid.newpage()
+  grid::pushViewport(grid::viewport(
+    xscale = c(0, canvas_width), yscale = c(canvas_height, 0),
+    gp = grid::gpar(fontfamily = "Arial"), clip = "off"
+  ))
+  text_at <- function(label, x, y, size, just = "centre", face = "plain", rot = 0) {
+    grid::grid.text(label, x = x, y = y, default.units = "native",
+      just = just, rot = rot,
+      gp = grid::gpar(fontsize = size * font_scale, fontface = face, col = "black"))
+  }
+  rect_at <- function(left, top, width, height, fill, border = NA, line_width = 0.65) {
+    grid::grid.rect(x = left, y = top, width = grid::unit(width / canvas_width, "npc"),
+      height = grid::unit(height / canvas_height, "npc"),
+      just = c("left", "top"), default.units = "native",
+      gp = grid::gpar(fill = fill, col = border, lwd = line_width))
+  }
+  line_at <- function(x0, y0, x1, y1, colour = "black", width = 0.65) {
+    grid::grid.segments(x0, y0, x1, y1, default.units = "native",
+      gp = grid::gpar(col = colour, lwd = width))
+  }
+  text_at("Taxa", 46, 55, 28, "left", "bold")
+  for (i in seq_along(category_order)) {
+    legend_y <- 89 + (i - 1) * 33
+    rect_at(47, legend_y - 10, 36, 19, category_colors[[category_order[i]]])
+    text_at(category_order[i], 93, legend_y, 22, "left")
+  }
+  for (group in group_order) {
+    positions <- sample_summary$Sample_order[sample_summary$Multiplicity_group == group]
+    if (!length(positions)) next
+    left <- matrix_left + (min(positions) - 1) * column_step
+    right <- matrix_left + max(positions) * column_step
+    center <- (left + right) / 2
+    rect_at(left, band_top, right - left, band_bottom - band_top,
+      group_band_colors[[group]], "black")
+    if (group %in% c("Single", "Twice", "Triple")) {
+      text_at(group, center, (band_top + band_bottom) / 2, 22)
+    } else if (group == "Quadruple") {
+      text_at(group, center - 9, 15, 16, "right")
+      line_at(center - 6, 26, center, band_top + 12)
+    } else {
+      text_at("Quintuple and more", center + 4, 30, 16, "left")
+      line_at(center + 4, 39, center - 3, band_top + 12)
+    }
+  }
+  top_height <- top_baseline - top_plot_top
+  for (i in seq_len(sample_count)) {
+    height <- sample_summary$log10_RPM_plus1[i] / 4 * top_height
+    rect_at(sample_x[i] - column_step * 0.37, top_baseline - height,
+      column_step * 0.74, height,
+      top_bar_colors[[as.character(sample_summary$Multiplicity_group[i])]])
+  }
+  rect_at(matrix_left, top_plot_top, matrix_right - matrix_left,
+    top_height, NA, "black")
+  for (tick in 0:4) {
+    y <- top_baseline - tick / 4 * top_height
+    line_at(matrix_left - 4, y, matrix_left, y)
+    text_at(as.character(tick), matrix_left - 8, y, 18, "right")
+  }
+  text_at(expression(log[10](RPM + 1)), 237,
+    (top_baseline + top_plot_top) / 2, 20, rot = 90)
+  for (i in seq_len(pathogen_count)) {
+    text_at(pathogen_summary$Display_label[i], matrix_left - 19,
+      pathogen_y[i], 14.1, "right", "italic")
+    rect_at(matrix_left - 14, pathogen_y[i] - row_step / 2,
+      13, row_step, category_colors[[as.character(pathogen_summary$Classification[i])]])
+  }
+  ordered_binary <- binary[pathogen_summary$Pathogen, sample_summary$Sample, drop = FALSE]
+  for (j in seq_len(sample_count)) {
+    grid::grid.circle(x = rep(sample_x[j], pathogen_count), y = pathogen_y,
+      r = grid::unit(3.5, "native"), default.units = "native",
+      gp = grid::gpar(fill = "#D5D5D5", col = NA))
+    positive <- which(ordered_binary[, j] > 0)
+    if (length(positive) > 1) {
+      line_at(sample_x[j], min(pathogen_y[positive]), sample_x[j],
+        max(pathogen_y[positive]), "#505050", 0.8)
+    }
+    grid::grid.circle(x = rep(sample_x[j], length(positive)), y = pathogen_y[positive],
+      r = grid::unit(5.0, "native"), default.units = "native",
+      gp = grid::gpar(fill = "#333333", col = NA))
+  }
+  for (tick in 0:4) {
+    x <- right_left + tick / 4 * (right_right - right_left)
+    line_at(x, matrix_top - 2, x, matrix_bottom, "#D0D0D0", 0.5)
+    line_at(x, matrix_top - 7, x, matrix_top - 2)
+    text_at(as.character(tick), x, matrix_top - 17, 18)
+  }
+  line_at(right_left, matrix_top - 2, right_right, matrix_top - 2)
+  text_at(expression(log[10](RPM + 1)), (right_left + right_right) / 2,
+    matrix_top - 42, 20)
+  for (i in seq_len(pathogen_count)) {
+    width <- pathogen_summary$log10_RPM_plus1[i] / 4 * (right_right - right_left)
+    rect_at(right_left, pathogen_y[i] - row_step * 0.36, width, row_step * 0.72,
+      right_bar_colors[[as.character(pathogen_summary$Multiplicity_group[i])]])
+  }
+  grid::popViewport()
+}
 
 write.csv(
   sample_summary,
@@ -376,42 +301,17 @@ write.csv(
 )
 
 output_base <- file.path(output_dir, "FigureS5_pathogen_individual_upset")
-ggsave(
-  paste0(output_base, ".pdf"),
-  plot = figure_s5,
-  width = 12,
-  height = 10.7,
-  units = "in",
-  device = grDevices::cairo_pdf,
-  bg = "white"
-)
-ggsave(
-  paste0(output_base, ".png"),
-  plot = figure_s5,
-  width = 12,
-  height = 10.7,
-  units = "in",
-  dpi = 600,
-  bg = "white"
-)
-ggsave(
-  paste0(output_base, ".tiff"),
-  plot = figure_s5,
-  width = 12,
-  height = 10.7,
-  units = "in",
-  dpi = 600,
-  compression = "lzw",
-  bg = "white"
-)
-if (requireNamespace("svglite", quietly = TRUE)) {
-  ggsave(
-    paste0(output_base, ".svg"),
-    plot = figure_s5,
-    width = 12,
-    height = 10.7,
-    units = "in",
-    device = svglite::svglite,
-    bg = "white"
-  )
-}
+
+grDevices::cairo_pdf(paste0(output_base, ".pdf"), width = figure_width,
+  height = figure_height, family = "Arial", bg = "white")
+figure_s5()
+grDevices::dev.off()
+grDevices::png(paste0(output_base, ".png"), width = figure_width,
+  height = figure_height, units = "in", res = 600, type = "cairo", bg = "white")
+figure_s5()
+grDevices::dev.off()
+grDevices::tiff(paste0(output_base, ".tiff"), width = figure_width,
+  height = figure_height, units = "in", res = 600, type = "cairo",
+  compression = "lzw", bg = "white")
+figure_s5()
+grDevices::dev.off()

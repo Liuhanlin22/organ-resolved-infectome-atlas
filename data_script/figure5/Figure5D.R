@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5D — overlap of pathogen classes among pathogen-positive fish
 
 required <- c("openxlsx", "VennDiagram", "grid")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]

@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5F — descriptive observed pathogen co-infection network
-# Analysis unit: 112 fish with complete eight-organ sampling.
-# Network edges show observed co-detection counts and are descriptive.
 
 required_packages <- c("openxlsx", "igraph", "ggplot2", "ggraph", "ggrepel", "scales")
 missing_packages <- required_packages[
@@ -127,8 +124,6 @@ community_membership <- if (ecount(g0) > 0) {
 }
 nodes$community <- unname(community_membership[nodes$name])
 
-# Circular order: highest infected-host count first, then proceed counter-clockwise.
-# Toxocara sp. CTSZ has the highest occurrence and is fixed at the bottom.
 nodes <- nodes[
   order(
     -nodes$infected_hosts,
@@ -184,9 +179,9 @@ summary_table <- data.frame(
 wb <- createWorkbook()
 header_style <- createStyle(
   fontName = "Arial", fontSize = 10, textDecoration = "bold",
-  fgFill = "#D9EAF7", halign = "center", valign = "center", wrapText = TRUE
+  fontColour = "#000000", halign = "center", valign = "center", wrapText = TRUE
 )
-body_style <- createStyle(fontName = "Arial", fontSize = 9, valign = "center")
+body_style <- createStyle(fontName = "Arial", fontSize = 9, fontColour = "#000000", valign = "center")
 add_table <- function(sheet_name, data) {
   addWorksheet(wb, sheet_name)
   writeData(wb, sheet_name, data, headerStyle = header_style, withFilter = TRUE)

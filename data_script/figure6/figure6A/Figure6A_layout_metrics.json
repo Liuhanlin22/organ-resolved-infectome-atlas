@@ -6,9 +6,9 @@
   "edges": 118,
   "host_orders": 20,
   "host_radius_mean": 0.98,
-  "host_radius_cv": 6.62e-17,
+  "host_radius_cv": 5.5949e-17,
   "outer_radius_mean": 1.125,
-  "outer_radius_cv": 4.528e-17,
+  "outer_radius_cv": 3.6971e-17,
   "outer_radius_target": 1.125,
   "within_order_gap_radians": 0.1013,
   "between_order_gap_radians": 0.2027,
@@ -27,7 +27,7 @@
   "order_band_white_gap_degrees": 3.4208,
   "order_band_count": 20,
   "cross_zero_order_count": 1,
-  "order_sequence": ["Anguilliformes", "Carangiformes", "Mugiliformes", "Aulopiformes", "Lutjaniformes", "Pleuronectiformes", "Gadiformes", "Clupeiformes", "Spariformes", "Siluriformes", "Chaetodontiformes", "Perciformes", "Carcharhiniformes", "Gobiiformes", "Tetraodontiformes", "Eupercaria incertae sedis", "Scombriformes", "Myctophiformes", "Carangaria incertae sedis", "Myliobatiformes"],
+  "order_sequence": ["Anguilliformes", "Myliobatiformes", "Aulopiformes", "Lutjaniformes", "Pleuronectiformes", "Gobiiformes", "Clupeiformes", "Chaetodontiformes", "Siluriformes", "Spariformes", "Mugiliformes", "Tetraodontiformes", "Perciformes", "Eupercaria incertae sedis", "Carcharhiniformes", "Myctophiformes", "Gadiformes", "Scombriformes", "Carangaria incertae sedis", "Carangiformes"],
   "crossings_before": {
     "total": 219,
     "outer_outer": 40,
@@ -35,11 +35,11 @@
     "inner_outer": 4
   },
   "crossings_after": {
-    "total": 51,
+    "total": 46,
     "outer_outer": 0,
-    "inner_inner": 51,
+    "inner_inner": 46,
     "inner_outer": 0
   },
-  "crossing_reduction_percent": 76.71,
-  "min_inner_node_distance": 0.1156
+  "crossing_reduction_percent": 79,
+  "min_inner_node_distance": 0.107
 }

@@ -1,18 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 4C — brain-library pathogen heatmap (without host photographs)
-#
-# This script rebuilds Figure 4C directly from:
-#   1. the revised Table S1 host/sample annotation;
-#   2. Abundance_matrix_with_libs.xlsx.
-#
-# It automatically:
-#   - keeps Brain libraries only;
-#   - retains the 13 Figure 4C pathogens in the specified row order;
-#   - keeps libraries with RPM > 0 for at least one selected pathogen;
-#   - updates host species/order/class from the revised Table S1;
-#   - writes the updated matrix, sorting files and annotation files;
-#   - draws only the heatmap and legends (no fish photographs).
 
 required_packages <- c("openxlsx", "writexl", "pheatmap", "gtable")
 missing_packages <- required_packages[
@@ -33,10 +20,7 @@ suppressWarnings(
   })
 )
 
-# ---------------------------- adjustable parameters -------------------------
 output_font_family <- "Arial"
-# Leave grid text family empty so pheatmap can calculate its layout on the
-# temporary device; the Cairo PDF device below supplies Arial as the default.
 font_family <- ""
 if (.Platform$OS.type == "windows") {
   grDevices::windowsFonts(Arial = grDevices::windowsFont("Arial"))
@@ -53,7 +37,6 @@ heatmap_colors <- grDevices::colorRampPalette(
   c("#F7F7F7", "#D8D0E5", "#9E8AC5", "#542788")
 )(200)
 
-# Colors are consistent with the revised host-order palette used elsewhere.
 host_order_colors <- c(
   "Anguilliformes" = "#54278F",
   "Aulopiformes" = "#756BB1",
@@ -93,8 +76,6 @@ classification_colors <- c(
   "Eukaryota" = "#CCEAC4"
 )
 
-# This is the original Figure 4C row order, updated to the current abundance
-# matrix nomenclature (Pseudoloma sp. RWXLT -> Pseudoloma sp. FJ).
 selected_pathogens <- c(
   "Bombay duck fish bornavirus",
   "Nanhai filovirus 2",
@@ -111,7 +92,6 @@ selected_pathogens <- c(
   "Pseudoloma sp. FJ"
 )
 
-# These annotations were checked against the revised Table S3 taxonomy.
 pathogen_taxa_map <- c(
   "Bombay duck fish bornavirus" = "Bornaviridae",
   "Nanhai filovirus 2" = "Filoviridae",
@@ -144,7 +124,6 @@ classification_map <- c(
   "Pseudoloma sp. FJ" = "Eukaryota"
 )
 
-# ---------------------------- path handling ---------------------------------
 get_script_dir <- function() {
   file_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
   if (length(file_arg) == 1) {
@@ -158,16 +137,14 @@ get_script_dir <- function() {
 
 script_dir <- get_script_dir()
 table_s1_file <- file.path(
-  script_dir,
-  "Supplement_Table1_Info_sample, related to figure1-revised.xlsx"
+  script_dir, "..", "figure1",
+  "Table_S1_final_host_reads.xlsx"
 )
 abundance_file <- file.path(script_dir, "Abundance_matrix_with_libs.xlsx")
 if (!file.exists(table_s1_file) || !file.exists(abundance_file)) {
-  stop("Required input files must be stored beside this R script.")
+  stop("Required inputs are ../figure1/Table_S1_final_host_reads.xlsx and local Abundance_matrix_with_libs.xlsx.")
 }
 
-# ---------------------------- input and validation --------------------------
-# Table S1 has one title row; its actual header is Excel row 2.
 s1_raw <- openxlsx::read.xlsx(
   table_s1_file,
   sheet = 1,
@@ -176,8 +153,6 @@ s1_raw <- openxlsx::read.xlsx(
 )
 if (ncol(s1_raw) < 11) stop("The revised Table S1 has fewer than 11 columns.")
 
-# Use stable column positions so punctuation normalization by openxlsx cannot
-# break the mapping.
 sample_info <- data.frame(
   lib_index = trimws(as.character(s1_raw[[2]])),
   tissue_types = trimws(as.character(s1_raw[[3]])),
@@ -238,16 +213,12 @@ if (anyNA(brain_matrix)) {
 rownames(brain_matrix) <- selected_pathogens
 colnames(brain_matrix) <- brain_info$lib_index
 
-# Reproduce the original Figure 4C selection criterion: retain a Brain library
-# if at least one of the 13 selected pathogens has RPM > 0.
 keep_library <- colSums(brain_matrix > 0) > 0
 rpm_matrix <- brain_matrix[, keep_library, drop = FALSE]
 selected_info <- brain_info[match(colnames(rpm_matrix), brain_info$lib_index), , drop = FALSE]
 
 if (ncol(rpm_matrix) == 0) stop("No positive Brain libraries remain after filtering.")
 
-# Class -> order -> species -> individual -> lib_index ordering. This keeps
-# Actinopteri first and Chondrichthyes last if both occur in future updates.
 class_order <- c("Actinopteri", "Chondrichthyes")
 class_rank <- match(selected_info$Host_class, class_order)
 class_rank[is.na(class_rank)] <- length(class_order) + 1L
@@ -267,8 +238,6 @@ selected_info <- selected_info[sort_index, , drop = FALSE]
 rpm_matrix <- rpm_matrix[, selected_info$lib_index, drop = FALSE]
 individual_number <- individual_number[sort_index]
 
-# Append the individual number only when more than one selected library belongs
-# to the same host species, matching the old Figure 4C naming convention.
 species_frequency <- table(selected_info$species)
 selected_info$Display_label <- ifelse(
   species_frequency[selected_info$species] > 1,
@@ -280,7 +249,6 @@ if (anyDuplicated(selected_info$Display_label)) {
 }
 colnames(rpm_matrix) <- selected_info$Display_label
 
-# ---------------------------- annotations -----------------------------------
 annotation_col <- data.frame(
   `Host order` = selected_info$Host_order,
   `Host class` = selected_info$Host_class,
@@ -346,7 +314,6 @@ gaps_row <- if (length(row_group_lengths) > 1) {
   NULL
 }
 
-# ---------------------------- exports ---------------------------------------
 matrix_export <- data.frame(
   Pathogen = rownames(rpm_matrix),
   rpm_matrix,
@@ -417,7 +384,6 @@ write.table(
   fileEncoding = "UTF-8"
 )
 
-# ---------------------------- heatmap ---------------------------------------
 make_heatmap <- function() {
   hm <- pheatmap::pheatmap(
     heatmap_matrix,
@@ -441,8 +407,6 @@ make_heatmap <- function() {
     legend = TRUE,
     annotation_legend = TRUE,
     annotation_names_col = TRUE,
-    # Row-annotation meanings are already stated in the legends; hiding their
-    # vertical names prevents clipping at the lower-left corner.
     annotation_names_row = FALSE,
     treeheight_col = 0,
     treeheight_row = 0,
@@ -450,7 +414,6 @@ make_heatmap <- function() {
     fontfamily = font_family
   )
 
-  # Italicize biological names only; annotation and legend text remain plain.
   row_name_index <- which(hm$gtable$layout$name == "row_names")
   col_name_index <- which(hm$gtable$layout$name == "col_names")
   if (length(row_name_index) == 1) {
@@ -462,8 +425,6 @@ make_heatmap <- function() {
     hm$gtable$grobs[[col_name_index]]$gp$fontfamily <- font_family
   }
 
-  # pheatmap does not provide a built-in continuous-legend title. Add the
-  # scientific scale name above its color bar.
   legend_index <- which(hm$gtable$layout$name == "legend")
   if (length(legend_index) == 1) {
     legend_column <- hm$gtable$layout$l[legend_index]
@@ -490,7 +451,6 @@ make_heatmap <- function() {
     )
   }
 
-  # The first 45-degree column label otherwise touches the device boundary.
   hm$gtable <- gtable::gtable_add_cols(
     hm$gtable,
     grid::unit(62, "pt"),

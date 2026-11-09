@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5G — pathogen association coefficients across 112 fish
-# Statistics: phi coefficient for binary detection profiles; one-sided
-# Fisher exact tests; Benjamini-Hochberg correction across all detected pairs.
 
 required_packages <- c("openxlsx", "writexl", "ggplot2", "scales")
 missing_packages <- required_packages[

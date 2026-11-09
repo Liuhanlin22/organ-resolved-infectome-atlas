@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 4F: PCoA of pathogen-positive libraries
-# Repeated measures are controlled by restricting PERMANOVA permutations
-# within fish identity. Output: Figure4F_PCoA_positive_219.pdf only.
 
 required_packages <- c("openxlsx", "ggplot2", "vegan", "permute")
 missing_packages <- required_packages[
@@ -19,7 +16,6 @@ suppressPackageStartupMessages({
   library(permute)
 })
 
-# Use the script folder as the working folder, so the script is portable on GitHub.
 args <- commandArgs(trailingOnly = FALSE)
 file_arg <- grep("^--file=", args, value = TRUE)
 script_dir <- if (length(file_arg) > 0) {
@@ -42,7 +38,6 @@ if (!file.exists(input_file)) {
   )
 }
 
-# ------------------------------- Settings --------------------------------
 
 n_permutations <- 9999L
 set.seed(20260814)
@@ -63,7 +58,6 @@ organ_colors <- c(
   Skin = "#7BCCC4", Spleen = "#C79494"
 )
 
-# -------------------------- Read and select data --------------------------
 
 raw <- read.xlsx(input_file, sheet = 1, check.names = FALSE)
 if (ncol(raw) < 2) stop("The input must contain pathogen names and library columns.")
@@ -94,7 +88,6 @@ metadata <- data.frame(
   stringsAsFactors = FALSE
 )
 
-# Retain fish represented exactly once in each of the eight organs.
 fish_organ_table <- table(metadata$Fish_ID, metadata$Organ)
 complete_fish <- rownames(fish_organ_table)[
   ncol(fish_organ_table) == 8 &
@@ -122,7 +115,6 @@ if (nrow(analysis_matrix) != 219L) {
   stop("Expected 219 pathogen-positive libraries; found ", nrow(analysis_matrix), ".")
 }
 
-# ---------------------------- PCoA + PERMANOVA ----------------------------
 
 distance <- vegdist(log10(analysis_matrix + 1), method = "bray")
 pcoa <- wcmdscale(distance, k = 2, eig = TRUE, add = "lingoes")
@@ -138,7 +130,6 @@ plot_data$Organ <- factor(plot_data$Organ, levels = organ_order)
 positive_eigenvalues <- pcoa$eig[pcoa$eig > 0]
 axis_percent <- 100 * pcoa$eig[1:2] / sum(positive_eigenvalues)
 
-# Restricted permutations preserve the repeated-measures structure.
 permutation_scheme <- how(nperm = n_permutations)
 setBlocks(permutation_scheme) <- factor(analysis_meta$Fish_ID)
 
@@ -162,7 +153,6 @@ statistics_label <- paste0(
   p_text
 )
 
-# --------------------------------- Figure ---------------------------------
 
 p <- ggplot(plot_data, aes(PCoA1, PCoA2, colour = Organ, fill = Organ)) +
   geom_point(shape = 21, size = 3.5, stroke = 0.30, alpha = 0.62) +

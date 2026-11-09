@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5C — number of distinct pathogens detected per fish
 
 required <- c("openxlsx", "ggplot2")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
@@ -57,8 +56,6 @@ pie_data$label <- paste0(
   pie_data$fish_count, ", ", sprintf("%.2f%%", 100 * pie_data$proportion), ")"
 )
 
-# Arrange wedges to match the reference figure: large slices on the left,
-# progressively smaller slices on the right.
 draw_order <- c(
   "pathogen 1", "pathogen 2", "pathogen 3", "pathogen 5",
   "pathogen 4", "pathogen > 5", "pathogen 0"

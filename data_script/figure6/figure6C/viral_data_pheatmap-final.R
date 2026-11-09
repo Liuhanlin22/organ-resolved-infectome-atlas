@@ -18,7 +18,6 @@ if (length(missing_cols)) stop("Missing host columns: ", paste(missing_cols, col
 missing_rows <- setdiff(desired_order_row, data_raw$lib_id)
 if (length(missing_rows)) stop("Missing pathogen rows: ", paste(missing_rows, collapse = ", "))
 
-# Keep lib_id separate; the old script accidentally dropped the first host column.
 row_ids <- as.character(data_raw$lib_id)
 data <- data_raw[, desired_order, drop = FALSE]
 rownames(data) <- row_ids

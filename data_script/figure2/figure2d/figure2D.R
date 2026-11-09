@@ -1,14 +1,9 @@
 #!/usr/bin/env Rscript
 
-# Figure 2D - association between Toxocara sp. CTSZ-2 and
-# Nanhai rhabdovirus 4 abundance
 
 library(readxl)
 library(ggplot2)
 
-# -----------------------------------------------------------------------------
-# Input and output
-# -----------------------------------------------------------------------------
 get_script_dir <- function() {
   file_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
   if (length(file_arg) > 0) {
@@ -34,9 +29,6 @@ output_png <- file.path(work_dir, "figure2D.png")
 x_col <- "Toxocara_sp._CTSZ-2"
 y_col <- "Nanhai_rhabdovirus_4"
 
-# -----------------------------------------------------------------------------
-# Read and validate data
-# -----------------------------------------------------------------------------
 raw_data <- read_excel(input_file, sheet = 1)
 
 required_cols <- c("lib_id", x_col, y_col)
@@ -56,9 +48,6 @@ if (nrow(data) < 3) {
   stop("At least three complete observations are required for regression.")
 }
 
-# -----------------------------------------------------------------------------
-# Linear regression and statistics
-# -----------------------------------------------------------------------------
 lm_model <- lm(y ~ x, data = data)
 model_summary <- summary(lm_model)
 r_squared <- unname(model_summary$r.squared)
@@ -80,9 +69,6 @@ stats_text <- sprintf(
   format_p(p_value)
 )
 
-# -----------------------------------------------------------------------------
-# Plot
-# -----------------------------------------------------------------------------
 figure2D <- ggplot(data, aes(x = x, y = y)) +
   geom_smooth(
     method = "lm", formula = y ~ x,
@@ -146,9 +132,6 @@ figure2D <- ggplot(data, aes(x = x, y = y)) +
     plot.margin = margin(t = 17, r = 10, b = 8, l = 31)
   )
 
-# -----------------------------------------------------------------------------
-# Export
-# -----------------------------------------------------------------------------
 ggsave(
   output_pdf, figure2D,
   width = 6.20, height = 4.45, units = "in",

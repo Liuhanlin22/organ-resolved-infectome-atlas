@@ -4,24 +4,19 @@ library(networkD3)
 library(htmlwidgets)
 library(webshot)
 
-# Read the data
 data0 <- readxl::read_xlsx("figure2A_data.xlsx")
 
-# Clean and prepare the data
 data <- data0 %>%
   group_by(Timeline, `Lineages Distribution`, `Geographic Location`, `P.M.A.s`) %>%
   summarise(Count = n(), .groups = 'drop') %>%
   mutate(`P.M.A.s` = ifelse(`P.M.A.s` == "", NA, `P.M.A.s`))
 
-# Define node orders
 timeline_order <- c("DNA virus", "RNA virus", "Bacteria", "Eukaryota")
 lineages_order <- c("Known species", "Novel species")
 pathogen_order <- c("Pathogen", "Nonpathogen")
 
-# Get unique PMAs (excluding NA)
 pmas_order <- sort(unique(na.omit(data$`P.M.A.s`)))
 
-# Create nodes data frame
 nodes <- data.frame(
   name = c(
     timeline_order,
@@ -31,20 +26,16 @@ nodes <- data.frame(
   )
 )
 
-# Create links data
 links <- data %>%
-  # First layer: Timeline to Lineages Distribution
   select(source = Timeline, target = `Lineages Distribution`, value = Count) %>%
   group_by(source, target) %>%
   summarise(value = sum(value), .groups = 'drop') %>%
-  # Second layer: Lineages Distribution to Pathogen/Nonpathogen
   bind_rows(
     data %>%
       select(source = `Lineages Distribution`, target = `Geographic Location`, value = Count) %>%
       group_by(source, target) %>%
       summarise(value = sum(value), .groups = 'drop')
   ) %>%
-  # Third layer: Pathogen/Nonpathogen to P.M.A.s (only for Pathogens)
   bind_rows(
     data %>%
       filter(`Geographic Location` == "Pathogen") %>%
@@ -54,16 +45,14 @@ links <- data %>%
       summarise(value = sum(value), .groups = 'drop')
   )
 
-# Convert source/target to node indices (0-based for networkD3)
 links$IDsource <- match(links$source, nodes$name) - 1
 links$IDtarget <- match(links$target, nodes$name) - 1
 
-# Custom color palette
 customColors <- c(
-  "#abdaec", "#fa9fb5", "#f49e39", "#c7e9c0",  # Timeline colors
-  "#F0C2A2", "#B5A1E3",                        # Lineages Distribution colors
-  "#CB5148", "#6A9BCB",                        # Pathogen/Nonpathogen colors
-  "#67001f", "#ce1256", "#e7298a", "#df65b0",  # PMA colors
+  "#abdaec", "#fa9fb5", "#f49e39", "#c7e9c0",
+  "#F0C2A2", "#B5A1E3",
+  "#CB5148", "#6A9BCB",
+  "#67001f", "#ce1256", "#e7298a", "#df65b0",
   "#c994c7", "#d4b9da", "#c5b0d5", "#08306b",
   "#08519c", "#4292c6", "#6baed6", "#9ecae1",
   "#00441b", "#006d2c", "#238b45", "#74c476",
@@ -72,11 +61,9 @@ customColors <- c(
   "#807dba", "#9e9ac8", "#cc4c02", "#fe9929"
 )
 
-# Create color scale
 colourScale <- sprintf('d3.scaleOrdinal().range(["%s"])', 
                        paste(customColors, collapse = '", "'))
 
-# Create Sankey plot
 p <- sankeyNetwork(
   Links = links, 
   Nodes = nodes, 
@@ -95,7 +82,6 @@ p <- sankeyNetwork(
   colourScale = colourScale
 )
 
-# Add custom JavaScript for gradient links
 p <- htmlwidgets::onRender(
   p,
   '
@@ -151,12 +137,5 @@ p <- htmlwidgets::onRender(
   '
 )
 
-# Save the visualization
-saveNetwork(p, "sankey1.html")  # Save as HTML
-# webshot("sankey1.html", "sankey1.pdf", vwidth = 1200, vheight = 700)
+saveNetwork(p, "sankey1.html")
 
-# Take a screenshot
-# tryCatch({
-#   webshot("sankey1.html", "sankey1.png", vwidth = 1200, vheight = 700)
-# }, error = function(e) {
-# })

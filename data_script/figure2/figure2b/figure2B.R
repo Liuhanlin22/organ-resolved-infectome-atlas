@@ -1,9 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 2B — pathogen abundance heatmap
-# Input: revised Table S4 containing 51 host species, 8 tissues and 4 metadata columns.
-# The script rebuilds all four annotation/order files on every run so they cannot
-# become out of sync with Table S4.
 
 required_packages <- c("openxlsx", "pheatmap", "grid")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
@@ -21,7 +17,6 @@ suppressPackageStartupMessages({
   library(grid)
 })
 
-# ------------------------------ File settings ------------------------------
 all_args <- commandArgs(trailingOnly = FALSE)
 file_arg <- grep("^--file=", all_args, value = TRUE)
 script_dir <- if (length(file_arg) == 1) {
@@ -51,7 +46,6 @@ order_row_file <- file.path(output_dir, "order_data_row.txt")
 pdf_file <- file.path(output_dir, "figure2B_heatmap.pdf")
 png_file <- file.path(output_dir, "figure2B_heatmap.png")
 
-# ---------------------------- Read revised Table S4 -------------------------
 raw <- openxlsx::read.xlsx(
   input_xlsx,
   sheet = 1,
@@ -98,8 +92,6 @@ tissue_names <- c("Brain", "Gill", "Intestine", "Liver", "Kidney", "Spleen", "Mu
 host_class <- trimws(as.character(unlist(raw[2, data_cols, drop = TRUE])))
 host_order <- trimws(as.character(unlist(raw[3, data_cols, drop = TRUE])))
 is_tissue <- column_ids %in% tissue_names
-# Keep host taxonomy and organ annotations independent. The workbook currently
-# uses "Muscles" as the column ID, but the figure legend uses "Muscle".
 organ_type <- rep(NA_character_, length(column_ids))
 organ_type[is_tissue] <- column_ids[is_tissue]
 organ_type[organ_type == "Muscles"] <- "Muscle"
@@ -115,7 +107,6 @@ if (sum(!is_tissue) != 51 || sum(is_tissue) != 8 || length(pathogen_names) != 75
 classification <- trimws(as.character(raw[pathogen_rows, classification_col]))
 taxa <- trimws(as.character(raw[pathogen_rows, taxonomy_col]))
 
-# --------------------- Rebuild the four annotation files --------------------
 column_annotation_out <- data.frame(
   lib_id = column_ids,
   `Host class` = host_class,
@@ -137,7 +128,6 @@ write.table(row_annotation_out, annotation_row_file, sep = "\t", quote = FALSE, 
 writeLines(paste(c("lib_id", column_ids), collapse = "\t"), order_col_file, useBytes = TRUE)
 writeLines(pathogen_names, order_row_file, useBytes = TRUE)
 
-# Read the files back and validate them before plotting.
 desired_columns <- strsplit(readLines(order_col_file, warn = FALSE, encoding = "UTF-8")[1], "\t", fixed = TRUE)[[1]][-1]
 desired_rows <- readLines(order_row_file, warn = FALSE, encoding = "UTF-8")
 if (!setequal(desired_columns, colnames(abundance_matrix))) stop("order_data.txt does not match Table S4 columns.")
@@ -157,8 +147,6 @@ annotation_row <- read.delim(
 annotation_col <- annotation_col[colnames(heatmap_data), c("Host class", "Host order", "Organ type"), drop = FALSE]
 annotation_row <- annotation_row[rownames(heatmap_data), c("Classification", "Taxa"), drop = FALSE]
 
-# --------------------------- Annotation palettes ----------------------------
-# Same 20-order palette used in Figure 1; Clupeiformes is #1C69AF.
 order_colors <- c(
   "Anguilliformes" = "#54278F",
   "Aulopiformes" = "#756BB1",
@@ -255,7 +243,6 @@ annotation_colors[["Organ type"]] <- organ_colors
 annotation_colors[["Classification"]] <- classification_colors
 annotation_colors[["Taxa"]] <- taxa_colors
 
-# Major row gaps: between four Classification groups and between eukaryotic Taxa.
 classification_chr <- as.character(annotation_row$Classification)
 taxa_chr <- as.character(annotation_row$Taxa)
 row_transition <- which(classification_chr[-length(classification_chr)] != classification_chr[-1])
@@ -266,14 +253,12 @@ eukaryote_transition <- which(
 )
 gaps_row <- sort(unique(c(row_transition, eukaryote_transition)))
 
-# Column gaps: between host orders, and between individual tissue columns.
 order_chr <- ifelse(is_tissue, "Tissue", as.character(annotation_col[["Host order"]]))
 order_transition <- which(order_chr[-length(order_chr)] != order_chr[-1])
 tissue_positions <- which(order_chr == "Tissue")
 tissue_gaps <- if (length(tissue_positions) > 1) tissue_positions[-length(tissue_positions)] else integer(0)
 gaps_col <- sort(unique(c(order_transition, tissue_gaps)))
 
-# ------------------------------ Draw heatmap -------------------------------
 max_value <- max(heatmap_data, na.rm = TRUE)
 if (!is.finite(max_value) || max_value <= 0) max_value <- 1
 heatmap_breaks <- seq(0, max_value, length.out = 201)
@@ -300,8 +285,6 @@ heatmap_result <- pheatmap::pheatmap(
   annotation_names_row = TRUE,
   annotation_legend = TRUE,
   drop_levels = FALSE,
-  # Do not draw borders around individual heatmap cells. Only the group gaps
-  # defined by gaps_row and gaps_col remain, matching the original figure.
   border_color = NA,
   na_col = "#FFFFFF",
   fontsize_row = 20,

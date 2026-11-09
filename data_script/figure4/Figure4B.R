@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 4B — organ distribution of selected pathogens
-# Input:  figure4A.xlsx
-# Output: Figure4B.pdf, Figure4B.png and verification tables
 
 required_packages <- c("openxlsx", "ggplot2", "gridExtra")
 missing_packages <- required_packages[
@@ -24,15 +21,11 @@ suppressWarnings(
   })
 )
 
-# ---------------------------- adjustable parameters -------------------------
 font_family <- "Arial"
 if (.Platform$OS.type == "windows") {
   grDevices::windowsFonts(Arial = grDevices::windowsFont("Arial"))
 }
 
-# Species-title typography. Change these four values to modify every line of
-# every species title at once. Each title below is ONE character string; "\n"
-# only inserts a line break and does not create separate R text grobs.
 species_title_font_family <- font_family
 species_title_font_size <- 9.0
 species_title_font_face <- "italic"
@@ -63,8 +56,6 @@ organ_colors <- c(
   "Skin"      = "#B5E3C6"
 )
 
-# Panel order: first 8 are the upper row, last 7 are the lower row.
-# Species titles are drawn above their corresponding bubble panels.
 selected_species <- c(
   "Bombay duck fish bornavirus",
   "Odontamblyopus rubicundus hepacivirus",
@@ -83,9 +74,6 @@ selected_species <- c(
   "Marble sleepy goby iridovirus"
 )
 
-# Compact display labels matching the reference layout.
-# IMPORTANT: keep each value as one quoted string and use \n for line breaks.
-# Example: "Bombay\nduck fish\nbornavirus" is one editable title in the script.
 species_display_labels <- c(
   "Bombay duck fish bornavirus" = "Bombay\nduck fish\nbornavirus",
   "Odontamblyopus rubicundus hepacivirus" = "Odont.\nrubicundus\nhepacivirus",
@@ -104,7 +92,6 @@ species_display_labels <- c(
   "Marble sleepy goby iridovirus" = "Marble\nsleepy goby\niridovirus"
 )
 
-# Red-starred panels in the supplied reference figure.
 starred_species <- c(
   "Bombay duck fish bornavirus",
   "Glugea plecoglossi",
@@ -120,7 +107,6 @@ bar_right_min <- 38
 bar_right_max <- 42
 bar_right_start <- 11.6
 
-# ---------------------------- path handling ---------------------------------
 get_script_dir <- function() {
   file_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
   if (length(file_arg) == 1) {
@@ -140,7 +126,6 @@ normalize_header <- function(x) {
   trimws(gsub("[[:space:]]+", " ", x))
 }
 
-# ---------------------------- read and validate ------------------------------
 dat <- read.xlsx(input_file, sheet = 1, check.names = FALSE)
 original_names <- names(dat)
 header_keys <- normalize_header(original_names)
@@ -184,7 +169,6 @@ if (length(missing_species) > 0) {
 
 selected <- dat[match(selected_species, dat$Pathogens_for_plot), , drop = FALSE]
 
-# ---------------------------- bubble-plot data -------------------------------
 bubble_data <- do.call(rbind, lapply(seq_along(selected_species), function(i) {
   values <- as.numeric(unlist(selected[i, organ_order, drop = FALSE], use.names = FALSE))
   data.frame(
@@ -345,9 +329,6 @@ make_bubble_component <- function(pathogen, show_y_labels = FALSE) {
   )
 }
 
-# ---------------------------- infected-organ count --------------------------
-# For every pathogen, count the number of organs with RPM > 0. Then count how
-# many pathogen species occur at each breadth (1 to 8 infected organs).
 positive_matrix <- as.matrix(dat[, organ_order, drop = FALSE]) > 0
 infected_n <- rowSums(positive_matrix)
 if (any(infected_n < 1 | infected_n > 8)) {
@@ -372,8 +353,6 @@ write.table(
 
 max_count <- max(infected_count$Pathogen_species_count)
 
-# Draw the broken axis inside one ggplot panel so that the two bar segments
-# share exactly the same y coordinates. This prevents vertical misalignment.
 count_left <- infected_count
 count_left$xmin <- 0
 count_left$xmax <- pmin(count_left$Pathogen_species_count, bar_left_limit)
@@ -485,7 +464,6 @@ make_count_component <- function() {
   )
 }
 
-# ---------------------------- assemble and export ---------------------------
 interleave_grobs <- function(grobs) {
   result <- list()
   for (i in seq_along(grobs)) {
@@ -507,8 +485,6 @@ interleave_widths <- function(component_widths, gap_width) {
 }
 
 build_final_grob <- function() {
-  # Build grobs only after the output device is open. This allows Cairo/PNG
-  # to resolve Arial directly and avoids PostScript font-database warnings.
   top_plots <- lapply(seq_len(8), function(i) {
     make_bubble_component(selected_species[i], show_y_labels = i == 1)
   })

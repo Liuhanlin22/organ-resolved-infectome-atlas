@@ -1,8 +1,3 @@
-# Figure S4B: pathogen counts by broad category and tissue
-#
-# The count is the number of classified pathogen taxa detected in at least one
-# of the 112 complete libraries for each tissue. The four panels are RNA, DNA,
-# BACTERIA and EUKARYOTA, in the tissue order used by the supplied reference.
 
 required_packages <- c("ggplot2", "readxl", "dplyr", "tidyr", "openxlsx")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
@@ -156,11 +151,13 @@ plot_data <- counts_long %>%
     panel_max = c(RNA = 20, DNA = 3, BACTERIA = 10, EUKARYOTA = 12)[as.character(Category)]
   )
 
-# The colored rectangles provide the panel borders while allowing each panel
-# to retain its own y-axis scale.
 panel_data <- plot_data %>%
   distinct(Category, panel_max) %>%
-  mutate(xmin = 0.45, xmax = 8.55, ymin = 0, ymax = panel_max)
+  mutate(
+    xmin = 0.45, xmax = 8.55, ymin = 0, ymax = panel_max,
+    label = c(RNA = "RNA virus", DNA = "DNA virus",
+              BACTERIA = "Bacteria", EUKARYOTA = "Eukaryota")[as.character(Category)]
+  )
 
 figure_s4b <- ggplot(plot_data, aes(x = x, y = Pathogen_count, fill = Category)) +
   geom_rect(
@@ -171,7 +168,12 @@ figure_s4b <- ggplot(plot_data, aes(x = x, y = Pathogen_count, fill = Category))
     linewidth = 0.45
   ) +
   geom_col(width = 0.73, color = NA, alpha = 0.92) +
-  facet_grid(Category ~ ., scales = "free_y", space = "free_y") +
+  geom_text(
+    data = panel_data, aes(x = 8.45, y = panel_max * 0.96, label = label),
+    inherit.aes = FALSE, hjust = 1, vjust = 1,
+    family = "Arial", size = 3.2, color = "black"
+  ) +
+  facet_grid(Category ~ ., scales = "free_y", space = "fixed") +
   scale_fill_manual(values = category_fill, drop = FALSE) +
   scale_color_manual(values = category_border, guide = "none", drop = FALSE) +
   scale_x_continuous(
@@ -180,7 +182,14 @@ figure_s4b <- ggplot(plot_data, aes(x = x, y = Pathogen_count, fill = Category))
     labels = rep("", length(tissue_order)),
     expand = c(0, 0)
   ) +
-  scale_y_continuous(expand = c(0, 0)) +
+  scale_y_continuous(
+    breaks = function(limits) {
+      maximum <- round(limits[2])
+      step <- switch(as.character(maximum), "3" = 1, "10" = 2, "12" = 3, 5)
+      seq(0, maximum, by = step)
+    },
+    expand = c(0, 0)
+  ) +
   labs(x = NULL, y = "Number of pathogens", tag = "b") +
   theme_bw(base_family = "Arial", base_size = 9.5) +
   theme(
@@ -195,7 +204,7 @@ figure_s4b <- ggplot(plot_data, aes(x = x, y = Pathogen_count, fill = Category))
     axis.text.y = element_text(color = "black", size = 8.5),
     axis.title.y = element_text(color = "black", size = 10.5, margin = margin(r = 5)),
     axis.ticks.y = element_line(color = "#777777", linewidth = 0.35),
-    panel.spacing = grid::unit(0.12, "cm"),
+    panel.spacing = grid::unit(0.24, "cm"),
     plot.tag = element_text(face = "bold", size = 17),
     plot.tag.position = c(0.005, 0.995),
     plot.margin = margin(t = 5, r = 5, b = 4, l = 5),

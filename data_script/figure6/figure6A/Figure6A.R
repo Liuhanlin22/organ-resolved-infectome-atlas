@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 6A: deterministic ring layout with order blocks and straight edges.
 required <- c("ggplot2", "ggrepel", "scales", "jsonlite")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing) > 0) stop("Missing R package(s): ", paste(missing, collapse = ", "))
@@ -29,8 +28,6 @@ inner <- pathogens[pathogens$node_zone == "inner", , drop = FALSE]
 all_orders <- unique(hosts$host_order)
 if (!setequal(all_orders, names(order_colors))) stop("Host-order colour mapping is incomplete")
 
-# User-specified host-order background colours. Named assignment keeps the
-# mapping stable when the optimiser changes the circular order.
 order_colors <- c(
   "Anguilliformes" = "#e0f3db",
   "Carangiformes" = "#ccebc5",
@@ -58,7 +55,6 @@ order_to_hosts <- lapply(all_orders, function(ord) hosts$node_id[hosts$host_orde
 pathogen_edges <- split(seq_len(nrow(edges)), edges$target)
 node_zone <- setNames(nodes$node_zone, nodes$node_id); node_label <- setNames(nodes$label, nodes$node_id)
 
-# Independent edge pairs only: shared endpoints are legal junctions, not crossings.
 edge_i <- integer(0); edge_j <- integer(0)
 for (i in seq_len(nrow(edges) - 1L)) for (j in (i + 1L):nrow(edges)) {
   if (!length(intersect(c(edges$source[i], edges$target[i]), c(edges$source[j], edges$target[j])))) {
@@ -88,8 +84,6 @@ clamp_radius <- function(x, y, maximum) {
   rr <- sqrt(x^2 + y^2); if (rr > maximum && rr > 0) c(x * maximum / rr, y * maximum / rr) else c(x, y)
 }
 
-# With 42 hosts and 20 order boundaries, d=2*pi/62. Adding one extra d
-# after every block makes same-order gaps d and between-order gaps exactly 2d.
 host_positions_for_sequence <- function(order_sequence, order_to_hosts) {
   step <- 2 * pi / (sum(lengths(order_to_hosts[order_sequence])) + length(order_sequence))
   cursor <- pi / 2; out <- data.frame(); host_sequence <- character(0)
@@ -236,9 +230,6 @@ outer_pos$x <- positions[outer_pos$node_id, 1]; outer_pos$y <- positions[outer_p
 inner_pos <- inner
 inner_pos$x <- positions[inner_pos$node_id, 1]; inner_pos$y <- positions[inner_pos$node_id, 2]
 
-# Smooth capsule-shaped order bands only cover their host nodes. Using
-# unwrapped angles prevents the 357-20 degree Eupercaria block from filling
-# nearly the whole ring. Rounded end caps replace the previous sharp corners.
 host_radius <- 0.98
 band_corner_radius <- 0.07
 band_inner <- host_radius - band_corner_radius

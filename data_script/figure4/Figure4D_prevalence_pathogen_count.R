@@ -1,19 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 4D — organ-specific pathogen prevalence and pathogen count
-#
-# Input: Abundance_matrix_with_libs.xlsx (pathogen RPM matrix)
-# Only individuals represented by all eight organ libraries are retained.
-#
-# Organ suffixes:
-#   B = Brain, G = Gill, H = Liver, I = Intestine,
-#   K = Kidney, M = Muscles, P = Skin, S = Spleen
-#
-# Definitions:
-#   Prevalence (%) = individuals with >=1 pathogen (RPM > 0) / complete
-#                    individuals * 100, calculated separately for each organ.
-#   Pathogen count = number of distinct pathogen rows with RPM > 0 in at least
-#                    one complete individual for the indicated organ.
 
 required_packages <- c("openxlsx", "writexl", "ggplot2")
 missing_packages <- required_packages[
@@ -35,7 +21,6 @@ suppressWarnings(
   })
 )
 
-# ---------------------------- adjustable parameters -------------------------
 font_family <- "Arial"
 if (.Platform$OS.type == "windows") {
   grDevices::windowsFonts(Arial = grDevices::windowsFont("Arial"))
@@ -77,7 +62,6 @@ organ_code_to_tissue <- c(
 )
 required_organ_codes <- names(organ_code_to_tissue)
 
-# ---------------------------- path handling ---------------------------------
 get_script_dir <- function() {
   file_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
   if (length(file_arg) == 1) {
@@ -93,7 +77,6 @@ script_dir <- get_script_dir()
 input_file <- file.path(script_dir, "Abundance_matrix_with_libs.xlsx")
 if (!file.exists(input_file)) stop("Input file not found: ", input_file)
 
-# ---------------------------- read and validate -----------------------------
 abundance <- openxlsx::read.xlsx(
   input_file,
   sheet = 1,
@@ -167,8 +150,6 @@ incomplete_report <- incomplete_report[
   drop = FALSE
 ]
 
-# Convert the pathogen x library matrix to numeric only after all names have
-# been captured and validated.
 rpm_matrix <- as.matrix(abundance[, -1, drop = FALSE])
 suppressWarnings(storage.mode(rpm_matrix) <- "numeric")
 if (anyNA(rpm_matrix)) {
@@ -177,7 +158,6 @@ if (anyNA(rpm_matrix)) {
 rownames(rpm_matrix) <- abundance$Pathogen
 colnames(rpm_matrix) <- library_ids
 
-# Canonical export order: alphabetical individual ID, then B/G/H/I/K/M/P/S.
 complete_individuals <- sort(complete_individuals)
 complete_library_ids <- unlist(
   lapply(
@@ -197,7 +177,6 @@ complete_manifest <- library_manifest[
   drop = FALSE
 ]
 
-# ---------------------------- summary statistics ----------------------------
 summary_data <- do.call(
   rbind,
   lapply(plot_tissue_order, function(tissue_name) {
@@ -225,9 +204,6 @@ summary_data <- do.call(
 summary_data$Tissue <- factor(summary_data$Tissue, levels = plot_tissue_order)
 summary_data$Tissue_index <- seq_len(nrow(summary_data))
 
-# Count individuals with any detected pathogen across all eight organs. All-zero
-# individuals remain in the prevalence denominator, as required for an unbiased
-# complete-case comparison.
 individual_any_positive <- vapply(
   complete_individuals,
   function(id) {
@@ -241,7 +217,6 @@ individual_qc <- data.frame(
   stringsAsFactors = FALSE
 )
 
-# ---------------------------- data exports ----------------------------------
 summary_export <- summary_data
 summary_export$Tissue <- as.character(summary_export$Tissue)
 summary_export$Tissue_index <- NULL
@@ -282,9 +257,6 @@ write.table(
   fileEncoding = "UTF-8"
 )
 
-# ---------------------------- visualization ---------------------------------
-# Natural cubic interpolation is used only to draw a visually gentle line;
-# red points always show the exact integer pathogen counts.
 smooth_x <- seq(1, nrow(summary_data), length.out = 400)
 smooth_y <- stats::splinefun(
   summary_data$Tissue_index,

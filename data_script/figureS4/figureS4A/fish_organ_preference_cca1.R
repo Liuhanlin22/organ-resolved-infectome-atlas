@@ -61,7 +61,6 @@ if (!identical(as.integer(organ_gaps), expected_organ_gaps)) {
   warning("Updated organ gap positions: ", paste(organ_gaps, collapse = ", "))
 }
 
-# These separators reproduce the original CCA-ranked visual blocks.
 row_gaps <- c(16, 31, 48, 63)
 row_gaps <- row_gaps[row_gaps < nrow(heatmap_matrix)]
 

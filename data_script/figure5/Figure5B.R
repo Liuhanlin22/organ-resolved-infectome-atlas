@@ -1,7 +1,5 @@
 #!/usr/bin/env Rscript
 
-# Figure 5B — total pathogen abundance among fish orders
-# Uses 112 fish with one library from each of eight organs.
 
 required <- c("openxlsx", "ggplot2", "writexl")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
