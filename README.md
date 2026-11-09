@@ -1,6 +1,6 @@
-# An Organ-Resolved Infectome Atlas of Wild Fishes
+# A Marine Fish Infectome Atlas from the South China Sea
 
-This repository contains analysis code, figure-specific input data, and phylogenetic resources supporting the study *An Organ-Resolved Infectome Atlas of Wild Fishes*. The analyses characterize microbial diversity, tissue-associated distributions, and host associations in wild marine fishes using metatranscriptomic data.
+This repository contains analysis code, figure-specific input data, and phylogenetic resources supporting the study *A Marine Fish Infectome Atlas from the South China Sea*. The analyses characterize microbial diversity, tissue-associated distributions, and host associations in wild marine fishes using metatranscriptomic data.
 
 ## Repository contents
 
