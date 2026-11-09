@@ -6,13 +6,9 @@
 | B | Host-genus composition within host orders | `FigureS1B_host_genus_composition.R`, `FigureS1B_host_genus_composition_input.xlsx` |
 | C | Composition-partitioned log10 total-read bars above and percentage bars below | `FigureS1C_read_counts_and_percentages.R`, `FigureS1C_library_read_qc.tsv` |
 
-## Input preparation
+## Input data
 
-The source workbook is `../figure1/Table_S1_final_host_reads.xlsx`. Regenerate Figure S1B and C inputs using
-
-```bash
-python data_script/figure1/prepare_figure1_S1_inputs.py
-```
+The source workbook is `../figure1/Table_S1_final_host_reads.xlsx`. Plotting inputs are provided in this directory.
 
 Figure S1B counts each of the 134 fish individuals once. The workbook provides the proportions, individual counts, individual-level annotations and source checksum.
 

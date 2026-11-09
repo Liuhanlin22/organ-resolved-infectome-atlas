@@ -27,12 +27,6 @@ Rscript figure1C.R
 
 The script saves its figure outputs in the same directory.
 
-To regenerate the inputs for Figure 1C and Figure S1B–C from Table S1, run the following command from the repository root.
-
-```bash
-python data_script/figure1/prepare_figure1_S1_inputs.py
-```
-
 ## Data files
 
 Input tables are supplied in Excel, CSV, or TSV format. Sequence and alignment files are provided in FASTA format, and phylogenetic trees are provided in Newick format. Refer to the manuscript and supplementary tables for sample information and analytical methods.
