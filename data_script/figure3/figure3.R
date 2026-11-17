@@ -82,7 +82,7 @@ normalize_name <- function(x) {
     "Polydactylus sextarius picornavirus 1" =
       "Polydactylus sextarius picornavirus",
     "Cystoisospora sp. DSLT-2" = "Cystoisospora sp. DSLT-2",
-    "Sarcocystidae sp. DSLT-2" = "Cystoisospora sp. DSLT-2",
+    "Sarcocystidae sp. DSLT-2" = "Sarcocystidae sp. DSLT",
     "Photobacterium damselae QLXSD" = "Photobacterium sp. QLXSD"
   )
   hit <- match(x, names(aliases))
