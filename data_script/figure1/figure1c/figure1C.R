@@ -1,4 +1,3 @@
-#!/usr/bin/env Rscript
 options(stringsAsFactors = FALSE)
 required <- c("dplyr", "ggplot2", "scales")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]

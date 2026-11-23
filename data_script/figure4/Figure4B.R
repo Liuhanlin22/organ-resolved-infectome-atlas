@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required_packages <- c("openxlsx", "ggplot2", "gridExtra")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
@@ -550,8 +547,7 @@ grDevices::cairo_pdf(
   bg = "white"
 )
 draw_figure()
-grDevices::dev.off()
-
+invisible(grDevices::dev.off())
 png_file <- file.path(script_dir, "Figure4B.png")
 grDevices::png(
   png_file,
@@ -562,4 +558,4 @@ grDevices::png(
   bg = "white"
 )
 draw_figure()
-grDevices::dev.off()
+invisible(grDevices::dev.off())

@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required_packages <- c("openxlsx", "writexl", "pheatmap", "gtable")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
@@ -470,8 +467,7 @@ grDevices::cairo_pdf(
 heatmap_object <- make_heatmap()
 grid::grid.newpage()
 grid::grid.draw(heatmap_object$gtable)
-grDevices::dev.off()
-
+invisible(grDevices::dev.off())
 png_file <- file.path(script_dir, "Figure4C_heatmap_updated.png")
 grDevices::png(
   png_file,
@@ -484,4 +480,4 @@ grDevices::png(
 heatmap_object <- make_heatmap()
 grid::grid.newpage()
 grid::grid.draw(heatmap_object$gtable)
-grDevices::dev.off()
+invisible(grDevices::dev.off())

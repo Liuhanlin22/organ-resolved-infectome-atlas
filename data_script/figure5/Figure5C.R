@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required <- c("openxlsx", "ggplot2")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing)) stop("Missing R package(s): ", paste(missing, collapse = ", "))

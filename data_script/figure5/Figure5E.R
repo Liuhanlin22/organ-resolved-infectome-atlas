@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required <- c("readr", "dplyr", "ggplot2", "Rtsne", "vegan")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing)) {

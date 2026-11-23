@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required_packages <- c("openxlsx", "pheatmap", "grid")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing_packages) > 0) {
@@ -307,9 +304,8 @@ if (capabilities("cairo")) {
   grDevices::pdf(pdf_file, width = 22, height = 21, family = "sans", useDingbats = FALSE)
 }
 draw_heatmap()
-grDevices::dev.off()
-
+invisible(grDevices::dev.off())
 png_type <- if (capabilities("cairo")) "cairo" else getOption("bitmapType")
 grDevices::png(png_file, width = 22, height = 21, units = "in", res = 300, bg = "white", type = png_type)
 draw_heatmap()
-grDevices::dev.off()
+invisible(grDevices::dev.off())

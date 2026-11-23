@@ -1,4 +1,3 @@
-
 required_packages <- c("ggplot2", "readxl", "dplyr", "tidyr", "writexl", "ragg")
 missing_packages <- required_packages[!vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing_packages) > 0) {
@@ -345,7 +344,7 @@ tiff_file <- file.path(output_dir, "FigureS4C_pathogen_abundance_by_tissue.tiff"
 ggsave(pdf_file, figure_s4c, width = 4.35, height = 6.2, units = "in", device = cairo_pdf)
 svg(svg_file, width = 4.35, height = 6.2, bg = "white", onefile = TRUE)
 print(figure_s4c)
-dev.off()
+invisible(dev.off())
 raster_dir <- file.path(tempdir(), "figureS4C_raster")
 dir.create(raster_dir, recursive = TRUE, showWarnings = FALSE)
 png_stage <- file.path(raster_dir, basename(png_file))

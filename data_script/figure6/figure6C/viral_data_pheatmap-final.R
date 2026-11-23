@@ -101,10 +101,3 @@ png_file <- file.path(script_dir, "Figure6C_heatmap.png")
 grDevices::png(png_file, width = 10 * 600, height = 10 * 600, res = 600,
                units = "px", type = "cairo", bg = "white")
 grid.newpage(); grid.draw(plot_obj$gtable); grDevices::dev.off()
-
-write.table(data.frame(metric = c("host_columns", "pathogen_rows", "column_group_gaps",
-                                  "row_group_gaps", "first_host_column_retained"),
-                       value = c(ncol(heatmap_data), nrow(heatmap_data),
-                                 paste(gaps_col, collapse = ";"), paste(gaps_row, collapse = ";"), "TRUE")),
-            file.path(script_dir, "Figure6C_layout_metrics.tsv"), sep = "\t",
-            quote = FALSE, row.names = FALSE)

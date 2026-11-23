@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 library(readxl)
 library(ggplot2)
 

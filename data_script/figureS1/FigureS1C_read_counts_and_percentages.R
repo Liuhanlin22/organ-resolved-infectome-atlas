@@ -1,5 +1,3 @@
-#!/usr/bin/env Rscript
-
 options(stringsAsFactors = FALSE)
 required <- c("dplyr", "tidyr", "ggplot2", "patchwork", "scales")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
@@ -154,4 +152,3 @@ grDevices::pdfFonts(Arial = grDevices::pdfFonts("ArialMT")[[1]])
 ggsave(paste0(output_prefix, ".pdf"), figure, width = figure_width, height = figure_height,
        device = grDevices::pdf, useDingbats = FALSE)
 ggsave(paste0(output_prefix, ".png"), figure, width = figure_width, height = figure_height, dpi = 600, bg = "white")
-message("Saved Figure S1C for ", nrow(qc), " libraries in ", nrow(order_centres), " host orders.")

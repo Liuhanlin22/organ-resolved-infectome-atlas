@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required_packages <- c("openxlsx", "ggplot2")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)

@@ -176,11 +176,6 @@ def main():
         write_sheet(wb.create_sheet(name), frame)
     wb.save(OUT / "Figure6A_input.xlsx")
 
-    print(f"Hosts: {len(host_out)} / {len(host_meta)}")
-    print(f"Pathogens: {len(path_out)} / {len(pathogen_meta)}")
-    print(f"Edges: {len(edges)}")
-    print(f"Inner pathogens: {(path_out['node_zone'] == 'inner').sum()}")
-    print(f"Outer pathogens: {(path_out['node_zone'] == 'outer').sum()}")
 
 
 if __name__ == "__main__":

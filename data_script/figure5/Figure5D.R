@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required <- c("openxlsx", "VennDiagram", "grid")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing)) stop("Missing R package(s): ", paste(missing, collapse = ", "))
@@ -79,9 +76,8 @@ draw_figure <- function() {
 
 grDevices::cairo_pdf(file.path(script_dir, "Figure5D.pdf"), width = 6.0, height = 4.7)
 draw_figure()
-dev.off()
-
+invisible(dev.off())
 png(file.path(script_dir, "Figure5D.png"), width = 3600, height = 2820,
     res = 600, type = "cairo", bg = "white")
 draw_figure()
-dev.off()
+invisible(dev.off())

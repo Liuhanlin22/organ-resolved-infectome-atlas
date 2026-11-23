@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required_packages <- c("openxlsx", "ggplot2", "gridExtra")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
@@ -275,38 +272,39 @@ make_organ_plot <- function(dat, organ) {
     ) +
     geom_text(
       aes(
-        x = 0,
-        label = Display_name,
-        color = Known_pathogen
+        x = -0.08 * count_top,
+        label = Display_name
       ),
       inherit.aes = TRUE,
       family = font_family,
       fontface = "italic",
       size = species_font_size / ggplot2::.pt,
-      hjust = 1.05,
+      hjust = 1,
+      color = "black",
       vjust = 0.4,
       show.legend = FALSE
     ) +
-    scale_fill_manual(values = classification_colors, drop = FALSE) +
-    scale_color_manual(
-      values = c("FALSE" = "black", "TRUE" = known_star_color),
-      guide = "none"
+    geom_point(
+      data = dat[dat$Known_pathogen %in% TRUE, , drop = FALSE],
+      aes(x = -0.035 * count_top, y = Display_factor),
+      inherit.aes = FALSE, shape = 8, color = known_star_color,
+      size = 2.0, stroke = 0.65, show.legend = FALSE
     ) +
+    scale_fill_manual(values = classification_colors, drop = FALSE) +
     scale_y_discrete(labels = NULL, expand = expansion(add = c(0.25, 0.25))) +
     scale_x_continuous(
       name = "Number of positive individuals",
       position = "top",
-      limits = c(0, count_top),
       breaks = nice_integer_breaks(count_top),
       expand = expansion(mult = c(0, 0)),
       sec.axis = sec_axis(
         ~ . / scale_factor,
-        name = expression("Average abundance " * log[10] * "(RPM+1)"),
+        name = expression(log[10] * "(mean RPM + 1)"),
         breaks = abundance_pretty[abundance_pretty >= 0 & abundance_pretty <= abundance_top]
       )
     ) +
     labs(title = organ, y = NULL) +
-    coord_cartesian(clip = "off") +
+    coord_cartesian(xlim = c(0, count_top), clip = "off") +
     theme_classic(base_family = font_family, base_size = axis_font_size) +
     theme(
       legend.position = "none",
@@ -335,7 +333,7 @@ make_organ_plot <- function(dat, organ) {
       axis.line.y = element_line(color = "black", linewidth = 0.35),
       axis.line.x = element_line(color = "black", linewidth = 0.35),
       axis.ticks.x = element_line(color = "black", linewidth = 0.3),
-      plot.margin = margin(t = 5, r = 7, b = 5, l = 110)
+      plot.margin = margin(t = 5, r = 7, b = 5, l = 165)
     )
 }
 
@@ -352,7 +350,7 @@ make_shared_legend <- function(horizontal = TRUE) {
                    gp = gpar(col = abundance_color, lwd = 1.2)),
       pointsGrob(x = 0.2525, y = 0.44, pch = 16, size = unit(2.0, "mm"),
                  gp = gpar(col = abundance_color, fill = abundance_color)),
-      textGrob(expression("Average abundance " * log[10] * "(RPM+1)"),
+      textGrob(expression(log[10] * "(mean RPM + 1)"),
                x = 0.278, y = 0.44, just = "left",
                gp = gpar(fontfamily = font_family, fontsize = 9)),
 
@@ -367,9 +365,10 @@ make_shared_legend <- function(horizontal = TRUE) {
 
       textGrob("Known pathogens", x = 0.83, y = 0.80, just = "left",
                gp = gpar(fontfamily = font_family, fontface = "bold", fontsize = 10)),
-      textGrob("Known pathogen species", x = 0.84, y = 0.44, just = "left",
-               gp = gpar(fontfamily = font_family, fontface = "italic",
-                         col = known_star_color, fontsize = 8.5))
+      pointsGrob(x = 0.84, y = 0.44, pch = 8, size = unit(2.5, "mm"),
+                  gp = gpar(col = known_star_color, lwd = 1.2)),
+       textGrob("Known pathogen taxa", x = 0.855, y = 0.44, just = "left",
+                gp = gpar(fontfamily = font_family, fontsize = 8.5))
     )
   } else {
     grobTree(
@@ -383,7 +382,7 @@ make_shared_legend <- function(horizontal = TRUE) {
                    gp = gpar(col = abundance_color, lwd = 1.2)),
       pointsGrob(x = 0.10, y = 0.76, pch = 16, size = unit(2.0, "mm"),
                  gp = gpar(col = abundance_color, fill = abundance_color)),
-      textGrob(expression("Average abundance " * log[10] * "(RPM+1)"),
+      textGrob(expression(log[10] * "(mean RPM + 1)"),
                x = 0.17, y = 0.76, just = "left",
                gp = gpar(fontfamily = font_family, fontsize = 9)),
       textGrob("Classification", x = 0.05, y = 0.66, just = "left",
@@ -396,19 +395,14 @@ make_shared_legend <- function(horizontal = TRUE) {
                gp = gpar(fontfamily = font_family, fontsize = 9)),
       textGrob("Known pathogens", x = 0.05, y = 0.22, just = "left",
                gp = gpar(fontfamily = font_family, fontface = "bold", fontsize = 11)),
-      textGrob("Known pathogen species", x = 0.06, y = 0.12, just = "left",
-               gp = gpar(fontfamily = font_family, fontface = "italic",
-                         col = known_star_color, fontsize = 9))
+      pointsGrob(x = 0.06, y = 0.12, pch = 8, size = unit(2.5, "mm"),
+                  gp = gpar(col = known_star_color, lwd = 1.2)),
+       textGrob("Known pathogen taxa", x = 0.17, y = 0.12, just = "left",
+                gp = gpar(fontfamily = font_family, fontsize = 9))
     )
   }
 }
 
-save_grob_pdf <- function(grob, filename, width, height) {
-  grDevices::cairo_pdf(filename, width = width, height = height, family = font_family)
-  grid.newpage()
-  grid.draw(grob)
-  dev.off()
-}
 
 s3 <- read_s3(s3_file)
 organ_data <- setNames(vector("list", length(organ_order)), organ_order)
@@ -419,6 +413,11 @@ for (organ in organ_order) {
   plots[[organ]] <- make_organ_plot(organ_data[[organ]], organ)
 }
 
+grDevices::cairo_pdf(
+  file.path(script_dir, "figure3_combined_2rows_4cols.pdf"),
+  width = combined_width_in, height = combined_height_in,
+  family = font_family
+)
 plot_gtables <- lapply(plots[organ_order], ggplotGrob)
 common_widths <- Reduce(grid::unit.pmax, lapply(plot_gtables, `[[`, "widths"))
 plot_gtables <- lapply(plot_gtables, function(g) {
@@ -443,21 +442,5 @@ combined <- arrangeGrob(
   ncol = 1,
   heights = c(0.065, 0.935)
 )
-save_grob_pdf(
-  combined,
-  file.path(script_dir, "figure3_combined_2rows_4cols.pdf"),
-  width = combined_width_in,
-  height = combined_height_in
-)
-
-plot_audit <- do.call(rbind, lapply(organ_data, function(x) {
-  x[, c(
-    "Organ", "Input_row", "Full_name", "Display_name", "Abundance",
-    "Positive_count", "Classification", "Known_pathogen"
-  )]
-}))
-write.table(
-  plot_audit,
-  file = file.path(script_dir, "figure3_plot_mapping.tsv"),
-  sep = "\t", row.names = FALSE, quote = FALSE, fileEncoding = "UTF-8"
-)
+grid.draw(combined)
+invisible(dev.off())

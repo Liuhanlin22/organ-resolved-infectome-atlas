@@ -1,4 +1,3 @@
-#!/usr/bin/env Rscript
 options(stringsAsFactors = FALSE)
 required <- c("openxlsx", "ggplot2")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
@@ -75,5 +74,3 @@ ggsave(paste0(output_prefix, ".pdf"), plot, width = 5.5, height = 5.5,
   units = "in", device = pdf_device, bg = "white")
 ggsave(paste0(output_prefix, ".png"), plot, width = 5.5, height = 5.5,
   units = "in", dpi = 600, bg = "white")
-message("Figure6B complete: ", nrow(plot_data), " taxa, host-order counts ",
-  min(plot_data$host_order_count), " to ", max(plot_data$host_order_count), ".")

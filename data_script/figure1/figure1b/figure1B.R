@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 options(stringsAsFactors = FALSE)
 
 required_cran <- c("ape", "ggplot2", "dplyr", "readr", "tibble", "grid")

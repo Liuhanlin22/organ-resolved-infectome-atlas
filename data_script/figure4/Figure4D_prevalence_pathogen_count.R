@@ -1,6 +1,3 @@
-#!/usr/bin/env Rscript
-
-
 required_packages <- c("openxlsx", "writexl", "ggplot2")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
@@ -304,7 +301,7 @@ p <- ggplot(summary_data, aes(x = Tissue_index)) +
     expand = c(0, 0)
   ) +
   scale_y_continuous(
-    name = "Pathogen prevalence (%)",
+    name = "Detection frequency (%)",
     limits = c(0, y_upper),
     breaks = seq(0, y_upper, by = 5),
     expand = c(0, 0),
@@ -385,8 +382,7 @@ grDevices::cairo_pdf(
   bg = "white"
 )
 print(p)
-grDevices::dev.off()
-
+invisible(grDevices::dev.off())
 png_file <- file.path(script_dir, "Figure4D_prevalence_pathogen_count.png")
 grDevices::png(
   png_file,
@@ -397,6 +393,4 @@ grDevices::png(
   bg = "white"
 )
 print(p)
-grDevices::dev.off()
-
-
+invisible(grDevices::dev.off())

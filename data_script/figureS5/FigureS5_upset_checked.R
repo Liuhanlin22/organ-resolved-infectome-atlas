@@ -1,4 +1,3 @@
-
 required_packages <- c("openxlsx", "dplyr", "tidyr")
 missing_packages <- required_packages[
   !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
@@ -305,13 +304,13 @@ output_base <- file.path(output_dir, "FigureS5_pathogen_individual_upset")
 grDevices::cairo_pdf(paste0(output_base, ".pdf"), width = figure_width,
   height = figure_height, family = "Arial", bg = "white")
 figure_s5()
-grDevices::dev.off()
+invisible(grDevices::dev.off())
 grDevices::png(paste0(output_base, ".png"), width = figure_width,
   height = figure_height, units = "in", res = 600, type = "cairo", bg = "white")
 figure_s5()
-grDevices::dev.off()
+invisible(grDevices::dev.off())
 grDevices::tiff(paste0(output_base, ".tiff"), width = figure_width,
   height = figure_height, units = "in", res = 600, type = "cairo",
   compression = "lzw", bg = "white")
 figure_s5()
-grDevices::dev.off()
+invisible(grDevices::dev.off())

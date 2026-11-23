@@ -1,10 +1,16 @@
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+script_dir <- if (length(script_arg) == 1) {
+  dirname(normalizePath(sub("^--file=", "", script_arg)))
+} else {
+  normalizePath(getwd())
+}
+
 library(readxl)
 library(dplyr)
 library(networkD3)
 library(htmlwidgets)
-library(webshot)
 
-data0 <- readxl::read_xlsx("figure2A_data.xlsx")
+data0 <- readxl::read_xlsx(file.path(script_dir, "figure2A_data.xlsx"))
 
 data <- data0 %>%
   group_by(Timeline, `Lineages Distribution`, `Geographic Location`, `P.M.A.s`) %>%
@@ -64,13 +70,19 @@ customColors <- c(
 colourScale <- sprintf('d3.scaleOrdinal().range(["%s"])', 
                        paste(customColors, collapse = '", "'))
 
+nodes$label <- nodes$name
+nodes$label[nodes$name == "Nonpathogen"] <- "Other microbial taxa"
+nodes$label[nodes$name == "Pathogen"] <- "Known and putative pathogens"
+nodes$label[nodes$name == "Novel species"] <- "Putative novel taxa"
+nodes$label[nodes$name == "Arterviridae"] <- "Arteriviridae"
+
 p <- sankeyNetwork(
   Links = links, 
   Nodes = nodes, 
   Source = "IDsource", 
   Target = "IDtarget", 
   Value = "value", 
-  NodeID = "name", 
+  NodeID = "label", 
   units = "Count", 
   fontSize = 18, 
   nodeWidth = 20,
@@ -86,22 +98,13 @@ p <- htmlwidgets::onRender(
   p,
   '
   function(el, x) {
-    // Helper function to create valid ID
     function createValidID(name) {
       return name.replace(/[\\s&]+/g, "_").replace(/[^\\w-]/g, "");
     }
-    
-    // Select the SVG
     var svg = d3.select(el).select("svg");
-    
-    // Wait for the layout to complete
     setTimeout(function() {
-      // Apply gradients to all links
       svg.selectAll(".link").each(function(d) {
-        // Create unique gradient ID
         var gradientID = "gradient-" + createValidID(d.source.name) + "-" + createValidID(d.target.name);
-        
-        // Get the source and target colors
         var sourceColor = d3.select(el).selectAll(".node").filter(function(node) { 
           return node.name === d.source.name; 
         }).select("rect").style("fill");
@@ -109,8 +112,6 @@ p <- htmlwidgets::onRender(
         var targetColor = d3.select(el).selectAll(".node").filter(function(node) { 
           return node.name === d.target.name; 
         }).select("rect").style("fill");
-        
-        // Create gradient definition
         var defs = svg.append("defs");
         
         var gradient = defs.append("linearGradient")
@@ -128,14 +129,12 @@ p <- htmlwidgets::onRender(
         gradient.append("stop")
           .attr("offset", "100%")
           .attr("stop-color", targetColor);
-        
-        // Apply gradient to the link
         d3.select(this).style("stroke", "url(#" + gradientID + ")");
       });
-    }, 500); // Delay to ensure layout is complete
+    }, 500);
   }
   '
 )
 
-saveNetwork(p, "sankey1.html")
+saveNetwork(p, file.path(script_dir, "sankey1.html"), selfcontained = rmarkdown::pandoc_available())
 

@@ -1,5 +1,3 @@
-#!/usr/bin/env Rscript
-
 required <- c("ggplot2", "ggrepel", "scales", "jsonlite")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing) > 0) stop("Missing R package(s): ", paste(missing, collapse = ", "))
@@ -356,35 +354,3 @@ p <- ggplot() +
 
 ggsave(file.path(script_dir, "Figure6A.pdf"), p, width = 18.5, height = 15.2, units = "in", device = cairo_pdf, bg = "white")
 ggsave(file.path(script_dir, "Figure6A.png"), p, width = 18.5, height = 15.2, units = "in", dpi = 600, bg = "white")
-
-before_pos <- matrix(NA_real_, nrow = nrow(nodes), ncol = 2, dimnames = list(nodes$node_id, c("x", "y")))
-before_pos[original_positions$node_id, ] <- as.matrix(original_positions[, c("x", "y")])
-before <- crossing_breakdown(before_pos); after <- crossing_breakdown(positions)
-host_r <- node_pos$radius[node_pos$node_type == "Host species"]
-outer_r <- node_pos$radius[node_pos$node_zone == "outer"]
-inner_dist <- as.matrix(dist(inner_pos[, c("x", "y")]))
-metrics <- list(
-  random_seed = 20260815L, nodes = nrow(nodes), host_nodes = nrow(hosts), pathogen_nodes = nrow(pathogens),
-  edges = nrow(edges), host_orders = length(order_sequence), host_radius_mean = mean(host_r),
-  host_radius_cv = sd(host_r) / mean(host_r), outer_radius_mean = mean(outer_r),
-  outer_radius_cv = sd(outer_r) / mean(outer_r), outer_radius_target = 1.125,
-  within_order_gap_radians = 2 * pi / 62, between_order_gap_radians = 4 * pi / 62,
-  host_marker_size = 12.0, outer_marker_size = 3.15,
-  host_label_size_mm = host_label_size, inner_label_size_mm = inner_label_size,
-  outer_label_size_mm = outer_label_size, band_inner = band_inner,
-  band_outer = band_outer, band_corner_radius = band_corner_radius,
-  host_order_legend_columns = 1L, legend_title_size_pt = 14,
-  legend_text_size_pt = 11.2,
-  order_band_white_gap_radians = 4 * pi / 62 - 2 * band_cap_angle,
-  order_band_white_gap_degrees = (4 * pi / 62 - 2 * band_cap_angle) * 180 / pi,
-  order_band_count = nrow(band_ranges), cross_zero_order_count = sum(band_ranges$crosses_zero_degrees),
-  order_sequence = order_sequence,
-  crossings_before = as.list(before), crossings_after = as.list(after),
-  crossing_reduction_percent = round(100 * (before["total"] - after["total"]) / max(1, before["total"]), 2),
-  min_inner_node_distance = min(inner_dist[upper.tri(inner_dist)])
-)
-jsonlite::write_json(metrics, file.path(script_dir, "Figure6A_layout_metrics.json"), pretty = TRUE, auto_unbox = TRUE)
-scalar_metrics <- metrics[!vapply(metrics, is.list, logical(1))]
-write.table(data.frame(metric = names(scalar_metrics),
-                       value = vapply(scalar_metrics, function(x) paste(x, collapse = ";"), character(1))),
-            file.path(script_dir, "Figure6A_layout_metrics.tsv"), sep = "\t", quote = FALSE, row.names = FALSE)

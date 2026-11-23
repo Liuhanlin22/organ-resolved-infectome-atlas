@@ -1,4 +1,3 @@
-#!/usr/bin/env Rscript
 required <- c("openxlsx", "ggplot2", "grid")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
 if (length(missing)) stop("Missing R package(s): ", paste(missing, collapse = ", "))
@@ -83,10 +82,10 @@ save_plot <- function(plot, base, width, height) {
   grDevices::pdf(paste0(base, ".pdf"), width = width, height = height,
                  useDingbats = FALSE, compress = TRUE)
   print(plot)
-  dev.off()
+  invisible(dev.off())
   svg(paste0(base, ".svg"), width = width, height = height, bg = "white")
   print(plot)
-  dev.off()
+  invisible(dev.off())
 }
 
 save_plot(p_b, file.path(script_dir, "FigureS6B_R_rendered"), 5.6, 4.6)
@@ -98,12 +97,11 @@ pushViewport(viewport(layout = grid.layout(1, 2, widths = unit(c(1.35, 1), "null
 print(p_b, vp = viewport(layout.pos.row = 1, layout.pos.col = 1))
 print(p_c, vp = viewport(layout.pos.row = 1, layout.pos.col = 2))
 popViewport()
-dev.off()
-
+invisible(dev.off())
 png(file.path(script_dir, "FigureS6B_C_R_rendered.png"), width = 3240, height = 1380, res = 300, bg = "white")
 grid.newpage()
 pushViewport(viewport(layout = grid.layout(1, 2, widths = unit(c(1.35, 1), "null"))))
 print(p_b, vp = viewport(layout.pos.row = 1, layout.pos.col = 1))
 print(p_c, vp = viewport(layout.pos.row = 1, layout.pos.col = 2))
 popViewport()
-dev.off()
+invisible(dev.off())

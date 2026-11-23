@@ -1,5 +1,3 @@
-#!/usr/bin/env Rscript
-
 suppressPackageStartupMessages({
   library(pheatmap)
   library(vegan)
@@ -159,8 +157,7 @@ draw_heatmap <- function() {
 
 grDevices::cairo_pdf(output_pdf_device, width = 10, height = 8, family = "sans")
 draw_heatmap()
-grDevices::dev.off()
-
+invisible(grDevices::dev.off())
 grDevices::png(
   output_png_device,
   width = 10,
@@ -171,4 +168,4 @@ grDevices::png(
   bg = "white"
 )
 draw_heatmap()
-grDevices::dev.off()
+invisible(grDevices::dev.off())
